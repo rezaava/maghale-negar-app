@@ -1,0 +1,640 @@
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\ShivaNegar.dll.config
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\ShivaNegar.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\ShivaNegar.pdb
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\ShivaNegar.dll.manifest
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\ShivaNegar.vsto
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\CsvHelper.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\DocumentFormat.OpenXml.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\DocumentFormat.OpenXml.Framework.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\MaterialDesignColors.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\MaterialDesignThemes.Wpf.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\Microsoft.Bcl.HashCode.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\Microsoft.Xaml.Behaviors.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\System.Buffers.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\System.IO.Pipelines.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\System.Memory.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\System.Numerics.Vectors.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\System.Text.Encodings.Web.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\System.Text.Json.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\System.Threading.Tasks.Extensions.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\System.ValueTuple.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\CsvHelper.xml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\DocumentFormat.OpenXml.xml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\DocumentFormat.OpenXml.Framework.xml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\Microsoft.Bcl.HashCode.xml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\Microsoft.Xaml.Behaviors.pdb
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\Microsoft.Xaml.Behaviors.xml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\System.Buffers.xml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\System.IO.Pipelines.xml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\System.Memory.xml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\System.Numerics.Vectors.xml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\System.Text.Encodings.Web.xml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\System.Text.Json.xml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\System.Threading.Tasks.Extensions.xml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\CitationSettings\CitationSettingsControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide1.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide2.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide5.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide4.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide3.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\DocumentSettings\DocumentSettingsControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\FootnoteSettings\SubtitleSettingsControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\BugReport.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Networking.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Profile.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\NetworkingManager\NetworkingManagerControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\VirastarSettings\VirastarSettingsControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\TaskPanes\CrossReference\CrossReferenceControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\CaptionsReferSettings\CaptionsReferSettingsControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Settings.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\CustomControls\DialogBoxControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\CustomControls\ShowMessageControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\CustomControls\LoadingControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\AddRemovePages\AddRemovePagesControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\BesmellahPage\BesmellahPageControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\CitationSettings\CitationSettingsControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide1.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide2.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide6.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide5.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide4.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide3.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\DocumentSettings\DocumentSettingsControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\FootnoteSettings\SubtitleSettingsControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Main.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\AboutUs.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Login.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\BugReport.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Networking.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Profile.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\NetworkingManager\NetworkingManagerControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\ShivaNegarControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\VirastarSettings\VirastarSettingsControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\TaskPanes\CrossReference\CrossReferenceControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\CaptionsReferSettings\CaptionsReferSettingsControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ChangeContents\ChangeContentsControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\DocumentManagerControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Documents.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\Models\FileViewModel.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Settings.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\TaskPanes\ChatBoxNetworking\ChatBoxControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\TaskPanes\DefenseAnnouncements\DefenseAnnouncementsControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\TaskPanes\DesigningCD\DesigningCDControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\TaskPanes\InsertCitation\InsertCitationControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\TaskPanes\InsertNahjBalaghe\InsertNahjBalagheControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\TaskPanes\InsertDedicate\InsertDedicateControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\TaskPanes\InsertQuran\InsertQuranControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar_MarkupCompile.cache
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar_MarkupCompile.lref
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\CustomControls\DialogBoxControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\CustomControls\ShowMessageControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\CustomControls\LoadingControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\AddRemovePages\AddRemovePagesControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\BesmellahPage\BesmellahPageControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide6.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Main.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\AboutUs.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Login.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\ShivaNegarControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\Styles\MainDictionary.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ChangeContents\ChangeContentsControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\DocumentManagerControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Documents.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\Models\FileViewModel.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\TaskPanes\ChatBoxNetworking\ChatBoxControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\TaskPanes\DefenseAnnouncements\DefenseAnnouncementsControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\TaskPanes\DesigningCD\DesigningCDControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\TaskPanes\InsertCitation\InsertCitationControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\TaskPanes\InsertNahjBalaghe\InsertNahjBalagheControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\TaskPanes\InsertDedicate\InsertDedicateControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\TaskPanes\InsertQuran\InsertQuranControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.g.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.Private.FormMessageBox.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.CustomControls.Design.frmSwitchPages.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_ComboBox.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_P_ComboBox.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_P_TextBox.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_P_ToggleButton.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.Forms.AddBibliography.P_ResourceFileControl.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_TextBox.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.Forms.AddBibliography.AddBibliographyForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.Forms.AddRemovePages.AddRemovePagesForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.Forms.BesmellahPage.BesmellahPageForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.Forms.CitationSettings.CitationSettingsForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.Forms.DocumentSettings.DocumentSettingsForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.Forms.FootnoteSettings.FootnoteSettingsForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.Forms.VirastarSettings.VirastarSettingsForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.Forms.CaptionSettings.CaptionsReferSettingsForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.Forms.ChangeContents.ChangeContentsForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.Forms.ShivaNegarManager.ShivaNegarForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.Forms.LoadingForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.Forms.SplashScreen.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.Properties.ResourceRibbonIcons.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.Properties.Resources.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.CrossReference.CrossReferenceTaskPane.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.ChatBoxNetworking.ChatBoxNetworkingTaskPane.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.DefenseAnnouncements.DefenseAnnouncementsTaskPane.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.DesigningCD.DesigningCDTaskPane.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.InsertCitation.InsertCitationTaskPane.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.InsertNahjBalaghe.InsertNahjBalagheTaskPane.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.InsertDedicate.InsertDedicateTaskPane.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.InsertQuran.InsertQuranTaskPane.resources
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.csproj.Up2Date
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.pdb
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\Newtonsoft.Json.dll
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\bin\Release\Newtonsoft.Json.xml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\FormatSettings\FormatSettingsControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\Forms\FormatSettings\FormatSettingsControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\new\ShivaNegar\ShivaNegar\obj\Release\ShivaNegar.Forms.FormatSettings.FormatSettingsForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\ShivaNegar.dll.config
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\ShivaNegar.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\ShivaNegar.pdb
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\ShivaNegar.dll.manifest
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\ShivaNegar.vsto
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\CsvHelper.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\DocumentFormat.OpenXml.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\DocumentFormat.OpenXml.Framework.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\MaterialDesignColors.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\MaterialDesignThemes.Wpf.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Bcl.HashCode.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Xaml.Behaviors.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Newtonsoft.Json.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Buffers.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.IO.Pipelines.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Memory.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Numerics.Vectors.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Text.Encodings.Web.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Text.Json.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Threading.Tasks.Extensions.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.ValueTuple.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\CsvHelper.xml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\DocumentFormat.OpenXml.xml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\DocumentFormat.OpenXml.Framework.xml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Bcl.HashCode.xml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Xaml.Behaviors.pdb
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Xaml.Behaviors.xml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Newtonsoft.Json.xml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Buffers.xml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.IO.Pipelines.xml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Memory.xml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Numerics.Vectors.xml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Text.Encodings.Web.xml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Text.Json.xml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Threading.Tasks.Extensions.xml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\CitationSettings\CitationSettingsControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\FormatSettings\FormatSettingsControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide1.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide2.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide5.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide4.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide3.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\DocumentSettings\DocumentSettingsControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\FootnoteSettings\SubtitleSettingsControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\BugReport.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Networking.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Profile.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\NetworkingManager\NetworkingManagerControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\VirastarSettings\VirastarSettingsControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\CrossReference\CrossReferenceControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\CaptionsReferSettings\CaptionsReferSettingsControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Settings.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\CustomControls\DialogBoxControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\CustomControls\ShowMessageControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\CustomControls\LoadingControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\AddRemovePages\AddRemovePagesControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\BesmellahPage\BesmellahPageControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\CitationSettings\CitationSettingsControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\FormatSettings\FormatSettingsControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide1.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide2.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide6.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide5.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide4.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide3.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\DocumentSettings\DocumentSettingsControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\FootnoteSettings\SubtitleSettingsControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Main.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\AboutUs.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Login.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\BugReport.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Networking.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Profile.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\NetworkingManager\NetworkingManagerControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\ShivaNegarControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\VirastarSettings\VirastarSettingsControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\CrossReference\CrossReferenceControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\CaptionsReferSettings\CaptionsReferSettingsControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ChangeContents\ChangeContentsControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\DocumentManagerControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Documents.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\Models\FileViewModel.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Settings.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\ChatBoxNetworking\ChatBoxControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\DefenseAnnouncements\DefenseAnnouncementsControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\DesigningCD\DesigningCDControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertCitation\InsertCitationControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertNahjBalaghe\InsertNahjBalagheControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertDedicate\InsertDedicateControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertQuran\InsertQuranControl.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar_MarkupCompile.cache
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar_MarkupCompile.lref
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\CustomControls\DialogBoxControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\CustomControls\ShowMessageControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\CustomControls\LoadingControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\AddRemovePages\AddRemovePagesControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\BesmellahPage\BesmellahPageControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide6.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Main.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\AboutUs.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Login.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\ShivaNegarControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\Styles\MainDictionary.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ChangeContents\ChangeContentsControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\DocumentManagerControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Documents.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\Models\FileViewModel.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\ChatBoxNetworking\ChatBoxControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\DefenseAnnouncements\DefenseAnnouncementsControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\DesigningCD\DesigningCDControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertCitation\InsertCitationControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertNahjBalaghe\InsertNahjBalagheControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertDedicate\InsertDedicateControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertQuran\InsertQuranControl.baml
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.g.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Private.FormMessageBox.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.CustomControls.Design.frmSwitchPages.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_ComboBox.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_P_ComboBox.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_P_TextBox.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_P_ToggleButton.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.AddBibliography.P_ResourceFileControl.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_TextBox.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.AddBibliography.AddBibliographyForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.AddRemovePages.AddRemovePagesForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.BesmellahPage.BesmellahPageForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.CitationSettings.CitationSettingsForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.DocumentSettings.DocumentSettingsForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.FootnoteSettings.FootnoteSettingsForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.FormatSettings.FormatSettingsForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.VirastarSettings.VirastarSettingsForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.CaptionSettings.CaptionsReferSettingsForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.ChangeContents.ChangeContentsForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.ShivaNegarManager.ShivaNegarForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.LoadingForm.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.SplashScreen.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Properties.ResourceRibbonIcons.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Properties.Resources.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.CrossReference.CrossReferenceTaskPane.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.ChatBoxNetworking.ChatBoxNetworkingTaskPane.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.DefenseAnnouncements.DefenseAnnouncementsTaskPane.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.DesigningCD.DesigningCDTaskPane.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.InsertCitation.InsertCitationTaskPane.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.InsertNahjBalaghe.InsertNahjBalagheTaskPane.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.InsertDedicate.InsertDedicateTaskPane.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.InsertQuran.InsertQuranTaskPane.resources
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.csproj.Up2Date
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.dll
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.pdb
+C:\Users\user\Desktop\Folder\Programming\C#\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.dll.config
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\ShivaNegar.dll.config
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\ShivaNegar.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\ShivaNegar.pdb
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\ShivaNegar.dll.manifest
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\ShivaNegar.vsto
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\CsvHelper.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\DocumentFormat.OpenXml.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\DocumentFormat.OpenXml.Framework.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\MaterialDesignColors.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\MaterialDesignThemes.Wpf.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Bcl.HashCode.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Xaml.Behaviors.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Newtonsoft.Json.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Buffers.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.IO.Pipelines.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Memory.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Numerics.Vectors.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Text.Encodings.Web.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Text.Json.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Threading.Tasks.Extensions.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.ValueTuple.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\CsvHelper.xml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\DocumentFormat.OpenXml.xml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\DocumentFormat.OpenXml.Framework.xml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Bcl.HashCode.xml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Xaml.Behaviors.pdb
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Xaml.Behaviors.xml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Newtonsoft.Json.xml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Buffers.xml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.IO.Pipelines.xml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Memory.xml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Numerics.Vectors.xml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Text.Encodings.Web.xml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Text.Json.xml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Threading.Tasks.Extensions.xml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.csproj.AssemblyReference.cache
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\CitationSettings\CitationSettingsControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\FormatSettings\FormatSettingsControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide1.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide2.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide5.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide4.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide3.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\DocumentSettings\DocumentSettingsControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\FootnoteSettings\SubtitleSettingsControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\BugReport.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Networking.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Profile.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\NetworkingManager\NetworkingManagerControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\VirastarSettings\VirastarSettingsControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\CrossReference\CrossReferenceControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\CaptionsReferSettings\CaptionsReferSettingsControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Settings.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\CustomControls\DialogBoxControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\CustomControls\ShowMessageControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\CustomControls\LoadingControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\AddRemovePages\AddRemovePagesControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\BesmellahPage\BesmellahPageControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\CitationSettings\CitationSettingsControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\FormatSettings\FormatSettingsControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide1.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide2.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide6.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide5.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide4.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide3.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\DocumentSettings\DocumentSettingsControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\FootnoteSettings\SubtitleSettingsControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Main.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\AboutUs.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Login.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\BugReport.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Networking.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Profile.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\NetworkingManager\NetworkingManagerControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\ShivaNegarControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\VirastarSettings\VirastarSettingsControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\CrossReference\CrossReferenceControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\CaptionsReferSettings\CaptionsReferSettingsControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ChangeContents\ChangeContentsControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\DocumentManagerControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Documents.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\Models\FileViewModel.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Settings.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\ChatBoxNetworking\ChatBoxControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\DefenseAnnouncements\DefenseAnnouncementsControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\DesigningCD\DesigningCDControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertCitation\InsertCitationControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertNahjBalaghe\InsertNahjBalagheControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertDedicate\InsertDedicateControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertQuran\InsertQuranControl.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\GeneratedInternalTypeHelper.g.cs
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar_MarkupCompile.cache
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar_MarkupCompile.lref
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\CustomControls\DialogBoxControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\CustomControls\ShowMessageControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\CustomControls\LoadingControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\AddRemovePages\AddRemovePagesControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\BesmellahPage\BesmellahPageControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide6.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Main.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\AboutUs.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Login.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\ShivaNegarControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\Styles\MainDictionary.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ChangeContents\ChangeContentsControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\DocumentManagerControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Documents.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\Models\FileViewModel.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\ChatBoxNetworking\ChatBoxControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\DefenseAnnouncements\DefenseAnnouncementsControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\DesigningCD\DesigningCDControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertCitation\InsertCitationControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertNahjBalaghe\InsertNahjBalagheControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertDedicate\InsertDedicateControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertQuran\InsertQuranControl.baml
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.g.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Private.FormMessageBox.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.CustomControls.Design.frmSwitchPages.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_ComboBox.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_P_ComboBox.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_P_TextBox.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_P_ToggleButton.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.AddBibliography.P_ResourceFileControl.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_TextBox.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.AddBibliography.AddBibliographyForm.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.AddRemovePages.AddRemovePagesForm.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.BesmellahPage.BesmellahPageForm.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.CitationSettings.CitationSettingsForm.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.DocumentSettings.DocumentSettingsForm.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.FootnoteSettings.FootnoteSettingsForm.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.FormatSettings.FormatSettingsForm.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.VirastarSettings.VirastarSettingsForm.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.CaptionSettings.CaptionsReferSettingsForm.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.ChangeContents.ChangeContentsForm.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.ShivaNegarManager.ShivaNegarForm.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.LoadingForm.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.SplashScreen.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Properties.ResourceRibbonIcons.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Properties.Resources.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.CrossReference.CrossReferenceTaskPane.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.ChatBoxNetworking.ChatBoxNetworkingTaskPane.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.DefenseAnnouncements.DefenseAnnouncementsTaskPane.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.DesigningCD.DesigningCDTaskPane.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.InsertCitation.InsertCitationTaskPane.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.InsertNahjBalaghe.InsertNahjBalagheTaskPane.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.InsertDedicate.InsertDedicateTaskPane.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.InsertQuran.InsertQuranTaskPane.resources
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.csproj.GenerateResource.cache
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.csproj.CoreCompileInputs.cache
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.csproj.Up2Date
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.dll
+F:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.pdb
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\ShivaNegar.dll.config
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\ShivaNegar.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\ShivaNegar.pdb
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\ShivaNegar.dll.manifest
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\ShivaNegar.vsto
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\CsvHelper.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\DocumentFormat.OpenXml.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\DocumentFormat.OpenXml.Framework.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\MaterialDesignColors.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\MaterialDesignThemes.Wpf.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Bcl.HashCode.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Xaml.Behaviors.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Newtonsoft.Json.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Buffers.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.IO.Pipelines.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Memory.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Numerics.Vectors.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Text.Encodings.Web.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Text.Json.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Threading.Tasks.Extensions.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\CsvHelper.xml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\DocumentFormat.OpenXml.xml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\DocumentFormat.OpenXml.Framework.xml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Bcl.HashCode.xml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Xaml.Behaviors.pdb
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Microsoft.Xaml.Behaviors.xml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\Newtonsoft.Json.xml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Buffers.xml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.IO.Pipelines.xml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Memory.xml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Numerics.Vectors.xml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Text.Encodings.Web.xml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Text.Json.xml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\bin\Release\System.Threading.Tasks.Extensions.xml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.csproj.AssemblyReference.cache
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\CitationSettings\CitationSettingsControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\FormatSettings\FormatSettingsControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide1.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide2.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide5.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide4.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide3.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\DocumentSettings\DocumentSettingsControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\FootnoteSettings\SubtitleSettingsControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\BugReport.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Networking.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Profile.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\NetworkingManager\NetworkingManagerControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\VirastarSettings\VirastarSettingsControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\CrossReference\CrossReferenceControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\CaptionsReferSettings\CaptionsReferSettingsControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Settings.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\CustomControls\DialogBoxControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\CustomControls\ShowMessageControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\CustomControls\LoadingControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\AddRemovePages\AddRemovePagesControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\BesmellahPage\BesmellahPageControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\CitationSettings\CitationSettingsControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\FormatSettings\FormatSettingsControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide1.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide2.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide6.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide5.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide4.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide3.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\DocumentSettings\DocumentSettingsControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\FootnoteSettings\SubtitleSettingsControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Main.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\AboutUs.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Login.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\BugReport.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Networking.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Profile.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\NetworkingManager\NetworkingManagerControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\ShivaNegarControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\VirastarSettings\VirastarSettingsControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\CrossReference\CrossReferenceControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\CaptionsReferSettings\CaptionsReferSettingsControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ChangeContents\ChangeContentsControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\DocumentManagerControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Documents.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\Models\FileViewModel.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Settings.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\ChatBoxNetworking\ChatBoxControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\DefenseAnnouncements\DefenseAnnouncementsControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\DesigningCD\DesigningCDControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertCitation\InsertCitationControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertNahjBalaghe\InsertNahjBalagheControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertDedicate\InsertDedicateControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertQuran\InsertQuranControl.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar_MarkupCompile.cache
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar_MarkupCompile.lref
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\CustomControls\DialogBoxControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\CustomControls\ShowMessageControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\CustomControls\LoadingControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\AddRemovePages\AddRemovePagesControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\BesmellahPage\BesmellahPageControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\CreateDocument\CreateDocumentSlide6.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Main.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\AboutUs.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Login.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\ShivaNegarControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\Styles\MainDictionary.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ChangeContents\ChangeContentsControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\DocumentManagerControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\View\Documents.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\Forms\ShivaNegarManager\DocumentManager\Models\FileViewModel.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\ChatBoxNetworking\ChatBoxControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\DefenseAnnouncements\DefenseAnnouncementsControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\DesigningCD\DesigningCDControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertCitation\InsertCitationControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertNahjBalaghe\InsertNahjBalagheControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertDedicate\InsertDedicateControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\TaskPanes\InsertQuran\InsertQuranControl.baml
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.g.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Private.FormMessageBox.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.CustomControls.Design.frmSwitchPages.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_ComboBox.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_P_ComboBox.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_P_TextBox.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_P_ToggleButton.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.AddBibliography.P_ResourceFileControl.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.CustomControls.P_TextBox.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.AddBibliography.AddBibliographyForm.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.AddRemovePages.AddRemovePagesForm.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.BesmellahPage.BesmellahPageForm.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.CitationSettings.CitationSettingsForm.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.DocumentSettings.DocumentSettingsForm.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.FootnoteSettings.FootnoteSettingsForm.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.FormatSettings.FormatSettingsForm.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.VirastarSettings.VirastarSettingsForm.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.CaptionSettings.CaptionsReferSettingsForm.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.ChangeContents.ChangeContentsForm.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.ShivaNegarManager.ShivaNegarForm.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.LoadingForm.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Forms.SplashScreen.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Properties.ResourceRibbonIcons.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.Properties.Resources.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.CrossReference.CrossReferenceTaskPane.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.ChatBoxNetworking.ChatBoxNetworkingTaskPane.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.DefenseAnnouncements.DefenseAnnouncementsTaskPane.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.DesigningCD.DesigningCDTaskPane.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.InsertCitation.InsertCitationTaskPane.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.InsertNahjBalaghe.InsertNahjBalagheTaskPane.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.InsertDedicate.InsertDedicateTaskPane.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.TaskPanes.InsertQuran.InsertQuranTaskPane.resources
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.csproj.GenerateResource.cache
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.csproj.CoreCompileInputs.cache
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.csproj.Up2Date
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.dll
+D:\C# projects\Shivanegar\shiva\shivanegar\newShivanegar\newShivanegar\shivanegarApp\ShivaNegar\obj\Release\ShivaNegar.pdb

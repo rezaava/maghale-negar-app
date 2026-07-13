@@ -1,0 +1,323 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\shivanegar\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|solutionrelative:shivanegar\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|d:\\c# projects\\shivanegar\\shiva\\shivanegar\\newshivanegar\\newshivanegar\\shivanegarapp\\shivanegar\\dedicatedfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|solutionrelative:shivanegar\\dedicatedfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\shivanegar\\forms\\shivanegarmanager\\shivanegarcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|solutionrelative:shivanegar\\forms\\shivanegarmanager\\shivanegarcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\shivanegar\\forms\\besmellahpage\\besmellahpagecontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|solutionrelative:shivanegar\\forms\\besmellahpage\\besmellahpagecontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\shivanegar\\forms\\shivanegarmanager\\createdocument\\createdocumentslide2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|solutionrelative:shivanegar\\forms\\shivanegarmanager\\createdocument\\createdocumentslide2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\shivanegar\\templates\\templates.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|solutionrelative:shivanegar\\templates\\templates.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\shivanegar\\forms\\shivanegarmanager\\documentmanager\\view\\aboutus.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|solutionrelative:shivanegar\\forms\\shivanegarmanager\\documentmanager\\view\\aboutus.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\shivanegar\\forms\\changecontents\\changecontentscontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|solutionrelative:shivanegar\\forms\\changecontents\\changecontentscontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|d:\\c# projects\\shivanegar\\shiva\\shivanegar\\newshivanegar\\newshivanegar\\shivanegarapp\\shivanegar\\forms\\shivanegarmanager\\documentmanager\\viewmodel\\documentsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|solutionrelative:shivanegar\\forms\\shivanegarmanager\\documentmanager\\viewmodel\\documentsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\shivanegar\\properties\\resourceribbonicons.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|solutionrelative:shivanegar\\properties\\resourceribbonicons.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\shivanegar\\forms\\shivanegarmanager\\documentmanager\\view\\aboutus.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|solutionrelative:shivanegar\\forms\\shivanegarmanager\\documentmanager\\view\\aboutus.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\shivanegar\\forms\\shivanegarmanager\\createdocument\\createdocumentslide6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|solutionrelative:shivanegar\\forms\\shivanegarmanager\\createdocument\\createdocumentslide6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\shivanegar\\forms\\shivanegarmanager\\documentmanager\\documentmanagercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|solutionrelative:shivanegar\\forms\\shivanegarmanager\\documentmanager\\documentmanagercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\shivanegar\\forms\\shivanegarmanager\\shivanegarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|solutionrelative:shivanegar\\forms\\shivanegarmanager\\shivanegarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\shivanegar\\ribbon.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|solutionrelative:shivanegar\\ribbon.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\shivanegar\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|solutionrelative:shivanegar\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\shivanegar\\ribbon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|ShivaNegar\\ShivaNegar.csproj|solutionrelative:shivanegar\\ribbon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ThisAddIn.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\ThisAddIn.cs",
+              "RelativeDocumentMoniker": "ShivaNegar\\ThisAddIn.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\ThisAddIn.cs",
+              "RelativeToolTip": "ShivaNegar\\ThisAddIn.cs",
+              "ViewState": "AgIAAFoDAAAAAAAAAAAQwGUDAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T09:31:48.274Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Ribbon.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Ribbon.cs",
+              "RelativeDocumentMoniker": "ShivaNegar\\Ribbon.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Ribbon.cs",
+              "RelativeToolTip": "ShivaNegar\\Ribbon.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAuwLgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T08:58:04.494Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Ribbon.xml",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Ribbon.xml",
+              "RelativeDocumentMoniker": "ShivaNegar\\Ribbon.xml",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Ribbon.xml",
+              "RelativeToolTip": "ShivaNegar\\Ribbon.xml",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAAAKwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-06-01T09:31:48.275Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ShivaNegarForm.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\ShivaNegarManager\\ShivaNegarForm.cs",
+              "RelativeDocumentMoniker": "ShivaNegar\\Forms\\ShivaNegarManager\\ShivaNegarForm.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\ShivaNegarManager\\ShivaNegarForm.cs",
+              "RelativeToolTip": "ShivaNegar\\Forms\\ShivaNegarManager\\ShivaNegarForm.cs",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAuwBcBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T09:06:26.099Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShivaNegarControl.xaml.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\ShivaNegarManager\\ShivaNegarControl.xaml.cs",
+              "RelativeDocumentMoniker": "ShivaNegar\\Forms\\ShivaNegarManager\\ShivaNegarControl.xaml.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\ShivaNegarManager\\ShivaNegarControl.xaml.cs",
+              "RelativeToolTip": "ShivaNegar\\Forms\\ShivaNegarManager\\ShivaNegarControl.xaml.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAYwP8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T09:09:39.914Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DocumentManagerControl.xaml.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\ShivaNegarManager\\DocumentManager\\DocumentManagerControl.xaml.cs",
+              "RelativeDocumentMoniker": "ShivaNegar\\Forms\\ShivaNegarManager\\DocumentManager\\DocumentManagerControl.xaml.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\ShivaNegarManager\\DocumentManager\\DocumentManagerControl.xaml.cs",
+              "RelativeToolTip": "ShivaNegar\\Forms\\ShivaNegarManager\\DocumentManager\\DocumentManagerControl.xaml.cs",
+              "ViewState": "AgIAAAABAAAAAAAAAAAjwAYBAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T09:18:48.219Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DedicatedFunctions.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\DedicatedFunctions.cs",
+              "RelativeDocumentMoniker": "ShivaNegar\\DedicatedFunctions.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\DedicatedFunctions.cs",
+              "RelativeToolTip": "ShivaNegar\\DedicatedFunctions.cs",
+              "ViewState": "AgIAAH4KAAAAAAAAAAAgwI4KAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T09:31:47.988Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateDocumentSlide2.xaml.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\ShivaNegarManager\\CreateDocument\\CreateDocumentSlide2.xaml.cs",
+              "RelativeDocumentMoniker": "ShivaNegar\\Forms\\ShivaNegarManager\\CreateDocument\\CreateDocumentSlide2.xaml.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\ShivaNegarManager\\CreateDocument\\CreateDocumentSlide2.xaml.cs",
+              "RelativeToolTip": "ShivaNegar\\Forms\\ShivaNegarManager\\CreateDocument\\CreateDocumentSlide2.xaml.cs",
+              "ViewState": "AgIAAEUBAAAAAAAAAAAMwFcBAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T09:31:48.169Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BesmellahPageControl.xaml.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\BesmellahPage\\BesmellahPageControl.xaml.cs",
+              "RelativeDocumentMoniker": "ShivaNegar\\Forms\\BesmellahPage\\BesmellahPageControl.xaml.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\BesmellahPage\\BesmellahPageControl.xaml.cs",
+              "RelativeToolTip": "ShivaNegar\\Forms\\BesmellahPage\\BesmellahPageControl.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA+wDkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T17:53:00.693Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Constants\\Constants.cs",
+              "RelativeDocumentMoniker": "ShivaNegar\\Constants\\Constants.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Constants\\Constants.cs",
+              "RelativeToolTip": "ShivaNegar\\Constants\\Constants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHwAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T09:31:47.985Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DocumentsVM.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\ShivaNegarManager\\DocumentManager\\ViewModel\\DocumentsVM.cs",
+              "RelativeDocumentMoniker": "ShivaNegar\\Forms\\ShivaNegarManager\\DocumentManager\\ViewModel\\DocumentsVM.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\ShivaNegarManager\\DocumentManager\\ViewModel\\DocumentsVM.cs",
+              "RelativeToolTip": "ShivaNegar\\Forms\\ShivaNegarManager\\DocumentManager\\ViewModel\\DocumentsVM.cs",
+              "ViewState": "AgIAACUBAAAAAAAAAAAWwDgBAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T08:11:19.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChangeContentsControl.xaml.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\ChangeContents\\ChangeContentsControl.xaml.cs",
+              "RelativeDocumentMoniker": "ShivaNegar\\Forms\\ChangeContents\\ChangeContentsControl.xaml.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\ChangeContents\\ChangeContentsControl.xaml.cs",
+              "RelativeToolTip": "ShivaNegar\\Forms\\ChangeContents\\ChangeContentsControl.xaml.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAuwPAEAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T09:31:47.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Templates.xml",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Templates\\Templates.xml",
+              "RelativeDocumentMoniker": "ShivaNegar\\Templates\\Templates.xml",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Templates\\Templates.xml",
+              "RelativeToolTip": "ShivaNegar\\Templates\\Templates.xml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-06-01T09:31:47.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateDocumentSlide6.xaml.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\ShivaNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml.cs",
+              "RelativeDocumentMoniker": "ShivaNegar\\Forms\\ShivaNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\ShivaNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml.cs",
+              "RelativeToolTip": "ShivaNegar\\Forms\\ShivaNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwCkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T09:31:47.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AboutUs.xaml.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\ShivaNegarManager\\DocumentManager\\View\\AboutUs.xaml.cs",
+              "RelativeDocumentMoniker": "ShivaNegar\\Forms\\ShivaNegarManager\\DocumentManager\\View\\AboutUs.xaml.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\ShivaNegarManager\\DocumentManager\\View\\AboutUs.xaml.cs",
+              "RelativeToolTip": "ShivaNegar\\Forms\\ShivaNegarManager\\DocumentManager\\View\\AboutUs.xaml.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwCsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T09:31:48.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AboutUs.xaml",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\ShivaNegarManager\\DocumentManager\\View\\AboutUs.xaml",
+              "RelativeDocumentMoniker": "ShivaNegar\\Forms\\ShivaNegarManager\\DocumentManager\\View\\AboutUs.xaml",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Forms\\ShivaNegarManager\\DocumentManager\\View\\AboutUs.xaml",
+              "RelativeToolTip": "ShivaNegar\\Forms\\ShivaNegarManager\\DocumentManager\\View\\AboutUs.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-01T09:31:48.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ResourceRibbonIcons.resx",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Properties\\ResourceRibbonIcons.resx",
+              "RelativeDocumentMoniker": "ShivaNegar\\Properties\\ResourceRibbonIcons.resx",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\newShivanegar\\newShivanegar\\shivanegarApp\\ShivaNegar\\Properties\\ResourceRibbonIcons.resx",
+              "RelativeToolTip": "ShivaNegar\\Properties\\ResourceRibbonIcons.resx",
+              "ViewState": "AgIAALEAAAAAAAAAAAAEwMsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-06-01T09:31:48.273Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
