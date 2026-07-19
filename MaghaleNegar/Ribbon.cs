@@ -639,19 +639,15 @@ namespace MaghaleNegar
 
         public void gallerySimpleVirastar_Click(Microsoft.Office.Core.IRibbonControl control, string selectedId, int selectedIndex)
         {
-            if (selectedIndex == 0)
-            {
-                Globals.ThisAddIn.insertHalfSpace();
-            }
-            else if (selectedIndex == 1)
+           if (selectedIndex == 0)
             {
                 Globals.ThisAddIn.halfSpaceCorrection();
             }
-            else if (selectedIndex == 2)
+            else if (selectedIndex == 1)
             {
                 Globals.ThisAddIn.neshanehGozariCorrection();
             }
-            else if (selectedIndex == 3)
+            else if (selectedIndex == 2)
             {
                 Globals.ThisAddIn.spellingCorrection();
             }
@@ -783,7 +779,7 @@ namespace MaghaleNegar
             {
                 try
                 {
-                    System.Diagnostics.Process.Start("https://shivanegar.ir/ExtendedAbstract.docx");
+                    System.Diagnostics.Process.Start("https://shivanegar.ir/ArticleWritingGuide.pdf");
                 }
                 catch (Exception ex)
                 {
@@ -794,7 +790,7 @@ namespace MaghaleNegar
             {
                 try
                 {
-                    System.Diagnostics.Process.Start("https://shivanegar.ir/ArticleWritingGuide.docx");
+                    System.Diagnostics.Process.Start("https://shivanegar.ir/ExtendedAbstract.pdf");
                 }
                 catch (Exception ex)
                 {

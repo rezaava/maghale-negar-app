@@ -1562,6 +1562,8 @@ namespace MaghaleNegar
         }
         #endregion
 
+
+
         #region Caption and CrossReference
         public void InsertCaption(int index) // 0 > Shape , 1 > table , 2 > Formula
         {
@@ -1919,6 +1921,8 @@ namespace MaghaleNegar
                     }
                     loadingForm.ShowDialog();
                     Globals.ThisAddIn.Application.UndoRecord.EndCustomRecord();
+
+                    ShowReviewFormAfterEditing();
 
                     // ====== پایان Track Changes ======
                     if (!trackWasEnabled)
@@ -2617,6 +2621,9 @@ namespace MaghaleNegar
             });
             loadingForm.ShowDialog();
         }
+
+      
+
         #region Export
         public void exportToWord()
         {
