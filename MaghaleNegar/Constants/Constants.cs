@@ -175,7 +175,7 @@ namespace MaghaleNegar.Constants
         internal const string replace2 = "replace2";
 
         internal const string OldBibliographyNoItemMessage = "There are no sources in the current document.";
-        internal const string NewBibliographyNoItemMessage = "هیچ منبعی در متن ارجاع داده نشده است. تنها منابعی در لیست ذکر می‌شوند که در متن به آنها ارجاع شده باشد";
+        internal const string NewBibliographyNoItemMessage = "هنوز منبعی به مقاله اضافه نشده است. برای افزودن منابع خود به مقاله، از بخش «مدیریت استنادهای علمی» استفاده کنید و برای به‌روزرسانی فهرست منابع، بر روی گزینهٔ «به‌روزرسانی سند» کلیک کنید.";
 
         internal const string OldTableOfFiguresNoItemMessage = "No table of figures entries found.";
         internal const string NewTableOfFiguresNoItemMessage = "هیچ آیتمی از " + replace1 + " وجود ندارد، برای نمایش فهرست، عنوانی را اضافه نمایید";

@@ -1,26 +1,26 @@
-﻿D:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\obj\Debug\GeneratedInternalTypeHelper.g.cs
+﻿
 
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\CustomControls\DialogBoxControl.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\CustomControls\ShowMessageControl.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\CustomControls\LoadingControl.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\Forms\AddRemovePages\AddRemovePagesControl.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\Forms\BesmellahPage\BesmellahPageControl.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\Forms\MaghaleNegarManager\CreateDocument\CreateDocumentControl.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\Forms\MaghaleNegarManager\CreateDocument\CreateDocumentSlide6.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\Forms\MaghaleNegarManager\DocumentManager\View\Main.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\Forms\MaghaleNegarManager\DocumentManager\View\AboutUs.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\Forms\MaghaleNegarManager\DocumentManager\View\Login.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\Forms\MaghaleNegarManager\MaghaleNegarControl.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\Forms\Styles\MainDictionary.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\Forms\ChangeContents\ChangeContentsControl.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\Forms\MaghaleNegarManager\DocumentManager\DocumentManagerControl.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\Forms\MaghaleNegarManager\DocumentManager\View\Documents.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\Forms\MaghaleNegarManager\DocumentManager\Models\FileViewModel.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\TaskPanes\ChatBoxNetworking\ChatBoxControl.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\TaskPanes\DefenseAnnouncements\DefenseAnnouncementsControl.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\TaskPanes\DesigningCD\DesigningCDControl.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\TaskPanes\InsertCitation\InsertCitationControl.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\TaskPanes\InsertNahjBalaghe\InsertNahjBalagheControl.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\TaskPanes\InsertDedicate\InsertDedicateControl.xaml;;
-FD:\C# projects\Shivanegar\shiva\shivanegar\ShivaMaghale\maghalenegarApp\MaghaleNegar\TaskPanes\InsertQuran\InsertQuranControl.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\CustomControls\DialogBoxControl.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\CustomControls\ShowMessageControl.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\CustomControls\LoadingControl.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\Forms\AddRemovePages\AddRemovePagesControl.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\Forms\BesmellahPage\BesmellahPageControl.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\Forms\MaghaleNegarManager\CreateDocument\CreateDocumentControl.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\Forms\MaghaleNegarManager\CreateDocument\CreateDocumentSlide6.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\Forms\MaghaleNegarManager\DocumentManager\View\Main.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\Forms\MaghaleNegarManager\DocumentManager\View\AboutUs.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\Forms\MaghaleNegarManager\DocumentManager\View\Login.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\Forms\MaghaleNegarManager\MaghaleNegarControl.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\Forms\Styles\MainDictionary.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\Forms\ChangeContents\ChangeContentsControl.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\Forms\MaghaleNegarManager\DocumentManager\DocumentManagerControl.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\Forms\MaghaleNegarManager\DocumentManager\View\Documents.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\Forms\MaghaleNegarManager\DocumentManager\Models\FileViewModel.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\TaskPanes\ChatBoxNetworking\ChatBoxControl.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\TaskPanes\DefenseAnnouncements\DefenseAnnouncementsControl.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\TaskPanes\DesigningCD\DesigningCDControl.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\TaskPanes\InsertCitation\InsertCitationControl.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\TaskPanes\InsertNahjBalaghe\InsertNahjBalagheControl.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\TaskPanes\InsertDedicate\InsertDedicateControl.xaml;;
+FF:\Documents\Code\C#\maghale-negar-app\maghale-negar-app\MaghaleNegar\TaskPanes\InsertQuran\InsertQuranControl.xaml;;
 
