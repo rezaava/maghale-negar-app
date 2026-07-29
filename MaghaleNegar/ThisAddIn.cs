@@ -281,7 +281,22 @@ namespace MaghaleNegar
             }
             catch (Exception e)
             {
-                DedicatedFunctions.ShowErrorMessage("خطای غیر منتظره ای در مقدار دهی اولیه به وجود آمده" + "\nپیغام خطا:\n" + e.Message, (int)ErrorCodes.InternalStartup, StringConstant.SupportEmail);
+                //DedicatedFunctions.ShowErrorMessage("خطای غیر منتظره ای در مقدار دهی اولیه به وجود آمده" + "\nپیغام خطا:\n" + e.Message, (int)ErrorCodes.InternalStartup, StringConstant.SupportEmail);
+
+                string fullError = e.ToString();
+                if (e.InnerException != null)
+                    fullError += "\n\nInner Exception:\n" + e.InnerException.ToString();
+
+                // کپی خودکار در کلیپ‌بورد
+                Clipboard.SetText(fullError);
+
+                DedicatedFunctions.ShowErrorMessage(
+                    "خطای غیر منتظره ای در مقدار دهی اولیه به وجود آمده\n\n" +
+                    "متن خطا در کلیپ‌بورد کپی شد. (Ctrl+V)\n" +
+                    "پیغام خطا:\n" + e.Message,
+                    (int)ErrorCodes.InternalStartup,
+                    StringConstant.SupportEmail
+                );
             }
 
             //What?
@@ -306,6 +321,10 @@ namespace MaghaleNegar
         {
             try
             {
+                //CSV download
+
+                await CsvDownloader.DownloadAllCsvFilesAsync();
+
                 //unload already exists dedicated keyboard shortcuts
 
                 if (!Globals.ThisAddIn.SetKeyBindingStatus)
@@ -866,143 +885,30 @@ namespace MaghaleNegar
         {
             try
             {
-                var wordApp = Globals.ThisAddIn.Application;
-
-                // ====== 1. گرفتن تمپلیت ======
-                string resourceName = "MaghaleNegar.Templates.MainTemplate.docx";
-                Assembly assembly = Assembly.GetExecutingAssembly();
-                Stream stream = assembly.GetManifestResourceStream(resourceName);
-
-                if (stream == null)
-                {
-                    string[] allResources = assembly.GetManifestResourceNames();
-                    throw new Exception($"فایل تمپلیت پیدا نشد!\n{string.Join("\n", allResources)}");
-                }
-
-                string templatesPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Microsoft", "Templates", "MaghaleNegarTemplates");
-                Directory.CreateDirectory(templatesPath);
-                string templatePath = Path.Combine(templatesPath, "MainTemplate.docx");
-
-                using (FileStream fileStream = new FileStream(templatePath, FileMode.Create, FileAccess.Write))
-                {
-                    stream.CopyTo(fileStream);
-                }
-
-                // ====== 2. بستن همه اسناد باز ======
-                try
-                {
-                    // همه اسناد رو ببند
-                    while (wordApp.Documents.Count > 0)
-                    {
-                        Document doc = wordApp.Documents[1];
-                        if (doc != null)
-                        {
-                            bool isBlank = string.IsNullOrEmpty(doc.FullName) && doc.Characters.Count < 3;
-                            if (isBlank)
-                            {
-                                doc.Close(WdSaveOptions.wdDoNotSaveChanges);
-                            }
-                            else
-                            {
-                                // اگه سند خالی نیست، فقط مخفی‌اش کن
-                                doc.ActiveWindow.Visible = false;
-                                break;
-                            }
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Debug.WriteLine($"خطا در بستن اسناد: {ex.Message}");
-                }
-
-                // ====== 3. ایجاد سند جدید ======
-                Document newDoc = wordApp.Documents.Add(templatePath);
-
-                // ====== 4. ذخیره ======
-                string workspacePath = Properties.Settings.Default.WorkSpaceDirectory;
-                if (string.IsNullOrEmpty(workspacePath))
-                {
-                    workspacePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "MaghaleNegarWorkspace");
-                    Properties.Settings.Default.WorkSpaceDirectory = workspacePath;
-                    Properties.Settings.Default.Save();
-                }
-
-                Directory.CreateDirectory(workspacePath);
-                string fileName = $"مقاله_{DateTime.Now:yyyy-MM-dd_HH-mm-ss}.docx";
-                string savePath = Path.Combine(workspacePath, fileName);
-
-                newDoc.SaveAs2(savePath);
-
-                // ====== 5. نمایش سند جدید و مخفی کردن بقیه ======
-                wordApp.Visible = true;
-
-                // همه اسناد رو مخفی کن
-                foreach (Document doc in wordApp.Documents)
-                {
-                    try
-                    {
-                        if (doc != newDoc)
-                        {
-                            doc.ActiveWindow.Visible = false;
-                        }
-                    }
-                    catch { }
-                }
-
-                // فقط سند جدید رو نمایش بده
-                newDoc.Activate();
-                newDoc.ActiveWindow.Visible = true;
-
-                // ====== 6. بستن سند خالی باقی‌مونده ======
-                try
-                {
-                    for (int i = wordApp.Documents.Count; i >= 1; i--)
-                    {
-                        Document doc = wordApp.Documents[i];
-                        if (doc != newDoc)
-                        {
-                            bool isBlank = string.IsNullOrEmpty(doc.FullName) && doc.Characters.Count < 3;
-                            if (isBlank)
-                            {
-                                doc.Close(WdSaveOptions.wdDoNotSaveChanges);
-                            }
-                        }
-                    }
-                }
-                catch { }
-
-                // ====== 7. بستن فرم ======
                 if (DocumentManagerFormVisible && documentManagerForm != null)
                 {
-                    documentManagerForm.Close();
-                    DocumentManagerFormVisible = false;
-                    documentManagerForm = null;
+                    var mainControl = documentManagerForm.GetMainControl();
+                    if (mainControl != null)
+                    {
+                        mainControl.CreateDocumentPage();
+                    }
+                    documentManagerForm.Focus();
                 }
+                else
+                {
+                    documentManagerForm = new MaghaleNegarForm(true);
+                    documentManagerForm.Show();
+                    DocumentManagerFormVisible = true;
 
-                // ====== 8. تنظیمات ======
-                Ribbon.InitializeRibbon($"{StringConstant.NameOfProject}");
-                DedicatedFunctions.showSplashScreen(1000);
-                DedicatedFunctions.changeKeyboardLanguage(KeyboardLanguage.Persian);
-                SetupNewDocument(newDoc);
-
-                
-
-                // ====== 9. تنظیم Ribbon ======
-                // تنظیم عنوان تب
-                string ribbonTitle = $"{StringConstant.NameOfProject}";
-                Ribbon.InitializeRibbon(ribbonTitle);
-
-                // فعال کردن گزینه‌های Ribbon
-                Ribbon.setTabProperties(ribbonTitle, true);
-                Ribbon.RibbonControlsVisibility(true);
-
+                    var mainControl = documentManagerForm.GetMainControl();
+                    if (mainControl != null)
+                    {
+                        mainControl.CreateDocumentPage();
+                    }
+                }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Globals.ThisAddIn.Application.Visible = true;
-                DedicatedFunctions.ShowErrorMessage($"خطا در ایجاد مقاله جدید:\n{ex.Message}",
-                    email: StringConstant.SupportEmail);
             }
         }
 
@@ -1013,7 +919,7 @@ namespace MaghaleNegar
                 // کلماتی که باید در اسم استایل باشه
                 string[] searchPatterns = new string[]
                 {
-            
+
                 };
 
                 foreach (Style style in doc.Styles)
@@ -1075,7 +981,7 @@ namespace MaghaleNegar
             }
         }
 
-      
+
         public void ShowAbout()
         {
             try
@@ -1275,7 +1181,7 @@ namespace MaghaleNegar
         }
         public void createProposal()
         {
-            
+
 
             Document doc;
             try
@@ -1438,7 +1344,7 @@ namespace MaghaleNegar
         #region Set Style
         public void setNormalStyle()
         {
-        
+
             try
             {
                 Selection selection = Globals.ThisAddIn.Application.Selection;
@@ -1513,9 +1419,9 @@ namespace MaghaleNegar
                 selection.Font.NameBi = "B zar"; // یا هر فونت دیگه‌ای
                 selection.Font.SizeBi = 11; // اندازه فونت فارسی
 
-             
 
-                
+
+
 
                 Globals.ThisAddIn.Application.UndoRecord.EndCustomRecord();
             }
@@ -1882,26 +1788,25 @@ namespace MaghaleNegar
 
                 try
                 {
-                    StreamReader reader;
                     string virastarFolder = Properties.Settings.Default.WorkSpaceDirectory + StringConstant.VirastarFolder;
-                    string filePath = virastarFolder + StringConstant.HalfSpaceFile;
-
-                    if (Directory.Exists(virastarFolder) && File.Exists(filePath))
-                        reader = new StreamReader(filePath, Encoding.UTF8);
-                    else
-                        reader = new StreamReader(DedicatedFunctions.getStream(EmbeddedResourceNames.HalfSpace), Encoding.UTF8);
 
                     List<SearchReplaceModel> standardModels = new List<SearchReplaceModel>();
-                    using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+
+                    if (Directory.Exists(virastarFolder))
                     {
-                        var standardItems = csv.GetRecords<SearchReplaceModel>();
-                        foreach (var standardItem in standardItems)
+                        string[] files = Directory.GetFiles(
+                            virastarFolder,
+                            $"*{StringConstant.ButtonCodeHalfSpace}.csv");
+
+                        foreach (string file in files)
                         {
-                            standardModels.Add(standardItem);
+                            using (StreamReader reader = new StreamReader(file, Encoding.UTF8))
+                            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+                            {
+                                standardModels.AddRange(csv.GetRecords<SearchReplaceModel>());
+                            }
                         }
                     }
-                    reader.Close();
-                    reader.Dispose();
 
                     LoadingForm loadingForm = new LoadingForm();
                     if (doc.ActiveWindow.Selection.Words.Count >= 2)
@@ -1966,26 +1871,25 @@ namespace MaghaleNegar
 
                 try
                 {
-                    StreamReader reader;
                     string virastarFolder = Properties.Settings.Default.WorkSpaceDirectory + StringConstant.VirastarFolder;
-                    string filePath = virastarFolder + StringConstant.spellingCorrectionFile;
-
-                    if (Directory.Exists(virastarFolder) && File.Exists(filePath))
-                        reader = new StreamReader(filePath, Encoding.UTF8);
-                    else
-                        reader = new StreamReader(DedicatedFunctions.getStream(EmbeddedResourceNames.SpellingCorrection), Encoding.UTF8);
 
                     List<SearchReplaceModel> standardModels = new List<SearchReplaceModel>();
-                    using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+
+                    if (Directory.Exists(virastarFolder))
                     {
-                        var standardItems = csv.GetRecords<SearchReplaceModel>();
-                        foreach (var standardItem in standardItems)
+                        string[] files = Directory.GetFiles(
+                            virastarFolder,
+                            $"*{StringConstant.ButtonCodeSpelling}.csv");
+
+                        foreach (string file in files)
                         {
-                            standardModels.Add(standardItem);
+                            using (StreamReader reader = new StreamReader(file, Encoding.UTF8))
+                            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+                            {
+                                standardModels.AddRange(csv.GetRecords<SearchReplaceModel>());
+                            }
                         }
                     }
-                    reader.Close();
-                    reader.Dispose();
 
                     LoadingForm loadingForm = new LoadingForm();
                     if (doc.ActiveWindow.Selection.Words.Count >= 2)
@@ -2049,62 +1953,25 @@ namespace MaghaleNegar
 
                 try
                 {
-                    StreamReader reader;
-                    StreamReader reader2;
-                    StreamReader reader3;
                     string virastarFolder = Properties.Settings.Default.WorkSpaceDirectory + StringConstant.VirastarFolder;
-                    string tanvinFile = virastarFolder + StringConstant.TanvinFile;
-                    string SignsFile = virastarFolder + StringConstant.SignFile;
-                    string TashdidFile = virastarFolder + StringConstant.TashdidFile;
-
-                    if (Directory.Exists(virastarFolder) && File.Exists(tanvinFile))
-                        reader = new StreamReader(tanvinFile, Encoding.UTF8);
-                    else
-                        reader = new StreamReader(DedicatedFunctions.getStream(EmbeddedResourceNames.Tanvin), Encoding.UTF8);
-
-                    if (Directory.Exists(virastarFolder) && File.Exists(SignsFile))
-                        reader2 = new StreamReader(SignsFile, Encoding.UTF8);
-                    else
-                        reader2 = new StreamReader(DedicatedFunctions.getStream(EmbeddedResourceNames.Signs), Encoding.UTF8);
-
-                    if (Directory.Exists(virastarFolder) && File.Exists(TashdidFile))
-                        reader3 = new StreamReader(TashdidFile, Encoding.UTF8);
-                    else
-                        reader3 = new StreamReader(DedicatedFunctions.getStream(EmbeddedResourceNames.Tashdid), Encoding.UTF8);
 
                     List<SearchReplaceModel> standardModels = new List<SearchReplaceModel>();
-                    using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
-                    {
-                        var standardItems = csv.GetRecords<SearchReplaceModel>();
-                        foreach (var standardItem in standardItems)
-                        {
-                            standardModels.Add(standardItem);
-                        }
-                    }
-                    reader.Close();
-                    reader.Dispose();
 
-                    using (var csv = new CsvReader(reader2, CultureInfo.InvariantCulture))
+                    if (Directory.Exists(virastarFolder))
                     {
-                        var standardItems = csv.GetRecords<SearchReplaceModel>();
-                        foreach (var standardItem in standardItems)
-                        {
-                            standardModels.Add(standardItem);
-                        }
-                    }
-                    reader2.Close();
-                    reader2.Dispose();
+                        string[] files = Directory.GetFiles(
+                            virastarFolder,
+                            $"*{StringConstant.ButtonCodeSigns}.csv");
 
-                    using (var csv = new CsvReader(reader3, CultureInfo.InvariantCulture))
-                    {
-                        var standardItems = csv.GetRecords<SearchReplaceModel>();
-                        foreach (var standardItem in standardItems)
+                        foreach (string file in files)
                         {
-                            standardModels.Add(standardItem);
+                            using (StreamReader reader = new StreamReader(file, Encoding.UTF8))
+                            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+                            {
+                                standardModels.AddRange(csv.GetRecords<SearchReplaceModel>());
+                            }
                         }
                     }
-                    reader3.Close();
-                    reader3.Dispose();
 
                     // correct Spaces
                     SearchReplaceModel whiteSpaceCorrection = new SearchReplaceModel()
@@ -2214,30 +2081,25 @@ namespace MaghaleNegar
 
                 try
                 {
-                    // ... کد اصلی ...
-                    StreamReader reader;
                     string virastarFolder = Properties.Settings.Default.WorkSpaceDirectory + StringConstant.VirastarFolder;
-                    string standardCorrectionFile = virastarFolder + StringConstant.StandardCorrectionFile;
-                    if (Directory.Exists(virastarFolder) && File.Exists(standardCorrectionFile))
-                    {
-                        reader = new StreamReader(standardCorrectionFile, Encoding.UTF8);
-                    }
-                    else
-                    {
-                        reader = new StreamReader(DedicatedFunctions.getStream(EmbeddedResourceNames.Standard), Encoding.UTF8);
-                    }
 
                     List<SearchReplaceModel> standardModels = new List<SearchReplaceModel>();
-                    using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+
+                    if (Directory.Exists(virastarFolder))
                     {
-                        var standardItems = csv.GetRecords<SearchReplaceModel>();
-                        foreach (var standardItem in standardItems)
+                        string[] files = Directory.GetFiles(
+                            virastarFolder,
+                            $"*{StringConstant.ButtonCodeStandard}.csv");
+
+                        foreach (string file in files)
                         {
-                            standardModels.Add(standardItem);
+                            using (StreamReader reader = new StreamReader(file, Encoding.UTF8))
+                            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+                            {
+                                standardModels.AddRange(csv.GetRecords<SearchReplaceModel>());
+                            }
                         }
                     }
-                    reader.Close();
-                    reader.Dispose();
 
                     LoadingForm loadingForm = new LoadingForm();
 
@@ -2622,7 +2484,7 @@ namespace MaghaleNegar
             loadingForm.ShowDialog();
         }
 
-      
+
 
         #region Export
         public void exportToWord()

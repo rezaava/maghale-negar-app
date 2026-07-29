@@ -42,6 +42,8 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager
         {
             InitializeComponent(initialize);
 
+
+
             if (initialize)
             {
                 DedicatedFunctions.setManualScale(this, new Size(800, 600), new Size(700, 500));
@@ -405,5 +407,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager
                 timerOpenAnimation.Enabled = false;
             }
         }
+
+
     }
 }

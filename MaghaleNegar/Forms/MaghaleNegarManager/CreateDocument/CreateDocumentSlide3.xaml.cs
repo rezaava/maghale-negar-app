@@ -1,26 +1,34 @@
-﻿using System.Collections.Generic;
+﻿using MaghaleNegar.Constants;
+using MaghaleNegar.Constants.ComboBoxData;
+using MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument.Models;
+using MaterialDesignThemes.Wpf;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using MaterialDesignThemes.Wpf;
-using MaghaleNegar.Constants;
-using MaghaleNegar.Constants.ComboBoxData;
-using MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument.Models;
 using static MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument.Models.CreateDocumentControlModel;
 
 namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
 {
+    public class AuthorInfo
+    {
+        public string Name { get; set; }
+        public string NameEn { get; set; }
+        public string Email { get; set; }
+        public bool IsResponsible { get; set; }
+    }
+
     public partial class CreateDocumentSlide3 : UserControl
     {
         private List<CreateDocumentControlModel> textBoxControlModels;
-        private List<CreateDocumentControlModel> comboBoxcontrolModels;
+        private List<AuthorInfo> authorsList = new List<AuthorInfo>();
 
         private DocumentTypes documentType;
 
         //Properties
         public Universities University { get; private set; }
-
         public string UniversityFa { get; private set; }
         public string UniversityEn { get; private set; }
         public string BranchFa { get; private set; }
@@ -35,15 +43,17 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
         public string AreaOfStudyEn { get; private set; }
         public string AcademicDegreeFa { get; private set; }
         public string AcademicDegreeEn { get; private set; }
+        public string Email { get; private set; }
+        public bool IsResponsibleAuthor { get; private set; }
 
-        internal static readonly string[] AcademicDegree_Fa2 =
-        {
-            AcademicDegreeValues.AcademicDegree_AssociateOfScienceFa,
-            //AcademicDegreeValues.AcademicDegree_BachelorOfScienceFa,
-            AcademicDegreeValues.AcademicDegree_PartTimeBachelorOfScienceFa,
-            //AcademicDegreeValues.AcademicDegree_MasterOfScienceFa,
-            //AcademicDegreeValues.AcademicDegree_DoctoralFa,
-        };
+        public Action TransitionMoveNextCommand { get; set; }
+
+        public List<string> AuthorNames { get; private set; } = new List<string>();
+
+        // متغیرهای حالت ویرایش
+        private bool isEditingMode = false;
+        private AuthorInfo editingAuthor = null;
+        private AuthorInfo originalAuthor = null;
 
         public CreateDocumentSlide3()
         {
@@ -51,60 +61,447 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
 
             btnForward.IsEnabled = false;
 
-            //comboDepartment.ItemsSource = DepartmentsData.getPersianDepartments();
-            comboAcademicDegree.ItemsSource = AcademicDegree_Fa2;
+            // مقداردهی لیست نویسندگان
+            authorsList = new List<AuthorInfo>();
+            dgAuthors.ItemsSource = authorsList;
 
-            List<string> universities = UniversitiesData.getPersianUniversities();
-            for (int i = 0; i < universities.Count; i++)
-            {
-                string branchFa = UniversitiesData.getBranchFaOfUniversity((Universities)i);
-
-                if (!string.IsNullOrEmpty(branchFa))
-                    universities[i] = universities[i] + " " + branchFa;
-            }
-            comboUniversity.ItemsSource = universities;
-
-
-            comboBoxcontrolModels = new List<CreateDocumentControlModel>()
-            {
-                new CreateDocumentControlModel(comboUniversity,CreateDocumentControlModel.ControlLevels.Essential),
-                new CreateDocumentControlModel(comboDepartment,CreateDocumentControlModel.ControlLevels.Essential),
-                new CreateDocumentControlModel(comboGroup,CreateDocumentControlModel.ControlLevels.Essential),
-                new CreateDocumentControlModel(comboAcademicDegree,CreateDocumentControlModel.ControlLevels.Essential),
-            };
-            foreach (var controlModel in comboBoxcontrolModels)
-            {
-                ComboBox comboBox = controlModel.Control as ComboBox;
-
-                comboBox.SelectionChanged += ComboBox_SelectionChanged;
-                comboBox.PreviewMouseWheel += ComboBox_PreviewMouseWheel;
-                comboBox.GotFocus += ComboBox_GotFocus;
-                //control.LostFocus += ComboBox_LostFocus;
-            }
-
+            // تنظیم فیلدها
             textBoxControlModels = new List<CreateDocumentControlModel>()
             {
-                new CreateDocumentControlModel(txtBoxCustomDepartmentEn,CreateDocumentControlModel.ControlLevels.Essential),
-                new CreateDocumentControlModel(txtBoxCustomGroupEn,CreateDocumentControlModel.ControlLevels.Essential),
-                new CreateDocumentControlModel(txtBoxFieldOfStudy,CreateDocumentControlModel.ControlLevels.Essential),
-                new CreateDocumentControlModel(txtBoxFieldOfStudyEn,CreateDocumentControlModel.ControlLevels.Essential),
-                new CreateDocumentControlModel(txtBoxAreaOfStudy,CreateDocumentControlModel.ControlLevels.Optional),
-                new CreateDocumentControlModel(txtBoxAreaOfStudyEn,CreateDocumentControlModel.ControlLevels.Optional),
+                new CreateDocumentControlModel(txtBoxFieldOfStudy, CreateDocumentControlModel.ControlLevels.Essential),
+                new CreateDocumentControlModel(txtBoxFieldOfStudyEn, CreateDocumentControlModel.ControlLevels.Essential),
+                new CreateDocumentControlModel(txtBoxAreaOfStudy, CreateDocumentControlModel.ControlLevels.Essential),
+                new CreateDocumentControlModel(txtBoxAreaOfStudyEn, CreateDocumentControlModel.ControlLevels.Essential),
+                new CreateDocumentControlModel(txtBoxEmail, CreateDocumentControlModel.ControlLevels.Optional),
             };
 
             foreach (var controlModel in textBoxControlModels)
             {
                 TextBox textBox = controlModel.Control as TextBox;
-
                 textBox.TextChanged += TextBox_TextChanged;
                 textBox.GotFocus += TextBox_GotFocus;
                 textBox.LostFocus += TextBox_LostFocus;
             }
+
+            // تنظیم اولیه ایمیل
+            txtBoxEmail.IsEnabled = false;
+            txtBoxEmail.Text = "";
+
+            // رویدادهای CheckBox
+            chkResponsibleAuthor.Checked += ChkResponsibleAuthor_Checked;
+            chkResponsibleAuthor.Unchecked += ChkResponsibleAuthor_Unchecked;
+
+            // رویداد کلیک دکمه بعدی
+            btnForward.Click += BtnForward_Click;
+
+            // تنظیم اولیه وضعیت دکمه‌ها
+            UpdateButtonsState();
         }
 
-        #region Events
+        #region دکمه‌ها
 
-        #region TextBox
+        private void BtnForward_Click(object sender, RoutedEventArgs e)
+        {
+            if (validateControls())
+            {
+                SaveData();
+                TransitionMoveNextCommand?.Invoke();
+            }
+        }
+
+        private void SaveData()
+        {
+            FieldOfStudyFa = txtBoxFieldOfStudy.Text;
+            FieldOfStudyEn = txtBoxFieldOfStudyEn.Text;
+            AreaOfStudyFa = txtBoxAreaOfStudy.Text;
+            AreaOfStudyEn = txtBoxAreaOfStudyEn.Text;
+            Email = txtBoxEmail.Text;
+            IsResponsibleAuthor = chkResponsibleAuthor.IsChecked ?? false;
+
+            // ====== این بخش رو اضافه کن ======
+            AuthorNames = new List<string>();
+            foreach (var author in authorsList)
+            {
+                string displayName = author.Name;
+                if (!string.IsNullOrEmpty(author.Email))
+                {
+                    displayName += $" ({author.Email})";
+                }
+                AuthorNames.Add(displayName);
+            }
+        }
+
+        private void btnAddAuthor_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string authorName = txtBoxAreaOfStudy.Text.Trim();
+                string authorNameEn = txtBoxAreaOfStudyEn.Text.Trim();
+                string email = txtBoxEmail.Text.Trim();
+                bool isResponsible = chkResponsibleAuthor.IsChecked ?? false;
+
+                // بررسی نام نویسنده
+                if (string.IsNullOrEmpty(authorName))
+                {
+                    MessageBox.Show("لطفاً نام نویسنده را وارد کنید.", "خطا",
+                        MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                if (string.IsNullOrEmpty(authorNameEn))
+                {
+                    MessageBox.Show("لطفاً نام انگلیسی نویسنده را وارد کنید.", "خطا",
+                        MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                // ✅ اگر در حالت ویرایش هستیم
+                if (isEditingMode && editingAuthor != null)
+                {
+                    // بررسی: اگر ایمیل وارد شده و قبلاً در لیست وجود دارد (به جز خود نویسنده در حال ویرایش)
+                    if (!string.IsNullOrEmpty(email) && authorsList.Any(a => a.Email == email && a != editingAuthor))
+                    {
+                        MessageBox.Show("این ایمیل قبلاً برای نویسنده دیگری ثبت شده است.",
+                            "خطا", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        return;
+                    }
+
+                    // به‌روزرسانی نویسنده
+                    editingAuthor.Name = authorName;
+                    editingAuthor.NameEn = authorNameEn;
+                    editingAuthor.Email = email;
+                    editingAuthor.IsResponsible = isResponsible;
+
+                    // بررسی: اگر نویسنده مسئول است و قبلاً نویسنده مسئول دیگری وجود دارد
+                    if (isResponsible && authorsList.Any(a => a.IsResponsible && a != editingAuthor))
+                    {
+                        MessageBox.Show("قبلاً یک نویسنده مسئول ثبت شده است. ابتدا نویسنده مسئول قبلی را ویرایش کنید.",
+                            "خطا", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        chkResponsibleAuthor.IsChecked = false;
+                        return;
+                    }
+
+                    // اضافه کردن نویسنده ویرایش‌شده به لیست
+                    authorsList.Add(editingAuthor);
+                    RefreshDataGrid();
+
+                    // پاک کردن فیلدها
+                    txtBoxAreaOfStudy.Text = "";
+                    txtBoxAreaOfStudyEn.Text = "";
+                    txtBoxEmail.Text = "";
+                    txtBoxEmail.IsEnabled = false;
+                    chkResponsibleAuthor.IsChecked = false;
+
+                    // بازگشت به حالت عادی
+                    isEditingMode = false;
+                    editingAuthor = null;
+                    originalAuthor = null;
+                    UpdateButtonsState();
+
+                    // پاک کردن خطاها
+                    normalControl(txtBoxAreaOfStudy);
+                    normalControl(txtBoxAreaOfStudyEn);
+
+                    validateControls();
+
+                    MessageBox.Show($"نویسنده '{authorName}' با موفقیت ویرایش شد.", "موفق",
+                        MessageBoxButton.OK, MessageBoxImage.Information);
+                    return;
+                }
+
+                // ✅ حالت عادی - افزودن نویسنده جدید
+                // بررسی: اگر قبلاً نویسنده مسئول وجود دارد و کاربر می‌خواهد یکی دیگر اضافه کند
+                if (isResponsible && authorsList.Any(a => a.IsResponsible))
+                {
+                    MessageBox.Show("قبلاً یک نویسنده مسئول ثبت شده است. ابتدا نویسنده مسئول قبلی را ویرایش کنید.",
+                        "خطا", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                // بررسی: اگر ایمیل وارد شده و قبلاً در لیست وجود دارد
+                if (!string.IsNullOrEmpty(email) && authorsList.Any(a => a.Email == email))
+                {
+                    MessageBox.Show("این ایمیل قبلاً برای نویسنده دیگری ثبت شده است.",
+                        "خطا", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                // ایجاد نویسنده جدید
+                var newAuthor = new AuthorInfo
+                {
+                    Name = authorName,
+                    NameEn = authorNameEn,
+                    Email = email,
+                    IsResponsible = isResponsible
+                };
+
+                authorsList.Add(newAuthor);
+                RefreshDataGrid();
+
+                // پاک کردن فیلدها
+                txtBoxAreaOfStudy.Text = "";
+                txtBoxAreaOfStudyEn.Text = "";
+                txtBoxEmail.Text = "";
+                txtBoxEmail.IsEnabled = false;
+                chkResponsibleAuthor.IsChecked = false;
+
+                // پاک کردن خطاها
+                normalControl(txtBoxAreaOfStudy);
+                normalControl(txtBoxAreaOfStudyEn);
+
+                validateControls();
+
+                MessageBox.Show($"نویسنده '{authorName}' با موفقیت به لیست اضافه شد.", "موفق",
+                    MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"خطا در افزودن نویسنده: {ex.Message}", "خطا",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void btnEditAuthor_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                // ✅ اگر در حالت ویرایش هستیم، اجازه نده
+                if (isEditingMode)
+                {
+                    MessageBox.Show("لطفاً ابتدا ویرایش فعلی را کامل کنید یا انصراف دهید.",
+                        "توجه", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return;
+                }
+
+                Button btn = sender as Button;
+                var author = btn?.Tag as AuthorInfo;
+
+                if (author == null || !authorsList.Contains(author))
+                {
+                    MessageBox.Show("نویسنده مورد نظر یافت نشد.", "خطا",
+                        MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                // تنظیم حالت ویرایش
+                isEditingMode = true;
+                editingAuthor = author;
+
+                // ذخیره کپی از نویسنده اصلی برای بازگشت در صورت انصراف
+                originalAuthor = new AuthorInfo
+                {
+                    Name = author.Name,
+                    NameEn = author.NameEn,
+                    Email = author.Email,
+                    IsResponsible = author.IsResponsible
+                };
+
+                // پر کردن فیلدها با اطلاعات نویسنده
+                txtBoxAreaOfStudy.Text = author.Name;
+                txtBoxAreaOfStudyEn.Text = author.NameEn;
+                txtBoxEmail.Text = author.Email;
+                chkResponsibleAuthor.IsChecked = author.IsResponsible;
+
+                if (author.IsResponsible)
+                {
+                    txtBoxEmail.IsEnabled = true;
+                }
+
+                // حذف نویسنده از لیست
+                authorsList.Remove(author);
+                RefreshDataGrid();
+
+                // به‌روزرسانی وضعیت دکمه‌ها
+                UpdateButtonsState();
+
+                // فوکوس روی فیلد نام
+                txtBoxAreaOfStudy.Focus();
+                validateControls();
+
+                MessageBox.Show($"نویسنده '{author.Name}' برای ویرایش انتخاب شد. پس از ویرایش، روی دکمه 'ویرایش نویسنده' کلیک کنید.",
+                    "ویرایش", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"خطا در ویرایش نویسنده: {ex.Message}", "خطا",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void btnDeleteAuthor_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                // ✅ اگر در حالت ویرایش هستیم، اجازه حذف نده
+                if (isEditingMode)
+                {
+                    MessageBox.Show("لطفاً ابتدا ویرایش را کامل کنید یا روی 'انصراف از ویرایش' کلیک کنید.",
+                        "توجه", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return;
+                }
+
+                Button btn = sender as Button;
+                var author = btn?.Tag as AuthorInfo;
+
+                if (author != null && authorsList.Contains(author))
+                {
+                    string message = $"آیا از حذف نویسنده '{author.Name}' مطمئن هستید؟";
+
+                    if (author.IsResponsible)
+                    {
+                        message += "\n\n⚠️ این نویسنده مسئول است. پس از حذف، باید نویسنده مسئول جدیدی انتخاب کنید.";
+                    }
+
+                    if (MessageBox.Show(message, "تأیید حذف",
+                        MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                    {
+                        authorsList.Remove(author);
+                        RefreshDataGrid();
+                        validateControls();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"خطا در حذف نویسنده: {ex.Message}", "خطا",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void btnCancelEdit_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                // ✅ اگر نویسنده اصلی وجود دارد، آن را به لیست برگردان
+                if (originalAuthor != null)
+                {
+                    // بررسی: آیا نویسنده قبلاً در لیست نیست؟
+                    bool exists = authorsList.Any(a =>
+                        a.Name == originalAuthor.Name &&
+                        a.NameEn == originalAuthor.NameEn &&
+                        a.Email == originalAuthor.Email);
+
+                    if (!exists)
+                    {
+                        authorsList.Add(originalAuthor);
+                        RefreshDataGrid();
+                    }
+                }
+
+                // بازگشت به حالت عادی
+                isEditingMode = false;
+                editingAuthor = null;
+                originalAuthor = null;
+                UpdateButtonsState();
+
+                // پاک کردن فیلدها
+                txtBoxAreaOfStudy.Text = "";
+                txtBoxAreaOfStudyEn.Text = "";
+                txtBoxEmail.Text = "";
+                txtBoxEmail.IsEnabled = false;
+                chkResponsibleAuthor.IsChecked = false;
+
+                // پاک کردن خطاها
+                normalControl(txtBoxAreaOfStudy);
+                normalControl(txtBoxAreaOfStudyEn);
+
+                validateControls();
+
+                MessageBox.Show("ویرایش لغو شد و نویسنده به لیست بازگردانده شد.", "انصراف",
+                    MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"خطا در انصراف از ویرایش: {ex.Message}", "خطا",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void RefreshDataGrid()
+        {
+            dgAuthors.ItemsSource = null;
+            dgAuthors.ItemsSource = authorsList;
+        }
+
+        private void UpdateButtonsState()
+        {
+            // در حالت ویرایش، دکمه‌ها و DataGrid را غیرفعال کن
+            dgAuthors.IsEnabled = !isEditingMode;
+            
+
+            // تغییر ظاهر دکمه افزودن
+            if (isEditingMode)
+            {
+                btnAddAuthor.Content = "✏️ ویرایش نویسنده";
+                btnCancelEdit.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                btnAddAuthor.Content = "➕ افزودن به لیست نویسندگان";
+                btnCancelEdit.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        #endregion
+
+        #region CheckBox Events
+        private void ChkResponsibleAuthor_Checked(object sender, RoutedEventArgs e)
+        {
+            // ✅ اگر در حالت ویرایش هستیم و نویسنده در حال ویرایش، اجازه تغییر بده
+            if (isEditingMode && editingAuthor != null)
+            {
+                txtBoxEmail.IsEnabled = true;
+                txtBoxEmail.Focus();
+
+                var emailControlModel = textBoxControlModels.FirstOrDefault(m => m.Control == txtBoxEmail);
+                if (emailControlModel != null)
+                {
+                    emailControlModel.ControlLevel = ControlLevels.Essential;
+                    emailControlModel.Validate = validateTextBox(txtBoxEmail, ControlLevels.Essential, false);
+                }
+                validateControls();
+                return;
+            }
+
+            // ✅ حالت عادی - بررسی نویسنده مسئول تکراری
+            if (authorsList.Any(a => a.IsResponsible))
+            {
+                MessageBox.Show("قبلاً یک نویسنده مسئول ثبت شده است. ابتدا نویسنده مسئول قبلی را ویرایش کنید.",
+                    "خطا", MessageBoxButton.OK, MessageBoxImage.Warning);
+
+                chkResponsibleAuthor.IsChecked = false;
+                return;
+            }
+
+            txtBoxEmail.IsEnabled = true;
+            txtBoxEmail.Focus();
+
+            var emailModel = textBoxControlModels.FirstOrDefault(m => m.Control == txtBoxEmail);
+            if (emailModel != null)
+            {
+                emailModel.ControlLevel = ControlLevels.Essential;
+                emailModel.Validate = validateTextBox(txtBoxEmail, ControlLevels.Essential, false);
+            }
+            validateControls();
+        }
+
+        private void ChkResponsibleAuthor_Unchecked(object sender, RoutedEventArgs e)
+        {
+            txtBoxEmail.IsEnabled = false;
+            txtBoxEmail.Text = "";
+
+            var emailModel = textBoxControlModels.FirstOrDefault(m => m.Control == txtBoxEmail);
+            if (emailModel != null)
+            {
+                emailModel.ControlLevel = ControlLevels.Optional;
+                emailModel.Validate = true;
+                normalControl(txtBoxEmail);
+            }
+            validateControls();
+        }
+        #endregion
+
+        #region TextBox Events
         private void TextBox_LostFocus(object sender, RoutedEventArgs e)
         {
             TextBox textBox = (TextBox)sender;
@@ -119,11 +516,10 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                 }
             }
         }
+
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             TextBox textBox = (TextBox)sender;
-
-            #region on Optional Fields, one language typed, change to Essential for complete other language field
 
             if (textBox == txtBoxAreaOfStudy)
             {
@@ -153,7 +549,6 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                 textBoxControlModels.Where(a => a.Control == txtBoxAreaOfStudy).FirstOrDefault().Validate = validateTextBox(txtBoxAreaOfStudy, textBoxControlModels.Where(a => a.Control == txtBoxAreaOfStudy).FirstOrDefault().ControlLevel, false);
                 validateControls();
             }
-            #endregion
 
             for (int i = 0; i < textBoxControlModels.Count; i++)
             {
@@ -170,231 +565,24 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
         private void TextBox_GotFocus(object sender, RoutedEventArgs e)
         {
             TextBox textBox = (TextBox)sender;
-
             string tag = textBox.Tag.ToString();
 
             if (!string.IsNullOrEmpty(tag.Trim()))
             {
                 if (tag == "Persian")
-                {
                     DedicatedFunctions.changeKeyboardLanguage(KeyboardLanguage.Persian);
-                }
                 else if (tag == "English")
-                {
                     DedicatedFunctions.changeKeyboardLanguage(KeyboardLanguage.English);
-                }
             }
         }
-        #endregion
-
-        #region TextBox inside ComboBox
-        private void TextBoxInsideComboDepartment_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            for (int i = 0; i < comboBoxcontrolModels.Count; i++)
-            {
-                if (comboBoxcontrolModels[i].Control == comboDepartment)
-                {
-                    comboBoxcontrolModels[i].Validate = validateComboBox(comboDepartment, comboBoxcontrolModels[i].ControlLevel, true);
-                    if (comboBoxcontrolModels[i].Validate)
-                        validateControls();
-                    return;
-                }
-            }
-        }
-        private void TextBoxInsideComboGroup_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            for (int i = 0; i < comboBoxcontrolModels.Count; i++)
-            {
-                if (comboBoxcontrolModels[i].Control == comboGroup)
-                {
-                    comboBoxcontrolModels[i].Validate = validateComboBox(comboGroup, comboBoxcontrolModels[i].ControlLevel, true);
-                    if (comboBoxcontrolModels[i].Validate)
-                        validateControls();
-                    return;
-                }
-            }
-        }
-        private void TextBoxInsideComboDepartment_LostFocus(object sender, RoutedEventArgs e)
-        {
-            for (int i = 0; i < comboBoxcontrolModels.Count; i++)
-            {
-                if (comboBoxcontrolModels[i].Control == comboDepartment)
-                {
-                    comboBoxcontrolModels[i].Validate = validateComboBox(comboDepartment, comboBoxcontrolModels[i].ControlLevel, true);
-                    validateControls();
-                    return;
-                }
-            }
-        }
-        private void TextBoxInsideComboGroup_LostFocus(object sender, RoutedEventArgs e)
-        {
-            for (int i = 0; i < comboBoxcontrolModels.Count; i++)
-            {
-                if (comboBoxcontrolModels[i].Control == comboGroup)
-                {
-                    comboBoxcontrolModels[i].Validate = validateComboBox(comboGroup, comboBoxcontrolModels[i].ControlLevel, false);
-                    validateControls();
-                    return;
-                }
-            }
-        }
-
-        #endregion
-
-
-        #region ComboBox
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            ComboBox comboBox = (ComboBox)sender;
-
-            if (comboBox.SelectedIndex == -1)
-            {
-                return;
-            }
-
-            if (comboBox == comboUniversity && comboUniversity.SelectedIndex != -1)
-            {
-                University = (Universities)comboUniversity.SelectedIndex;
-
-                comboDepartment.ItemsSource = DepartmentsData.getPersianDepartments(University, true);
-
-                comboBoxcontrolModels.Where(a => a.Control == comboBox).FirstOrDefault().Validate = false;
-                comboBoxcontrolModels.Where(a => a.Control == comboDepartment).FirstOrDefault().Validate = false;
-                comboBoxcontrolModels.Where(a => a.Control == comboGroup).FirstOrDefault().Validate = false;
-
-                resetComboBox(comboDepartment);
-                resetComboBox(comboGroup);
-                changeVisibilityEnglishControls(txtBoxCustomDepartmentEn, gridDepartment, Visibility.Collapsed);
-                changeVisibilityEnglishControls(txtBoxCustomGroupEn, gridGroup, Visibility.Collapsed);
-            }
-            else if (comboBox == comboDepartment)
-            {
-                comboGroup.ItemsSource = DepartmentsData.getPersianGroups(University, comboDepartment.SelectedItem as string);
-
-                comboBoxcontrolModels.Where(a => a.Control == comboBox).FirstOrDefault().Validate = false;
-                comboBoxcontrolModels.Where(a => a.Control == comboDepartment).FirstOrDefault().Validate = false;
-                comboBoxcontrolModels.Where(a => a.Control == comboGroup).FirstOrDefault().Validate = false;
-
-                resetComboBox(comboGroup);
-                changeVisibilityEnglishControls(txtBoxCustomGroupEn, gridGroup, Visibility.Collapsed);
-            }
-
-            TextBox textBoxInside = (comboBox.Template.FindName("PART_EditableTextBox", comboBox) as TextBox);
-            textBoxInside.TextWrapping = TextWrapping.Wrap;
-            textBoxInside.AcceptsReturn = false;
-            textBoxInside.AcceptsTab = false;
-
-            if (comboBox.SelectedItem.ToString() != ComboBoxData.otherFa)
-            {
-                comboBox.IsEditable = false;
-                comboBox.IsTextSearchEnabled = true;
-
-                bool isValid = validateComboBox(comboBox, comboBoxcontrolModels.Where(a => a.Control == comboBox).FirstOrDefault().ControlLevel, false);
-                comboBoxcontrolModels.Where(a => a.Control == comboBox).FirstOrDefault().Validate = isValid;
-
-                if (comboBox == comboDepartment)
-                {
-
-                    gridDepartment.ColumnDefinitions[1].Width = new GridLength(1, GridUnitType.Auto);
-
-                    txtBoxCustomDepartmentEn.Visibility = Visibility.Collapsed;
-                    resetTextBoxControl(txtBoxCustomDepartmentEn);
-
-                    textBoxInside.TextChanged -= TextBoxInsideComboDepartment_TextChanged;
-                    textBoxInside.LostFocus -= TextBoxInsideComboDepartment_LostFocus;
-
-                    textBoxControlModels.Where(a => a.Control == txtBoxCustomDepartmentEn).FirstOrDefault().Validate = isValid;
-                }
-                else if (comboBox == comboGroup)
-                {
-
-                    gridGroup.ColumnDefinitions[1].Width = new GridLength(1, GridUnitType.Auto);
-
-                    txtBoxCustomGroupEn.Visibility = Visibility.Collapsed;
-                    resetTextBoxControl(txtBoxCustomGroupEn);
-
-                    textBoxInside.TextChanged -= TextBoxInsideComboGroup_TextChanged;
-                    textBoxInside.LostFocus -= TextBoxInsideComboGroup_LostFocus;
-
-                    textBoxControlModels.Where(a => a.Control == txtBoxCustomGroupEn).FirstOrDefault().Validate = isValid;
-                }
-            }
-            else// selected Other
-            {
-                comboBox.IsEditable = true;
-                comboBox.IsTextSearchEnabled = false;
-
-                textBoxInside.Focus();
-                textBoxInside.Text = "";
-                //textBox.Select(0, textBox.Text.Length);
-
-                comboBoxcontrolModels.Where(a => a.Control == comboBox).FirstOrDefault().Validate = false;
-
-                if (comboBox == comboDepartment)
-                {
-                    changeVisibilityEnglishControls(txtBoxCustomDepartmentEn, gridDepartment, Visibility.Visible);
-
-                    textBoxInside.TextChanged += TextBoxInsideComboDepartment_TextChanged;
-                    textBoxInside.LostFocus += TextBoxInsideComboDepartment_LostFocus;
-
-                    textBoxControlModels.Where(a => a.Control == txtBoxCustomDepartmentEn).FirstOrDefault().Validate = false;
-                }
-                else if (comboBox == comboGroup)
-                {
-                    changeVisibilityEnglishControls(txtBoxCustomGroupEn, gridGroup, Visibility.Visible);
-
-                    textBoxInside.TextChanged += TextBoxInsideComboGroup_TextChanged;
-                    textBoxInside.LostFocus += TextBoxInsideComboGroup_LostFocus;
-
-                    textBoxControlModels.Where(a => a.Control == txtBoxCustomGroupEn).FirstOrDefault().Validate = false;
-                }
-            }
-
-            validateControls();
-        }
-
-        private void ComboBox_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
-        {
-            ComboBox comboBox = (ComboBox)sender;
-
-            if (!comboBox.IsDropDownOpen)
-            {
-                if (comboBox.IsFocused)
-                {
-                    scrollContent.Focus();
-                    e.Handled = true;
-                }
-            }
-        }
-        private void ComboBox_GotFocus(object sender, RoutedEventArgs e)
-        {
-            ComboBox comboBox = (ComboBox)sender;
-
-            if (comboBox.FlowDirection == FlowDirection.RightToLeft)
-            {
-                DedicatedFunctions.changeKeyboardLanguage(KeyboardLanguage.Persian);
-            }
-            else
-            {
-                DedicatedFunctions.changeKeyboardLanguage(KeyboardLanguage.English);
-            }
-        }
-        #endregion
-
         #endregion
 
         #region Validators
         private bool validateControls()
         {
             bool isValid = true;
-            foreach (CreateDocumentControlModel controlModel in comboBoxcontrolModels)
-            {
-                if (!controlModel.Validate && controlModel.ControlLevel != CreateDocumentControlModel.ControlLevels.Optional)
-                {
-                    isValid = false;
-                    break;
-                }
-            }
+
+            // 1. بررسی فیلدهای متنی
             foreach (CreateDocumentControlModel controlModel in textBoxControlModels)
             {
                 if (!controlModel.Validate && controlModel.ControlLevel != CreateDocumentControlModel.ControlLevels.Optional)
@@ -404,147 +592,52 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                 }
             }
 
+            // 2. بررسی لیست نویسندگان (حداقل یک نویسنده)
+            if (isValid && authorsList.Count == 0)
+            {
+                isValid = false;
+
+            }
+            else
+            {
+                normalControl(txtBoxAreaOfStudy);
+                normalControl(txtBoxAreaOfStudyEn);
+            }
+
+            // 3. بررسی: آیا نویسنده مسئول وجود دارد؟
+            if (isValid && !authorsList.Any(a => a.IsResponsible))
+            {
+                isValid = false;
+
+            }
+
+            // 4. مقداردهی نهایی
             if (isValid)
             {
-                UniversityFa = UniversitiesData.getPersianUniversities()[comboUniversity.SelectedIndex];
-                UniversityEn = UniversitiesData.getEnglishUniversities()[comboUniversity.SelectedIndex];
-
-                University = (Universities)comboUniversity.SelectedIndex;
-                BranchFa = UniversitiesData.getBranchFaOfUniversity(University);
-                BranchEn = UniversitiesData.getBranchEnOfUniversity(University);
-
-                if (!comboDepartment.IsEditable)
-                {
-                    DepartmentFa = DepartmentsData.getPersianDepartments(University, true)[comboDepartment.SelectedIndex];
-                    DepartmentEn = DepartmentsData.getEnglistDepartments(University, true)[comboDepartment.SelectedIndex];
-                }
-                else
-                {
-                    DepartmentFa = comboDepartment.Text;
-                    DepartmentEn = txtBoxCustomDepartmentEn.Text;
-                }
-
-                if (!comboGroup.IsEditable)
-                {
-                    string tempFa = DepartmentsData.getPersianGroups(University, comboDepartment.SelectedItem as string)[comboGroup.SelectedIndex];
-                    string tempEn = DepartmentsData.getEnglishGroups(University, comboDepartment.SelectedItem as string)[comboGroup.SelectedIndex];
-                    if (tempFa == ComboBoxData.nothingFa || tempEn == ComboBoxData.nothingEn)
-                    {
-                        tempFa = "";
-                        tempEn = "";
-                    }
-
-                    GroupFa = tempFa;
-                    GroupEn = tempEn;
-                }
-                else
-                {
-                    GroupFa = comboGroup.Text;
-                    GroupEn = txtBoxCustomGroupEn.Text;
-                }
-
-                if (documentType == DocumentTypes.Project)
-                {
-                    AcademicDegreeFa = ComboBoxDataAcademicDegree.AcademicDegree_Project_Fa[comboAcademicDegree.SelectedIndex];
-                    AcademicDegreeEn = ComboBoxDataAcademicDegree.AcademicDegree_Project_En[comboAcademicDegree.SelectedIndex];
-                }
-                else if (documentType == DocumentTypes.Thesis)
-                {
-                    AcademicDegreeFa = ComboBoxDataAcademicDegree.AcademicDegree_Thesis_Fa[comboAcademicDegree.SelectedIndex];
-                    AcademicDegreeEn = ComboBoxDataAcademicDegree.AcademicDegree_Thesis_En[comboAcademicDegree.SelectedIndex];
-                }
-                else if (documentType == DocumentTypes.Dissertation)
-                {
-                    AcademicDegreeFa = ComboBoxDataAcademicDegree.AcademicDegree_Dissertation_Fa[comboAcademicDegree.SelectedIndex];
-                    AcademicDegreeEn = ComboBoxDataAcademicDegree.AcademicDegree_Dissertation_En[comboAcademicDegree.SelectedIndex];
-                }
-                else
-                {
-                    AcademicDegreeFa = AcademicDegree_Fa2[comboAcademicDegree.SelectedIndex];
-                    AcademicDegreeEn = ComboBoxDataAcademicDegree.AcademicDegree_En[comboAcademicDegree.SelectedIndex];
-                }
                 FieldOfStudyFa = txtBoxFieldOfStudy.Text;
                 FieldOfStudyEn = txtBoxFieldOfStudyEn.Text;
                 AreaOfStudyFa = txtBoxAreaOfStudy.Text;
                 AreaOfStudyEn = txtBoxAreaOfStudyEn.Text;
+                Email = txtBoxEmail.Text;
+                IsResponsibleAuthor = chkResponsibleAuthor.IsChecked ?? false;
 
                 btnForward.IsEnabled = true;
                 return true;
             }
             else
             {
-                UniversityFa = "";
-                UniversityEn = "";
-                DepartmentFa = "";
-                DepartmentEn = "";
-                GroupFa = "";
-                GroupEn = "";
-                AcademicDegreeFa = "";
-                AcademicDegreeEn = "";
                 FieldOfStudyFa = "";
                 FieldOfStudyEn = "";
                 AreaOfStudyFa = "";
                 AreaOfStudyEn = "";
+                Email = "";
+                IsResponsibleAuthor = false;
 
                 btnForward.IsEnabled = false;
                 return false;
             }
         }
 
-        private bool validateComboBox(ComboBox comboBox, ControlLevels controlLevel, bool onlyReturn)
-        {
-            if (controlLevel == ControlLevels.Optional)
-            {
-                normalControl(comboBox);
-                return true;
-            }
-
-            if (!comboBox.IsEditable)
-            {
-                if (comboBox.SelectedIndex != -1)
-                {
-                    normalControl(comboBox);
-                    return true;
-                }
-                else
-                {
-                    if (!onlyReturn)
-                        errorControl(comboBox, "موردی انتخاب نشده است");
-                    return false;
-                }
-            }
-            else
-            {
-                var textBox = (comboBox.Template.FindName("PART_EditableTextBox", comboBox) as TextBox);
-
-                if (!string.IsNullOrEmpty(textBox.Text) && !string.IsNullOrWhiteSpace(textBox.Text) && textBox.Text != ComboBoxData.otherFa && textBox.Text.Trim().Length > 5)
-                {
-                    normalControl(comboBox);
-                    return true;
-                }
-                else if (string.IsNullOrEmpty(textBox.Text) || string.IsNullOrWhiteSpace(textBox.Text))
-                {
-                    if (!onlyReturn)
-                        errorControl(comboBox, "فیلد نباید خالی باشد");
-
-                    return false;
-                }
-                else if (textBox.Text == ComboBoxData.otherFa)
-                {
-                    normalControl(comboBox);
-                    return true;
-                }
-                else if (textBox.Text.Trim().Length <= 5)
-                {
-                    if (!onlyReturn)
-                        errorControl(comboBox, "بیشتر از 5 حرف میبایست باشد");
-
-                    return false;
-                }
-                else
-                    throw new System.Exception("unexpected error, value is >\n\t" + textBox.Text);
-            }
-        }
         private bool validateTextBox(TextBox textBox, ControlLevels controlLevel, bool onlyReturn)
         {
             if (controlLevel == ControlLevels.Optional)
@@ -553,7 +646,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                 return true;
             }
 
-            if (!string.IsNullOrEmpty(textBox.Text) && !string.IsNullOrWhiteSpace(textBox.Text) && textBox.Text.Length > 5)
+            if (!string.IsNullOrEmpty(textBox.Text) && !string.IsNullOrWhiteSpace(textBox.Text) && textBox.Text.Length > 2)
             {
                 normalControl(textBox);
                 return true;
@@ -562,17 +655,14 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
             {
                 if (!onlyReturn)
                     errorControl(textBox, "فیلد نباید خالی باشد");
-
                 return false;
             }
             else
             {
                 if (!onlyReturn)
-                    errorControl(textBox, "حروف بیشتر از 5 حرف میبایست باشد");
-
+                    errorControl(textBox, "حداقل 3 حرف وارد کنید");
                 return false;
             }
-
         }
         #endregion
 
@@ -581,32 +671,28 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
         internal void resetControls()
         {
             #region variables
-            foreach (CreateDocumentControlModel controlModel in comboBoxcontrolModels)
-            {
-                controlModel.Validate = false;
-            }
             foreach (CreateDocumentControlModel controlModel in textBoxControlModels)
             {
                 controlModel.Validate = false;
+                if (controlModel.Control == txtBoxEmail)
+                {
+                    controlModel.ControlLevel = ControlLevels.Optional;
+                }
             }
-
-            UniversityFa = "";
-            UniversityEn = "";
-
-            DepartmentFa = "";
-            DepartmentEn = "";
-
-            GroupFa = "";
-            GroupEn = "";
 
             FieldOfStudyFa = "";
             FieldOfStudyEn = "";
-
             AreaOfStudyFa = "";
             AreaOfStudyEn = "";
+            Email = "";
+            IsResponsibleAuthor = false;
 
-            AcademicDegreeFa = "";
-            AcademicDegreeEn = "";
+            // ====== این خط رو اضافه کن ======
+            AuthorNames = new List<string>();
+
+            // پاک کردن لیست نویسندگان
+            authorsList.Clear();
+            RefreshDataGrid();
             #endregion
 
             #region controls
@@ -614,64 +700,26 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
             {
                 btnForward.IsEnabled = false;
 
-                comboUniversity.SelectedIndex = -1;
-                comboDepartment.ItemsSource = null;
-                comboGroup.ItemsSource = null;
-                comboAcademicDegree.ItemsSource = AcademicDegree_Fa2;
-
-                foreach (CreateDocumentControlModel controlModel in comboBoxcontrolModels)
-                {
-                    ComboBox comboBox = (ComboBox)controlModel.Control;
-
-                    resetComboBox(comboBox);
-                    comboBoxcontrolModels.Where(a => a.Control == comboBox).FirstOrDefault().Validate = false;
-                }
-
                 foreach (CreateDocumentControlModel controlModel in textBoxControlModels)
                 {
                     TextBox textBox = (TextBox)controlModel.Control;
-
-                    if (textBox == txtBoxCustomDepartmentEn)
-                    {
-                        changeVisibilityEnglishControls(txtBoxCustomDepartmentEn, gridDepartment, Visibility.Collapsed);
-                    }
-                    else if (textBox == txtBoxCustomGroupEn)
-                    {
-                        changeVisibilityEnglishControls(txtBoxCustomGroupEn, gridGroup, Visibility.Collapsed);
-                    }
-
                     resetTextBoxControl(textBox);
                 }
+
+                txtBoxFieldOfStudy.Text = "";
+                txtBoxFieldOfStudyEn.Text = "";
+                txtBoxAreaOfStudy.Text = "";
+                txtBoxAreaOfStudyEn.Text = "";
+                txtBoxEmail.Text = "";
+                txtBoxEmail.IsEnabled = false;
+                chkResponsibleAuthor.IsChecked = false;
             });
             #endregion
         }
 
-        private void changeVisibilityEnglishControls(TextBox englishTextBox, Grid grid, Visibility visibility)
-        {
-            englishTextBox.Visibility = visibility;
-
-            if (visibility == Visibility.Collapsed)
-            {
-                grid.ColumnDefinitions[1].Width = new GridLength(1, GridUnitType.Auto);
-            }
-            else
-            {
-                grid.ColumnDefinitions[1].Width = new GridLength(1, GridUnitType.Star);
-            }
-        }
-
-
         private void resetTextBoxControl(TextBox control)
         {
             control.Text = "";
-            normalControl(control);
-        }
-        private void resetComboBox(ComboBox control)
-        {
-            control.IsEditable = false;
-            control.IsTextSearchEnabled = true;
-            control.Text = "";
-            control.SelectedIndex = -1;
             normalControl(control);
         }
 
@@ -681,38 +729,21 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
             control.Foreground = System.Windows.Media.Brushes.Red;
 
             Thickness margin = new Thickness(0, 0, 0, 20);
-            if (control == comboUniversity)
-                gridUniversity.Margin = margin;
-            else if (control == comboDepartment || control == txtBoxCustomDepartmentEn)
-                gridDepartment.Margin = margin;
-            else if (control == comboGroup || control == txtBoxCustomGroupEn)
-                gridGroup.Margin = margin;
-            else if (control == comboAcademicDegree)
-                gridAcademicDegree.Margin = margin;
-            else if (control == txtBoxFieldOfStudy || control == txtBoxFieldOfStudyEn)
+            if (control == txtBoxFieldOfStudy || control == txtBoxFieldOfStudyEn)
                 gridFieldOfStudy.Margin = margin;
             else if (control == txtBoxAreaOfStudy || control == txtBoxAreaOfStudyEn)
                 gridAreaOfStudy.Margin = margin;
+            else if (control == txtBoxEmail)
+                gridEmail.Margin = margin;
         }
+
         private void normalControl(Control control)
         {
             HintAssist.SetHelperText(control, "");
             control.Foreground = System.Windows.Media.Brushes.Black;
 
             Thickness margin = new Thickness(0);
-            if (control == comboUniversity)
-                gridUniversity.Margin = margin;
-            else if (control == comboDepartment && txtBoxCustomDepartmentEn.Foreground != System.Windows.Media.Brushes.Red)
-                gridDepartment.Margin = margin;
-            else if (control == txtBoxCustomDepartmentEn && comboDepartment.Foreground != System.Windows.Media.Brushes.Red)
-                gridDepartment.Margin = margin;
-            else if (control == comboGroup && txtBoxCustomGroupEn.Foreground != System.Windows.Media.Brushes.Red)
-                gridGroup.Margin = margin;
-            else if (control == txtBoxCustomGroupEn && comboGroup.Foreground != System.Windows.Media.Brushes.Red)
-                gridGroup.Margin = margin;
-            else if (control == comboAcademicDegree)
-                gridAcademicDegree.Margin = margin;
-            else if (control == txtBoxFieldOfStudy && txtBoxFieldOfStudyEn.Foreground != System.Windows.Media.Brushes.Red)
+            if (control == txtBoxFieldOfStudy && txtBoxFieldOfStudyEn.Foreground != System.Windows.Media.Brushes.Red)
                 gridFieldOfStudy.Margin = margin;
             else if (control == txtBoxFieldOfStudyEn && txtBoxFieldOfStudy.Foreground != System.Windows.Media.Brushes.Red)
                 gridFieldOfStudy.Margin = margin;
@@ -720,47 +751,16 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                 gridAreaOfStudy.Margin = margin;
             else if (control == txtBoxAreaOfStudyEn && txtBoxAreaOfStudy.Foreground != System.Windows.Media.Brushes.Red)
                 gridAreaOfStudy.Margin = margin;
+            else if (control == txtBoxEmail)
+                gridEmail.Margin = margin;
         }
 
         internal void initializeVariables(DocumentTypes documentType)
         {
             this.documentType = documentType;
-
-            string previousSelectedAcademicDegree = "";
-
-            if (comboAcademicDegree.SelectedIndex != -1)
-            {
-                previousSelectedAcademicDegree = comboAcademicDegree.SelectedItem as string;
-            }
-            comboAcademicDegree.SelectedIndex = -1;
-
-
-            if (documentType == DocumentTypes.Project)
-            {
-                comboAcademicDegree.ItemsSource = ComboBoxDataAcademicDegree.AcademicDegree_Project_Fa;
-            }
-            else if (documentType == DocumentTypes.Thesis)
-            {
-                comboAcademicDegree.ItemsSource = ComboBoxDataAcademicDegree.AcademicDegree_Thesis_Fa;
-            }
-            else if (documentType == DocumentTypes.Dissertation)
-            {
-                comboAcademicDegree.ItemsSource = ComboBoxDataAcademicDegree.AcademicDegree_Dissertation_Fa;
-            }
-            else
-            {
-                comboAcademicDegree.ItemsSource = AcademicDegree_Fa2;
-            }
-
-            if (comboAcademicDegree.Items.Contains(previousSelectedAcademicDegree))
-            {
-                comboAcademicDegree.SelectedItem = previousSelectedAcademicDegree;
-            }
-
-            comboBoxcontrolModels.Where(a => a.Control == comboAcademicDegree).FirstOrDefault().Validate = validateComboBox(comboAcademicDegree, ControlLevels.Essential, true);
-
             validateControls();
         }
+
         #endregion
     }
 }

@@ -254,6 +254,8 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager
         {
             transitionMain.SelectedIndex = 1;
         }
+
+
     }
 
 }

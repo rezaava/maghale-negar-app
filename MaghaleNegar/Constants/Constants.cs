@@ -156,6 +156,12 @@ namespace MaghaleNegar.Constants
         internal const string HalfSpaceFile = "HalfSpace.csv";
         internal const string StandardCorrectionFile = "Standard.csv";
         internal const string spellingCorrectionFile = "SpellingCorrection.csv";
+
+
+        public const string ButtonCodeSigns = "1000";
+        public const string ButtonCodeSpelling = "1001";
+        public const string ButtonCodeHalfSpace = "1002";
+        public const string ButtonCodeStandard = "1004";
     }
 
     struct DialogBoxMessages

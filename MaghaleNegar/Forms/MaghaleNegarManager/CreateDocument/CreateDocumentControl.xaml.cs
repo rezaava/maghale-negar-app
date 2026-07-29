@@ -18,10 +18,8 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
         public Action NormalStateFormRequest { get; set; }
         public Action MaximizeStateFormRequest { get; set; }
 
-        //Transition Variables
         private int previousSelectedTransition = 0;
         private bool isTransitionMovementForward = false;
-
 
         private int m_progress;
         public int Progress
@@ -49,21 +47,16 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
             }
         }
 
-        public CreateDocumentControl()
+        public CreateDocumentControl()  
         {
             InitializeComponent();
 
             Steps = new ObservableCollection<string>();
-            Steps.Add("بسم الله");
-            Steps.Add("مشخصات سند");
-            Steps.Add("مشخصات تحصیلی");
 
-            Constants.DocumentTypes documentType = DedicatedFunctions.getDocumentType(createDocumentSlide2.comboDocumentType.SelectedItem as string);
-            string documentTypeString = DedicatedFunctions.getDocumentTypePersianName((int)documentType);
-            Steps.Add("مشخصات " + documentTypeString);
+            // ====== فقط دو مرحله ======
+            Steps.Add("مشخصات مقاله");
+            Steps.Add("ساخت مقاله");
 
-            Steps.Add("تاییدیه");
-            Steps.Add("ساخت سند");
             Progress = 1;
             DataContext = this;
 
@@ -74,34 +67,20 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
 
             transitionCreateDocument.SelectionChanged += TransitionCreateDocument_SelectionChanged;
 
-            //progressPage.Value = 0;
-            //lblProgressPage.Text = "%0";
-            //transitionCreateDocument.SelectedIndex = 5;//Test //Page 6 
+            // ====== رفتن به اسلاید اول ======
+            transitionCreateDocument.SelectedIndex = 0;
 
-            createDocumentSlide2.comboDocumentType.SelectionChanged += (s, a) =>
+            // ====== رویداد دکمه بعدی در اسلاید 3 ======
+            createDocumentSlide3.TransitionMoveNextCommand += () =>
             {
-                if (createDocumentSlide2.comboDocumentType.SelectedIndex != -1)
-                {
-                    documentType = DedicatedFunctions.getDocumentType(createDocumentSlide2.comboDocumentType.SelectedItem as string);
-                    documentTypeString = DedicatedFunctions.getDocumentTypePersianName((int)documentType);
-                    Steps[3] = "مشخصات " + documentTypeString;
-                }
+                transitionCreateDocument.SelectedIndex = 1;
             };
 
-            createDocumentSlide5.TransitionMoveNextCommand += () =>
-            {
-                transitionCreateDocument.SelectedIndex++;
-            };
+            // ====== رویدادهای اسلاید 6 ======
             createDocumentSlide6.TransitionDocumentManagerRequest += () =>
             {
-                #region pages reset
-                createDocumentSlide1.resetControls();
-                createDocumentSlide2.resetControls();
                 createDocumentSlide3.resetControls();
-                createDocumentSlide4.resetControls();
-                createDocumentSlide5.resetControls();
                 createDocumentSlide6.resetControls();
-                #endregion
 
                 Dispatcher.Invoke(() =>
                 {
@@ -109,11 +88,11 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                 });
                 this.TransitionDocumentManagerRequest?.Invoke();
             };
+
             createDocumentSlide6.CloseForm += () =>
             {
                 CloseFormRequest?.Invoke();
             };
-
 
             string versionCustomized = BugReport.AssemblyVersion;
             versionCustomized = versionCustomized.Replace("0", "۰").Replace("1", "۱").Replace("2", "۲").Replace("3", "۳").Replace("4", "۴").Replace("5", "۵")
@@ -130,22 +109,16 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                 AlwaysOnTopDisableRequest?.Invoke();
         }
 
-        #region Events
-        public void BtnExitCreateDocument_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void BtnExitCreateDocument_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            if (transitionCreateDocument.SelectedIndex == 5)
+            if (transitionCreateDocument.SelectedIndex == 1)
             {
                 createDocumentSlide6.close();
                 return;
             }
-            #region pages reset
-            createDocumentSlide1.resetControls();
-            createDocumentSlide2.resetControls();
+
             createDocumentSlide3.resetControls();
-            createDocumentSlide4.resetControls();
-            createDocumentSlide5.resetControls();
             createDocumentSlide6.resetControls();
-            #endregion
 
             transitionCreateDocument.SelectedIndex = 0;
             TransitionDocumentManagerRequest?.Invoke();
@@ -153,7 +126,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
 
         private void TransitionCreateDocument_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
-            if (transitionCreateDocument.SelectedIndex != previousSelectedTransition)//changed selected Page
+            if (transitionCreateDocument.SelectedIndex != previousSelectedTransition)
             {
                 if (transitionCreateDocument.SelectedIndex > previousSelectedTransition)
                     isTransitionMovementForward = true;
@@ -164,41 +137,36 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                 return;
 
             float step = 100f / (float)transitionCreateDocument.Items.Count;
-
             Progress = (int)step * (transitionCreateDocument.SelectedIndex + 1);
 
-            //lblProgressPage.Text = "%" + (step * (transitionCreateDocument.SelectedIndex + 1)).ToString();
-            //progressPage.Value = step * (transitionCreateDocument.SelectedIndex + 1);
+            if (transitionCreateDocument.SelectedIndex == 1)
+            {
+                try
+                {
+                    // ====== دریافت عنوان انگلیسی از اسلاید 3 ======
+                    string titleFa = createDocumentSlide3.FieldOfStudyFa ?? "";
+                    string titleEn = createDocumentSlide3.FieldOfStudyEn ?? "";
 
-            if (transitionCreateDocument.SelectedIndex == -1)//not selected any Page
-            {
-                previousSelectedTransition = transitionCreateDocument.SelectedIndex;
-                return;
-            }
-            else if (transitionCreateDocument.SelectedIndex == 2)//page 3
-            {
-                if (isTransitionMovementForward)
-                    createDocumentSlide3.initializeVariables(createDocumentSlide2.DocumentType);
-            }
-            else if (transitionCreateDocument.SelectedIndex == 3)//page 4
-            {
-                createDocumentSlide4.initializeVariables(createDocumentSlide2.DocumentType);
-            }
-            else if (transitionCreateDocument.SelectedIndex == 4)//page 6
-            {
-                createDocumentSlide5.initializeVariables(createDocumentSlide2, createDocumentSlide3, createDocumentSlide4);
-            }
-            else if (transitionCreateDocument.SelectedIndex == 5)//page 7
-            {
-                createDocumentSlide6.initializeVariables(createDocumentSlide1, createDocumentSlide2, createDocumentSlide3, createDocumentSlide4);
+                    // ====== دریافت لیست نویسندگان ======
+                    var authorNames = createDocumentSlide3.AuthorNames ?? new System.Collections.Generic.List<string>();
+
+                    // ====== مقداردهی اسلاید 6 با عنوان انگلیسی ======
+                    createDocumentSlide6.initializeVariables(
+                        authorNames,
+                        titleEn,
+                        titleFa  
+                    );
+                }
+                catch (Exception ex)
+                {
+                    System.Windows.MessageBox.Show($"خطا در انتقال اطلاعات به اسلاید نهایی: {ex.Message}",
+                        "خطا", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                }
             }
 
             previousSelectedTransition = transitionCreateDocument.SelectedIndex;
         }
-        #endregion
 
-        #region Functions
-        #endregion
+
     }
-
 }

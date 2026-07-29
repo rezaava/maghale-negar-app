@@ -773,10 +773,10 @@ namespace MaghaleNegar.Forms.AddRemovePages
                                     {
                                         DedicatedFunctions.ProtectImportantText(cc, content, title, title, lockContentControl, lockContent, false, mustBeEmpty);
 
-                                        if (university == Universities.YazdUniversity && mustBeEmpty)
-                                        {
-                                            CreateDocumentSlide6.customActionInUniversity(doc, contentControlName);
-                                        }
+                                        //if (university == Universities.YazdUniversity && mustBeEmpty)
+                                        //{
+                                        //    CreateDocumentSlide6.customActionInUniversity(doc, contentControlName);
+                                        //}
                                     }
                                 }
                             }
