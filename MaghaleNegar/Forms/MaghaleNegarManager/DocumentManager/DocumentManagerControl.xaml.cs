@@ -47,8 +47,8 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.DocumentManager
 
             NavigationVm.CurrentViewChanged = () =>
             {
-                radioBtnNetworking.Foreground = System.Windows.Media.Brushes.White;
-                radioBtnNetworking.Background = (System.Windows.Media.Brush)new System.Windows.Media.BrushConverter().ConvertFrom("#007ac1");
+                //radioBtnNetworking.Foreground = System.Windows.Media.Brushes.White;
+                //radioBtnNetworking.Background = (System.Windows.Media.Brush)new System.Windows.Media.BrushConverter().ConvertFrom("#007ac1");
                 radioBtnAllDocuments.Foreground = System.Windows.Media.Brushes.White;
                 radioBtnAllDocuments.Background = (System.Windows.Media.Brush)new System.Windows.Media.BrushConverter().ConvertFrom("#007ac1");
                 radioBtnArchives.Foreground = System.Windows.Media.Brushes.White;
@@ -56,10 +56,10 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.DocumentManager
 
                 if ((NavigationVm.CurrentView is NetworkingVM networkingVM))
                 {
-                    networkingVM.getBadgedButton(badgeNetworking);
+                    //networkingVM.getBadgedButton(badgeNetworking);
                     networkingVM.getNetworkingRequests();
-                    radioBtnNetworking.Foreground = (System.Windows.Media.Brush)new System.Windows.Media.BrushConverter().ConvertFrom("#007ac1");
-                    radioBtnNetworking.Background = System.Windows.Media.Brushes.White;
+                    //radioBtnNetworking.Foreground = (System.Windows.Media.Brush)new System.Windows.Media.BrushConverter().ConvertFrom("#007ac1");
+                    //radioBtnNetworking.Background = System.Windows.Media.Brushes.White;
                 }
                 else if ((NavigationVm.CurrentView is DocumentsVM dvm))
                 {
@@ -84,14 +84,14 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.DocumentManager
             radioBtnAllDocuments.Click += RadioBtnAllDocuments_Click;
             radioBtnArchives.Click += RadioBtnArchives_Click;
             radioBtnCreateDocument.Click += RadioBtnCreateDocument_Click;
-            radioBtnNetworking.Click += RadioBtnNetworking_Click;
+            //radioBtnNetworking.Click += RadioBtnNetworking_Click;
         }
 
         public void SelectArchiveTab()
         {
             // تغییر رنگ دکمه‌ها
-            radioBtnNetworking.Foreground = System.Windows.Media.Brushes.White;
-            radioBtnNetworking.Background = (System.Windows.Media.Brush)new System.Windows.Media.BrushConverter().ConvertFrom("#007ac1");
+            //radioBtnNetworking.Foreground = System.Windows.Media.Brushes.White;
+            //radioBtnNetworking.Background = (System.Windows.Media.Brush)new System.Windows.Media.BrushConverter().ConvertFrom("#007ac1");
 
             radioBtnArchives.Foreground = (System.Windows.Media.Brush)new System.Windows.Media.BrushConverter().ConvertFrom("#007ac1");
             radioBtnArchives.Background = System.Windows.Media.Brushes.White;
@@ -105,8 +105,8 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.DocumentManager
 
         private void RadioBtnNetworking_Click(object sender, RoutedEventArgs e)
         {
-            radioBtnNetworking.Foreground = (System.Windows.Media.Brush)new System.Windows.Media.BrushConverter().ConvertFrom("#007ac1");
-            radioBtnNetworking.Background = System.Windows.Media.Brushes.White;
+            //radioBtnNetworking.Foreground = (System.Windows.Media.Brush)new System.Windows.Media.BrushConverter().ConvertFrom("#007ac1");
+            //radioBtnNetworking.Background = System.Windows.Media.Brushes.White;
 
             radioBtnAllDocuments.Foreground = System.Windows.Media.Brushes.White;
             radioBtnAllDocuments.Background = (System.Windows.Media.Brush)new System.Windows.Media.BrushConverter().ConvertFrom("#007ac1");
@@ -116,8 +116,8 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.DocumentManager
 
         private void RadioBtnArchives_Click(object sender, RoutedEventArgs e)
         {
-            radioBtnNetworking.Foreground = System.Windows.Media.Brushes.White;
-            radioBtnNetworking.Background = (System.Windows.Media.Brush)new System.Windows.Media.BrushConverter().ConvertFrom("#007ac1");
+            //radioBtnNetworking.Foreground = System.Windows.Media.Brushes.White;
+            //radioBtnNetworking.Background = (System.Windows.Media.Brush)new System.Windows.Media.BrushConverter().ConvertFrom("#007ac1");
 
             radioBtnArchives.Foreground = (System.Windows.Media.Brush)new System.Windows.Media.BrushConverter().ConvertFrom("#007ac1");
             radioBtnArchives.Background = System.Windows.Media.Brushes.White;
@@ -126,8 +126,8 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.DocumentManager
         }
         private void RadioBtnAllDocuments_Click(object sender, RoutedEventArgs e)
         {
-            radioBtnNetworking.Foreground = System.Windows.Media.Brushes.White;
-            radioBtnNetworking.Background = (System.Windows.Media.Brush)new System.Windows.Media.BrushConverter().ConvertFrom("#007ac1");
+            //radioBtnNetworking.Foreground = System.Windows.Media.Brushes.White;
+            //radioBtnNetworking.Background = (System.Windows.Media.Brush)new System.Windows.Media.BrushConverter().ConvertFrom("#007ac1");
 
             radioBtnAllDocuments.Foreground = (System.Windows.Media.Brush)new System.Windows.Media.BrushConverter().ConvertFrom("#007ac1");
             radioBtnAllDocuments.Background = System.Windows.Media.Brushes.White;
@@ -196,7 +196,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.DocumentManager
             radioBtnCreateDocument.IsEnabled = false;
             radioBtnProfile.IsEnabled = false;
             radioBtnSettings.IsEnabled = false;
-            radioBtnNetworking.IsEnabled = false;
+            //radioBtnNetworking.IsEnabled = false;
             btnLogout.IsEnabled = false;
 
             NavigationVm.CurrentView = new LoginVM();
@@ -208,7 +208,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.DocumentManager
             radioBtnCreateDocument.IsEnabled = true;
             radioBtnProfile.IsEnabled = true;
             radioBtnSettings.IsEnabled = true;
-            radioBtnNetworking.IsEnabled = true;
+            //radioBtnNetworking.IsEnabled = true;
             btnLogout.IsEnabled = true;
 
             NavigationVm.CurrentView = new MainVM();
@@ -220,7 +220,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.DocumentManager
             radioBtnCreateDocument.IsEnabled = true;
             radioBtnProfile.IsEnabled = true;
             radioBtnSettings.IsEnabled = true;
-            radioBtnNetworking.IsEnabled = true;
+            //radioBtnNetworking.IsEnabled = true;
             btnLogout.IsEnabled = true;
 
             NavigationVm.CurrentView = new DocumentsVM(NavigationVm.goToArchive);
@@ -274,7 +274,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.DocumentManager
                     {
                         Dispatcher.Invoke(() =>
                         {
-                            badgeNetworking.Badge = null;
+                            //badgeNetworking.Badge = null;
                         });
                     }
                     else
@@ -284,7 +284,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.DocumentManager
 
                         Dispatcher.Invoke(() =>
                         {
-                            badgeNetworking.Badge = shareCounts;
+                            //badgeNetworking.Badge = shareCounts;
                         });
                     }
                 }

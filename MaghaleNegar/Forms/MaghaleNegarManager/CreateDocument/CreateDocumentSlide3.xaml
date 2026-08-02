@@ -57,6 +57,19 @@
                             Foreground="{StaticResource PrimaryBackgroundColor}"
                             Margin="5,0,5,10" />
 
+                    <!-- نام نشریه -->
+                    
+                                    <ComboBox
+                            x:Name="cmbJournalName"
+                            Margin="5,0,5,15"
+                            materialDesign:HintAssist.Background="{StaticResource LightBackgroundColor}"
+                            materialDesign:HintAssist.FloatingScale="1"
+                            materialDesign:HintAssist.Hint="انتخاب نشریه"
+                            Style="{StaticResource MaterialDesignOutlinedComboBox}"
+                            SelectedIndex="0">  
+                            <ComboBoxItem Content="نشریه علمی ابتکار و خلاقیت در علوم انسانی" />
+                    </ComboBox>
+
                     <!-- نام مقاله -->
                     <Grid x:Name="gridFieldOfStudy" Margin="0,0,0,15">
                         <Grid.ColumnDefinitions>

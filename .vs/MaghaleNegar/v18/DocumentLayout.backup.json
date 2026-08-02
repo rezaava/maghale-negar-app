@@ -1,115 +1,62 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\",
+  "WorkspaceRootPath": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\",
   "Documents": [
     {
-<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|d:\\c# projects\\shivanegar\\shiva\\shivanegar\\shivamaghale\\maghalenegarapp\\maghalenegar\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\dedicatedfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\dedicatedfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|d:\\c# projects\\shivanegar\\shiva\\shivanegar\\shivamaghale\\maghalenegarapp\\maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\forms\\maghalenegarmanager\\maghalenegarcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\forms\\maghalenegarmanager\\maghalenegarcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide6.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide6.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\ribbon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\ribbon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide3.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide3.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|d:\\c# projects\\shivanegar\\shiva\\shivanegar\\shivamaghale\\maghalenegarapp\\maghalenegar\\ribbon.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\ribbon.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\ribbon.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\ribbon.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\dedicatedfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\dedicatedfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|d:\\c# projects\\shivanegar\\shiva\\shivanegar\\shivamaghale\\maghalenegarapp\\maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide6.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide6.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide3.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide3.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide6.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide6.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentcontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\forms\\maghalenegarmanager\\documentmanager\\documentmanagercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\forms\\maghalenegarmanager\\documentmanager\\documentmanagercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\forms\\maghalenegarmanager\\documentmanager\\documentmanagercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\forms\\maghalenegarmanager\\documentmanager\\documentmanagercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\forms\\addremovepages\\addremovepagescontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\forms\\addremovepages\\addremovepagescontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|f:\\documents\\code\\c#\\maghale-negar-app\\maghale-negar-app\\maghalenegar\\ribbon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\ribbon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\maghalenegar\\models\\ribboncontrolmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\models\\ribboncontrolmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\maghalenegar\\properties\\resourceribbonicons.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\properties\\resourceribbonicons.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\maghalenegar\\ribbon.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\ribbon.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\maghalenegar\\dedicatedfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\dedicatedfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\maghalenegar\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\maghalenegar\\taskpanes\\crossreference\\crossreferencecontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\taskpanes\\crossreference\\crossreferencecontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\maghalenegar\\taskpanes\\crossreference\\crossreferencetaskpane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\taskpanes\\crossreference\\crossreferencetaskpane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\maghalenegar\\taskpanes\\crossreference\\crossreferencecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\taskpanes\\crossreference\\crossreferencecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\maghalenegar\\interfaces\\ikeyboardshortcuts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\interfaces\\ikeyboardshortcuts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\maghalenegar\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\maghalenegar\\properties\\resourceribbonicons.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\properties\\resourceribbonicons.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
->>>>>>> a47c0a8b371fa0be914a1cfa30ec1b9d613c3203
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\maghalenegar\\forms\\loadingform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\forms\\loadingform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -119,50 +66,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ThisAddIn.cs",
-              "DocumentMoniker": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\ThisAddIn.cs",
-              "RelativeDocumentMoniker": "MaghaleNegar\\ThisAddIn.cs",
-              "ToolTip": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\ThisAddIn.cs",
-              "RelativeToolTip": "MaghaleNegar\\ThisAddIn.cs",
-<<<<<<< HEAD
-              "ViewState": "AgIAABkIAAAAAAAAAAAmwCsIAABBAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAACUAAAAAAAAAAAAQwCsDAAAIAAAAAAAAAA==",
->>>>>>> a47c0a8b371fa0be914a1cfa30ec1b9d613c3203
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-03T14:26:30.777Z",
-              "IsPinned": true
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreateDocumentControl.xaml.cs",
-              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentControl.xaml.cs",
-              "RelativeDocumentMoniker": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentControl.xaml.cs",
-              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentControl.xaml.cs",
-              "RelativeToolTip": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentControl.xaml.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAArwDkAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-21T08:07:53.17Z",
-              "IsPinned": true
+              "DocumentIndex": 2,
+              "Title": "Ribbon.xml",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Ribbon.xml",
+              "RelativeDocumentMoniker": "MaghaleNegar\\Ribbon.xml",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Ribbon.xml",
+              "RelativeToolTip": "MaghaleNegar\\Ribbon.xml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAG0AAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-08-01T09:24:10.371Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "DedicatedFunctions.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\DedicatedFunctions.cs",
+              "RelativeDocumentMoniker": "MaghaleNegar\\DedicatedFunctions.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\DedicatedFunctions.cs",
+              "RelativeToolTip": "MaghaleNegar\\DedicatedFunctions.cs",
+              "ViewState": "AgIAAAMXAAAAAAAAAAAwwBkXAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-31T20:46:39.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DocumentManagerControl.xaml.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\MaghaleNegarManager\\DocumentManager\\DocumentManagerControl.xaml.cs",
+              "RelativeDocumentMoniker": "MaghaleNegar\\Forms\\MaghaleNegarManager\\DocumentManager\\DocumentManagerControl.xaml.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\MaghaleNegarManager\\DocumentManager\\DocumentManagerControl.xaml.cs",
+              "RelativeToolTip": "MaghaleNegar\\Forms\\MaghaleNegarManager\\DocumentManager\\DocumentManagerControl.xaml.cs",
+              "ViewState": "AgIAAAEBAAAAAAAAAAAnwCIBAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-31T19:29:02.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ThisAddIn.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\ThisAddIn.cs",
+              "RelativeDocumentMoniker": "MaghaleNegar\\ThisAddIn.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\ThisAddIn.cs",
+              "RelativeToolTip": "MaghaleNegar\\ThisAddIn.cs",
+              "ViewState": "AgIAAPoMAAAAAAAAAAAwwA4NAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-31T12:08:59.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Constants\\Constants.cs",
+              "RelativeDocumentMoniker": "MaghaleNegar\\Constants\\Constants.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Constants\\Constants.cs",
+              "RelativeToolTip": "MaghaleNegar\\Constants\\Constants.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAMwKUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-31T09:46:33.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DocumentManagerControl.xaml",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\MaghaleNegarManager\\DocumentManager\\DocumentManagerControl.xaml",
+              "RelativeDocumentMoniker": "MaghaleNegar\\Forms\\MaghaleNegarManager\\DocumentManager\\DocumentManagerControl.xaml",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\MaghaleNegarManager\\DocumentManager\\DocumentManagerControl.xaml",
+              "RelativeToolTip": "MaghaleNegar\\Forms\\MaghaleNegarManager\\DocumentManager\\DocumentManagerControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-07-30T19:28:56.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CreateDocumentSlide6.xaml.cs",
               "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml.cs",
               "RelativeDocumentMoniker": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml.cs",
               "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml.cs",
               "RelativeToolTip": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAADwv0YAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAHsCAAAAAAAAAAD4v5ACAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-04T08:17:43.078Z",
-              "IsPinned": true,
+              "WhenOpened": "2026-07-29T17:23:27.326Z",
               "EditorCaption": ""
             },
             {
@@ -174,21 +173,56 @@
               "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml",
               "RelativeToolTip": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-23T13:26:51.195Z",
-              "IsPinned": true
+              "WhenOpened": "2026-07-29T17:23:23.804Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "CreateDocumentSlide3.xaml.cs",
               "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide3.xaml.cs",
               "RelativeDocumentMoniker": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide3.xaml.cs",
               "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide3.xaml.cs",
               "RelativeToolTip": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide3.xaml.cs",
-              "ViewState": "AgIAAOECAAAAAAAAAAAuwP4CAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAowI0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T06:38:33.133Z",
-              "IsPinned": true
+              "WhenOpened": "2026-07-29T17:21:26.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CreateDocumentControl.xaml",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentControl.xaml",
+              "RelativeDocumentMoniker": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentControl.xaml",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentControl.xaml",
+              "RelativeToolTip": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-07-29T17:23:46.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ribbon.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Ribbon.cs",
+              "RelativeDocumentMoniker": "MaghaleNegar\\Ribbon.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Ribbon.cs",
+              "RelativeToolTip": "MaghaleNegar\\Ribbon.cs",
+              "ViewState": "AgIAANcBAAAAAAAAAAAgwOUBAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-30T09:43:52.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateDocumentControl.xaml.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentControl.xaml.cs",
+              "RelativeDocumentMoniker": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentControl.xaml.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentControl.xaml.cs",
+              "RelativeToolTip": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentControl.xaml.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAwwJkAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-29T17:23:54.752Z"
             },
             {
               "$type": "Document",
@@ -199,246 +233,19 @@
               "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide3.xaml",
               "RelativeToolTip": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide3.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-19T08:38:24.951Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Constants.cs",
-              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Constants\\Constants.cs",
-              "RelativeDocumentMoniker": "MaghaleNegar\\Constants\\Constants.cs",
-              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Constants\\Constants.cs",
-              "RelativeToolTip": "MaghaleNegar\\Constants\\Constants.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAewKMAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T05:30:53.824Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 4,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "MaghaleNegar\\Properties\\Resources.resx",
-              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Properties\\Resources.resx",
-              "RelativeToolTip": "MaghaleNegar\\Properties\\Resources.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2026-07-28T11:28:18.425Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-=======
-              "DocumentIndex": 6,
-              "Title": "CrossReferenceControl.xaml.cs",
-              "DocumentMoniker": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\TaskPanes\\CrossReference\\CrossReferenceControl.xaml.cs",
-              "RelativeDocumentMoniker": "MaghaleNegar\\TaskPanes\\CrossReference\\CrossReferenceControl.xaml.cs",
-              "ToolTip": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\TaskPanes\\CrossReference\\CrossReferenceControl.xaml.cs",
-              "RelativeToolTip": "MaghaleNegar\\TaskPanes\\CrossReference\\CrossReferenceControl.xaml.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-18T07:35:08.395Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CrossReferenceTaskPane.cs [Design]",
-              "DocumentMoniker": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\TaskPanes\\CrossReference\\CrossReferenceTaskPane.cs",
-              "RelativeDocumentMoniker": "MaghaleNegar\\TaskPanes\\CrossReference\\CrossReferenceTaskPane.cs",
-              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\TaskPanes\\CrossReference\\CrossReferenceTaskPane.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-18T07:35:08.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CrossReferenceControl.xaml",
-              "DocumentMoniker": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\TaskPanes\\CrossReference\\CrossReferenceControl.xaml",
-              "RelativeDocumentMoniker": "MaghaleNegar\\TaskPanes\\CrossReference\\CrossReferenceControl.xaml",
-              "ToolTip": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\TaskPanes\\CrossReference\\CrossReferenceControl.xaml",
-              "RelativeToolTip": "MaghaleNegar\\TaskPanes\\CrossReference\\CrossReferenceControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-18T07:34:29.895Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
->>>>>>> a47c0a8b371fa0be914a1cfa30ec1b9d613c3203
-              "Title": "DedicatedFunctions.cs",
-              "DocumentMoniker": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\DedicatedFunctions.cs",
-              "RelativeDocumentMoniker": "MaghaleNegar\\DedicatedFunctions.cs",
-              "ToolTip": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\DedicatedFunctions.cs",
-              "RelativeToolTip": "MaghaleNegar\\DedicatedFunctions.cs",
-<<<<<<< HEAD
-              "ViewState": "AgIAADoZAAAAAAAAAAAAAEYZAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T07:00:49.382Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MaghaleNegarControl.xaml",
-              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\MaghaleNegarManager\\MaghaleNegarControl.xaml",
-              "RelativeDocumentMoniker": "MaghaleNegar\\Forms\\MaghaleNegarManager\\MaghaleNegarControl.xaml",
-              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\MaghaleNegarManager\\MaghaleNegarControl.xaml",
-              "RelativeToolTip": "MaghaleNegar\\Forms\\MaghaleNegarManager\\MaghaleNegarControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-28T05:59:10.379Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Properties\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "MaghaleNegar\\Properties\\AssemblyInfo.cs",
-              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Properties\\AssemblyInfo.cs",
-              "RelativeToolTip": "MaghaleNegar\\Properties\\AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T05:53:50.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-=======
-              "ViewState": "AgIAAGwAAAAAAAAAAAAowB4AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T12:06:12.549Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CreateDocumentSlide6.xaml.cs",
-              "DocumentMoniker": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml.cs",
-              "RelativeDocumentMoniker": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml.cs",
-              "ToolTip": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml.cs",
-              "RelativeToolTip": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml.cs",
-              "ViewState": "AgIAACgEAAAAAAAAAAAAAJcEAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-04T08:17:43.078Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ResourceRibbonIcons.resx",
-              "DocumentMoniker": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\Properties\\ResourceRibbonIcons.resx",
-              "RelativeDocumentMoniker": "MaghaleNegar\\Properties\\ResourceRibbonIcons.resx",
-              "ToolTip": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\Properties\\ResourceRibbonIcons.resx",
-              "RelativeToolTip": "MaghaleNegar\\Properties\\ResourceRibbonIcons.resx",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAKgAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2026-07-03T14:41:51.03Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ResourceRibbonIcons.Designer.cs",
-              "DocumentMoniker": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\Properties\\ResourceRibbonIcons.Designer.cs",
-              "RelativeDocumentMoniker": "MaghaleNegar\\Properties\\ResourceRibbonIcons.Designer.cs",
-              "ToolTip": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\Properties\\ResourceRibbonIcons.Designer.cs",
-              "RelativeToolTip": "MaghaleNegar\\Properties\\ResourceRibbonIcons.Designer.cs",
-              "ViewState": "AgIAADcBAAAAAAAAAAAmwEgBAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-03T14:41:07.867Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Constants.cs",
-              "DocumentMoniker": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\Constants\\Constants.cs",
-              "RelativeDocumentMoniker": "MaghaleNegar\\Constants\\Constants.cs",
-              "ToolTip": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\Constants\\Constants.cs",
-              "RelativeToolTip": "MaghaleNegar\\Constants\\Constants.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAD4vwUBAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-03T09:14:53.696Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RibbonControlModel.cs",
-              "DocumentMoniker": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\Models\\RibbonControlModel.cs",
-              "RelativeDocumentMoniker": "MaghaleNegar\\Models\\RibbonControlModel.cs",
-              "ToolTip": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\Models\\RibbonControlModel.cs",
-              "RelativeToolTip": "MaghaleNegar\\Models\\RibbonControlModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-03T09:13:51.079Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IKeyboardShortcuts.cs",
-              "DocumentMoniker": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\Interfaces\\IKeyboardShortcuts.cs",
-              "RelativeDocumentMoniker": "MaghaleNegar\\Interfaces\\IKeyboardShortcuts.cs",
-              "ToolTip": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\Interfaces\\IKeyboardShortcuts.cs",
-              "RelativeToolTip": "MaghaleNegar\\Interfaces\\IKeyboardShortcuts.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAkwCAAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-03T09:11:17.047Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
->>>>>>> a47c0a8b371fa0be914a1cfa30ec1b9d613c3203
-              "Title": "Ribbon.xml",
-              "DocumentMoniker": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\Ribbon.xml",
-              "RelativeDocumentMoniker": "MaghaleNegar\\Ribbon.xml",
-              "ToolTip": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\Ribbon.xml",
-              "RelativeToolTip": "MaghaleNegar\\Ribbon.xml",
-<<<<<<< HEAD
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
->>>>>>> a47c0a8b371fa0be914a1cfa30ec1b9d613c3203
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2026-07-26T05:52:16.288Z"
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 9,
-=======
-              "DocumentIndex": 0,
->>>>>>> a47c0a8b371fa0be914a1cfa30ec1b9d613c3203
-              "Title": "Ribbon.cs",
-              "DocumentMoniker": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\Ribbon.cs",
-              "RelativeDocumentMoniker": "MaghaleNegar\\Ribbon.cs",
-              "ToolTip": "F:\\Documents\\Code\\C#\\maghale-negar-app\\maghale-negar-app\\MaghaleNegar\\Ribbon.cs",
-              "RelativeToolTip": "MaghaleNegar\\Ribbon.cs",
-<<<<<<< HEAD
-              "ViewState": "AgIAAC8BAAAAAAAAAAAxwEYBAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-26T05:52:06.451Z"
+              "WhenOpened": "2026-07-29T17:21:29.389Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "AddRemovePagesControl.xaml.cs",
-              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\AddRemovePages\\AddRemovePagesControl.xaml.cs",
-              "RelativeDocumentMoniker": "MaghaleNegar\\Forms\\AddRemovePages\\AddRemovePagesControl.xaml.cs",
-              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\AddRemovePages\\AddRemovePagesControl.xaml.cs",
-              "RelativeToolTip": "MaghaleNegar\\Forms\\AddRemovePages\\AddRemovePagesControl.xaml.cs",
-              "ViewState": "AgIAAH0DAAAAAAAAAAAAAAcEAAAAAAAAAAAAAA==",
+              "Title": "LoadingForm.Designer.cs",
+              "DocumentMoniker": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\LoadingForm.Designer.cs",
+              "RelativeDocumentMoniker": "MaghaleNegar\\Forms\\LoadingForm.Designer.cs",
+              "ToolTip": "D:\\C# projects\\Shivanegar\\shiva\\shivanegar\\ShivaMaghale\\maghalenegarApp\\MaghaleNegar\\Forms\\LoadingForm.Designer.cs",
+              "RelativeToolTip": "MaghaleNegar\\Forms\\LoadingForm.Designer.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA1wBAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-23T16:21:23.53Z"
-=======
-              "ViewState": "AgIAAKgAAAAAAAAAAAAUwLMAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-03T09:06:31.661Z",
-              "EditorCaption": ""
->>>>>>> a47c0a8b371fa0be914a1cfa30ec1b9d613c3203
+              "WhenOpened": "2026-07-29T18:27:58.773Z"
             }
           ]
         }

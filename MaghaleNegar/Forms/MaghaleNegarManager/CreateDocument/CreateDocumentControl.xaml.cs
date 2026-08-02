@@ -1,8 +1,9 @@
-﻿using System;
+﻿using MaghaleNegar.Forms.MaghaleNegarManager.DocumentManager.View;
+using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Threading;
-using MaghaleNegar.Forms.MaghaleNegarManager.DocumentManager.View;
 
 namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
 {
@@ -47,15 +48,16 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
             }
         }
 
-        public CreateDocumentControl()  
+        public CreateDocumentControl()
         {
             InitializeComponent();
 
             Steps = new ObservableCollection<string>();
 
-            // ====== فقط دو مرحله ======
-            Steps.Add("مشخصات مقاله");
-            Steps.Add("ساخت مقاله");
+            // ====== سه مرحله (مرحله سوم فقط برای نمایش در نوار بالا) ======
+            Steps.Add("مشخصات مقاله");    
+            Steps.Add("وابستگی علمی");    
+            Steps.Add("ساخت مقاله");           
 
             Progress = 1;
             DataContext = this;
@@ -70,7 +72,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
             // ====== رفتن به اسلاید اول ======
             transitionCreateDocument.SelectedIndex = 0;
 
-            // ====== رویداد دکمه بعدی در اسلاید 3 ======
+            // ====== رویداد دکمه بعدی در اسلاید 3 (رفتن به اسلاید 6) ======
             createDocumentSlide3.TransitionMoveNextCommand += () =>
             {
                 transitionCreateDocument.SelectedIndex = 1;
@@ -81,6 +83,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
             {
                 createDocumentSlide3.resetControls();
                 createDocumentSlide6.resetControls();
+                Progress = 1;
 
                 Dispatcher.Invoke(() =>
                 {
@@ -119,6 +122,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
 
             createDocumentSlide3.resetControls();
             createDocumentSlide6.resetControls();
+            Progress = 1;
 
             transitionCreateDocument.SelectedIndex = 0;
             TransitionDocumentManagerRequest?.Invoke();
@@ -139,22 +143,22 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
             float step = 100f / (float)transitionCreateDocument.Items.Count;
             Progress = (int)step * (transitionCreateDocument.SelectedIndex + 1);
 
+            // ====== وقتی به اسلاید 6 می‌رویم (وابستگی علمی) ======
             if (transitionCreateDocument.SelectedIndex == 1)
             {
                 try
                 {
-                    // ====== دریافت عنوان انگلیسی از اسلاید 3 ======
                     string titleFa = createDocumentSlide3.FieldOfStudyFa ?? "";
                     string titleEn = createDocumentSlide3.FieldOfStudyEn ?? "";
-
-                    // ====== دریافت لیست نویسندگان ======
                     var authorNames = createDocumentSlide3.AuthorNames ?? new System.Collections.Generic.List<string>();
+                    var authorNamesEn = createDocumentSlide3.AuthorNamesEn ?? new List<string>();
 
-                    // ====== مقداردهی اسلاید 6 با عنوان انگلیسی ======
+
                     createDocumentSlide6.initializeVariables(
                         authorNames,
+                        authorNamesEn,
                         titleEn,
-                        titleFa  
+                        titleFa
                     );
                 }
                 catch (Exception ex)
@@ -166,7 +170,5 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
 
             previousSelectedTransition = transitionCreateDocument.SelectedIndex;
         }
-
-
     }
 }

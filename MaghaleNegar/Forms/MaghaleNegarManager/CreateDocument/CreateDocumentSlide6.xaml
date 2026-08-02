@@ -150,6 +150,7 @@
                                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
                                 Tag="Persian"
                                 TextWrapping="Wrap"
+                                GotFocus="TextBox_GotFocus"
                                 LostFocus="AnyTextBox_LostFocus" />
                         <TextBox
                                 x:Name="txtAcademicDegreeEn"
@@ -161,6 +162,7 @@
                                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
                                 Tag="English"
                                 TextWrapping="Wrap" 
+                                GotFocus="TextBox_GotFocus"
                                 LostFocus="AnyTextBox_LostFocus" />
                     </Grid>
 
@@ -186,6 +188,7 @@
                                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
                                 Tag="Persian"
                                 TextWrapping="Wrap"
+                                GotFocus="TextBox_GotFocus"
                                 LostFocus="AnyTextBox_LostFocus" />
                         <TextBox
                                 x:Name="txtGroupEn"
@@ -196,7 +199,8 @@
                                 materialDesign:HintAssist.Hint="English"
                                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
                                 Tag="English"
-                                TextWrapping="Wrap" 
+                                TextWrapping="Wrap"
+                                GotFocus="TextBox_GotFocus"
                                 LostFocus="AnyTextBox_LostFocus" />
                     </Grid>
 
@@ -223,6 +227,7 @@
                                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
                                 Tag="Persian"
                                 TextWrapping="Wrap" 
+                                GotFocus="TextBox_GotFocus"
                                 LostFocus="AnyTextBox_LostFocus" />
                         <TextBox
                                 x:Name="txtFacultyEn"
@@ -234,6 +239,7 @@
                                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
                                 Tag="English"
                                 TextWrapping="Wrap"
+                                GotFocus="TextBox_GotFocus"
                                 LostFocus="AnyTextBox_LostFocus" />
                     </Grid>
 
@@ -256,10 +262,11 @@
                                 Margin="5"
                                 materialDesign:HintAssist.Background="{StaticResource LightBackgroundColor}"
                                 materialDesign:HintAssist.FloatingScale="1"
-                                materialDesign:HintAssist.Hint="فارسی"
+                                materialDesign:HintAssist.Hint="فارسی - مثال : دانشگاه یزد"
                                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
                                 Tag="Persian"
                                 TextWrapping="Wrap" 
+                                GotFocus="TextBox_GotFocus"
                                 LostFocus="AnyTextBox_LostFocus" />
                         <TextBox
                                 x:Name="txtUniversityEn"
@@ -267,10 +274,11 @@
                                 Margin="5"
                                 materialDesign:HintAssist.Background="{StaticResource LightBackgroundColor}"
                                 materialDesign:HintAssist.FloatingScale="1"
-                                materialDesign:HintAssist.Hint="English"
+                                materialDesign:HintAssist.Hint="(English - (University of Yazd , Azad University"
                                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
                                 Tag="English"
                                 TextWrapping="Wrap"
+                                GotFocus="TextBox_GotFocus"
                                 LostFocus="AnyTextBox_LostFocus" />
                     </Grid>
 
@@ -296,6 +304,7 @@
                                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
                                 Tag="Persian"
                                 TextWrapping="Wrap"
+                                GotFocus="TextBox_GotFocus"
                                 LostFocus="AnyTextBox_LostFocus" />
                         <TextBox
                                 x:Name="txtCityEn"
@@ -307,6 +316,7 @@
                                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
                                 Tag="English"
                                 TextWrapping="Wrap"
+                                GotFocus="TextBox_GotFocus"
                                 LostFocus="AnyTextBox_LostFocus" />
                     </Grid>
 
@@ -360,6 +370,17 @@
                                     Text="Please complete the information..." />
                         </StackPanel>
                     </Border>
+
+                    <!-- ====== ✅ چک‌باکس تأیید وابستگی علمی ====== -->
+                    <CheckBox 
+                            x:Name="chkConfirmAffiliation"
+                            Margin="5,0,5,15"
+                            Content="وابستگی علمی وارد شده به برنامه مورد تأیید است"
+                            FontSize="13"
+                            FontWeight="SemiBold"
+                            Foreground="#333333"
+                            Checked="ChkConfirmAffiliation_Checked"
+                            Unchecked="ChkConfirmAffiliation_Unchecked" />      
 
                     <!-- ========================================== -->
                     <!-- بخش ۵: دکمه افزودن به لیست -->
@@ -437,14 +458,32 @@
                                     Width="3*" />
 
                             <!-- ستون عملیات - حذف -->
-                            <DataGridTemplateColumn Header="عملیات" Width="Auto" MinWidth="60">
+                            <!-- ستون عملیات - ویرایش و حذف -->
+                            <DataGridTemplateColumn Header="عملیات" Width="Auto" MinWidth="110">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
-                                        <Button 
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                            <!-- دکمه ویرایش -->
+                                            <Button 
+                                                Content="✏️" 
+                                                Width="28" 
+                                                Height="28" 
+                                                FontSize="14"
+                                                Background="#4CAF50" 
+                                                Foreground="White"
+                                                BorderThickness="0"
+                                                Cursor="Hand"
+                                                ToolTip="ویرایش"
+                                                Click="btnEditItem_Click"
+                                                Tag="{Binding}"
+                                                Margin="0,0,5,0" />
+
+                                            <!-- دکمه حذف -->
+                                            <Button 
                                                 Content="✕" 
-                                                Width="25" 
-                                                Height="25" 
-                                                FontSize="12"
+                                                Width="28" 
+                                                Height="28" 
+                                                FontSize="14"
                                                 FontWeight="Bold"
                                                 Background="#FF4444" 
                                                 Foreground="White"
@@ -452,7 +491,8 @@
                                                 Cursor="Hand"
                                                 ToolTip="حذف"
                                                 Click="btnDeleteItem_Click"
-                                                Tag="{Binding}" />
+                                                Tag="{Binding}" />  
+                                        </StackPanel>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
                             </DataGridTemplateColumn>

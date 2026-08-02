@@ -31,7 +31,7 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <!-- ====== فقط ۲ اسلاید ====== -->
+            <!-- ====== دو اسلاید ====== -->
             <materialDesign:Transitioner
                 x:Name="transitionCreateDocument"
                 Grid.Row="2"
@@ -46,7 +46,7 @@
                     <local:CreateDocumentSlide3 x:Name="createDocumentSlide3" />
                 </materialDesign:TransitionerSlide>
 
-                <!-- اسلاید 2: ساخت سند -->
+                <!-- اسلاید 2: وابستگی علمی + ساخت مقاله -->
                 <materialDesign:TransitionerSlide>
                     <materialDesign:TransitionerSlide.OpeningEffects>
                         <materialDesign:TransitionEffect Kind="FadeIn" />

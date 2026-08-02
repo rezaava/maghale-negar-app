@@ -293,6 +293,12 @@ namespace MaghaleNegar
             {
                 return true;
             }
+
+            if (control.Id == RibbonControlNames.btnChatBoxNetworking)
+            {
+                return true;
+            }
+
             else
             {
                 bool status = ribbonComponents.Where(p => p.Id == control.Id).First().Enable;
@@ -314,6 +320,12 @@ namespace MaghaleNegar
             if (control.Id == RibbonControlNames.galleryDocumentsManager)
             {
                 // گالری: فقط در صورت لاگین بودن
+                return isLoggedIn;
+            }
+
+            // ====== دکمه "مقاله‌های من": فقط در صورت لاگین بودن ======
+            if (control.Id == RibbonControlNames.btnChatBoxNetworking)
+            {
                 return isLoggedIn;
             }
 
@@ -454,7 +466,7 @@ namespace MaghaleNegar
             {
 
 
-                Globals.ThisAddIn.documentsManagerArchive();
+                Globals.ThisAddIn.documentsManager();
 
 
             }
@@ -462,7 +474,7 @@ namespace MaghaleNegar
             {
 
 
-                Globals.ThisAddIn.documentsManager();
+                Globals.ThisAddIn.documentsManagerArchive();
 
             }
 
@@ -738,7 +750,7 @@ namespace MaghaleNegar
             {
                 try
                 {
-                    System.Diagnostics.Process.Start("https://MaghaleNegar.ir/videos/4");
+                    System.Diagnostics.Process.Start("https://shivanegar.ir/videos/4");
                 }
                 catch (Exception ex)
                 {
@@ -749,7 +761,7 @@ namespace MaghaleNegar
             {
                 try
                 {
-                    System.Diagnostics.Process.Start("https://MaghaleNegar.ir/");
+                    System.Diagnostics.Process.Start("https://shivanegar.ir/");
                 }
                 catch (Exception ex)
                 {

@@ -2478,6 +2478,8 @@ namespace MaghaleNegar
                 DedicatedFunctions.ShowErrorMessage("خطایی در اعمال جایگذاری در کل سند به وجود آمده" + "\nپیغام خطا:\n" + e.Message);
             }
             frm?.closeForm(countOfChanges);
+
+            ThisAddIn.LastCountOfChanges = countOfChanges;
         }
         internal static void StringCorrection(LoadingForm frm, Microsoft.Office.Interop.Word.Document doc, List<SearchReplaceModel> correctionModels)
         {
@@ -2643,6 +2645,9 @@ namespace MaghaleNegar
                 }
             }
             frm?.closeForm(countOfChanges);
+
+            ThisAddIn.LastCountOfChanges = countOfChanges;
+
         }
 
         #endregion

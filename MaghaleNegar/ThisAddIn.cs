@@ -182,6 +182,9 @@ namespace MaghaleNegar
         public bool ChangeContentFormVisible { get; set; } = false;
 
 
+        public static int LastCountOfChanges { get; set; } = 0;
+
+
         //Server
         public bool ManualyDisableServer { get; set; } = false;
 
@@ -1262,10 +1265,10 @@ namespace MaghaleNegar
                     }
                 }
             }
-            else if (accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
-            {
-                DedicatedFunctions.ShowMessage(DialogBoxMessages.RequiredDedicatedDocument);
-            }
+            //else if (accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
+            //{
+            //    DedicatedFunctions.ShowMessage(DialogBoxMessages.RequiredDedicatedDocument);
+            //}
         }
         public void changeContent()
         {
@@ -1309,10 +1312,10 @@ namespace MaghaleNegar
                     DedicatedFunctions.ShowErrorMessage(e.Message);
                 }
             }
-            else if (accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
-            {
-                DedicatedFunctions.ShowMessage(DialogBoxMessages.RequiredDedicatedDocument);
-            }
+            //else if (accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
+            //{
+            //    DedicatedFunctions.ShowMessage(DialogBoxMessages.RequiredDedicatedDocument);
+            //}
         }
         public void addRemovePages()
         {
@@ -1334,10 +1337,10 @@ namespace MaghaleNegar
                 AddRemovePagesForm addRemovePagesForm = new AddRemovePagesForm(doc);
                 addRemovePagesForm.ShowDialog();
             }
-            else if (accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
-            {
-                DedicatedFunctions.ShowMessage(DialogBoxMessages.RequiredDedicatedDocument);
-            }
+            //else if (accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
+            //{
+            //    DedicatedFunctions.ShowMessage(DialogBoxMessages.RequiredDedicatedDocument);
+            //}
 
         }
 
@@ -1827,6 +1830,9 @@ namespace MaghaleNegar
                     loadingForm.ShowDialog();
                     Globals.ThisAddIn.Application.UndoRecord.EndCustomRecord();
 
+                    int countOfChanges = ThisAddIn.LastCountOfChanges;
+                    
+
                     ShowReviewFormAfterEditing();
 
                     // ====== پایان Track Changes ======
@@ -1909,6 +1915,9 @@ namespace MaghaleNegar
                     }
                     loadingForm.ShowDialog();
                     Globals.ThisAddIn.Application.UndoRecord.EndCustomRecord();
+
+                    int countOfChanges = ThisAddIn.LastCountOfChanges;
+                    
 
                     ShowReviewFormAfterEditing();
 
@@ -2010,6 +2019,8 @@ namespace MaghaleNegar
 
                     loadingForm.ShowDialog();
                     Globals.ThisAddIn.Application.UndoRecord.EndCustomRecord();
+
+                    int countOfChanges = ThisAddIn.LastCountOfChanges;
 
                     ShowReviewFormAfterEditing();
 
@@ -2120,6 +2131,9 @@ namespace MaghaleNegar
                     }
                     loadingForm.ShowDialog();
                     Globals.ThisAddIn.Application.UndoRecord.EndCustomRecord();
+
+                    int countOfChanges = ThisAddIn.LastCountOfChanges;
+
 
                     ShowReviewFormAfterEditing();
 
@@ -2685,10 +2699,10 @@ namespace MaghaleNegar
                     }
                 }
             }
-            else if (accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
-            {
-                DedicatedFunctions.ShowMessage(DialogBoxMessages.RequiredDedicatedDocument);
-            }
+            //else if (accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
+            //{
+            //    DedicatedFunctions.ShowMessage(DialogBoxMessages.RequiredDedicatedDocument);
+            //}
         }
         public void exportAsGrayscale()
         {
@@ -3210,16 +3224,18 @@ namespace MaghaleNegar
                 return;
             }
             DedicatedFunctions.AccessType accessType = DedicatedFunctions.hasAccess(doc);
-            if (accessType == DedicatedFunctions.AccessType.AccessGranted)
+
+            // ====== هر دو حالت دسترسی را قبول کن ======
+            if (accessType == DedicatedFunctions.AccessType.AccessGranted ||
+                accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
             {
-                FormatSettingsForm form = new FormatSettingsForm(Globals.ThisAddIn.Application.ActiveDocument, accessType);
+                FormatSettingsForm form = new FormatSettingsForm(doc, accessType);
                 form.ShowDialog();
             }
-            else if (accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
+            else
             {
-                DedicatedFunctions.ShowMessage(DialogBoxMessages.RequiredDedicatedDocument);
+                DedicatedFunctions.ShowMessage("شما دسترسی لازم برای این عملیات را ندارید.");
             }
-
         }
         public void captionSettings()
         {
@@ -3233,16 +3249,13 @@ namespace MaghaleNegar
                 return;
             }
             DedicatedFunctions.AccessType accessType = DedicatedFunctions.hasAccess(doc);
-            if (accessType == DedicatedFunctions.AccessType.AccessGranted)
+
+            if (accessType == DedicatedFunctions.AccessType.AccessGranted ||
+                accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
             {
-                CaptionsReferSettingsForm form = new CaptionsReferSettingsForm(Globals.ThisAddIn.Application.ActiveDocument);
+                CaptionsReferSettingsForm form = new CaptionsReferSettingsForm(doc);
                 form.Show();
             }
-            else if (accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
-            {
-                DedicatedFunctions.ShowMessage(DialogBoxMessages.RequiredDedicatedDocument);
-            }
-
         }
         public void virastarSettings()
         {
@@ -3279,16 +3292,13 @@ namespace MaghaleNegar
                 return;
             }
             DedicatedFunctions.AccessType accessType = DedicatedFunctions.hasAccess(doc);
-            if (accessType == DedicatedFunctions.AccessType.AccessGranted)
+
+            if (accessType == DedicatedFunctions.AccessType.AccessGranted ||
+                accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
             {
-                FootnoteSettingsForm form = new FootnoteSettingsForm(Globals.ThisAddIn.Application.ActiveDocument);
+                FootnoteSettingsForm form = new FootnoteSettingsForm(doc);
                 form.ShowDialog();
             }
-            else if (accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
-            {
-                DedicatedFunctions.ShowMessage(DialogBoxMessages.RequiredDedicatedDocument);
-            }
-
         }
         public void listsManagerSettings()
         {
@@ -3302,16 +3312,13 @@ namespace MaghaleNegar
                 return;
             }
             DedicatedFunctions.AccessType accessType = DedicatedFunctions.hasAccess(doc);
-            if (accessType == DedicatedFunctions.AccessType.AccessGranted)
+
+            if (accessType == DedicatedFunctions.AccessType.AccessGranted ||
+                accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
             {
-                DocumentSettingsForm form = new DocumentSettingsForm(Globals.ThisAddIn.Application.ActiveDocument);
+                DocumentSettingsForm form = new DocumentSettingsForm(doc);
                 form.ShowDialog();
             }
-            else if (accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
-            {
-                DedicatedFunctions.ShowMessage(DialogBoxMessages.RequiredDedicatedDocument);
-            }
-
         }
         public void citationSettings()
         {
@@ -3325,14 +3332,12 @@ namespace MaghaleNegar
                 return;
             }
             DedicatedFunctions.AccessType accessType = DedicatedFunctions.hasAccess(doc);
-            if (accessType == DedicatedFunctions.AccessType.AccessGranted)
+
+            if (accessType == DedicatedFunctions.AccessType.AccessGranted ||
+                accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
             {
-                CitationSettingsForm form = new CitationSettingsForm(Globals.ThisAddIn.Application.ActiveDocument, accessType);
+                CitationSettingsForm form = new CitationSettingsForm(doc, accessType);
                 form.ShowDialog();
-            }
-            else if (accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
-            {
-                DedicatedFunctions.ShowMessage(DialogBoxMessages.RequiredDedicatedDocument);
             }
         }
         #endregion
@@ -3353,6 +3358,8 @@ namespace MaghaleNegar
             {
                 Document doc = Globals.ThisAddIn.Application.ActiveDocument;
                 if (doc == null || doc.Revisions.Count == 0) return;
+
+                int countOfChanges = ThisAddIn.LastCountOfChanges;
 
                 // ====== نمایش کلمه ویرایش شده ======
                 ShowCurrentRevision(doc);
@@ -3381,7 +3388,7 @@ namespace MaghaleNegar
 
                 // عنوان با شمارش تعداد ویرایش‌ها
                 Label lblTitle = new Label();
-                lblTitle.Text = $"تایید ویرایش‌ها ({doc.Revisions.Count} مورد)";
+                lblTitle.Text = $"تایید ویرایش‌ها ({countOfChanges} مورد)";
                 lblTitle.Font = new System.Drawing.Font("Tahoma", 11, FontStyle.Bold);
                 lblTitle.ForeColor = Color.FromArgb(0, 122, 193);
                 lblTitle.TextAlign = ContentAlignment.MiddleCenter;
@@ -3456,7 +3463,7 @@ namespace MaghaleNegar
                             doc.Revisions[1].Accept();
 
                             // بروزرسانی عنوان
-                            lblTitle.Text = $"تایید ویرایش‌ها ({doc.Revisions.Count} مورد)";
+                            lblTitle.Text = $"تایید ویرایش‌ها ({countOfChanges} مورد)";
                         }
 
                         // نمایش ویرایش بعدی (اگه وجود داشته باشه)
@@ -3513,7 +3520,7 @@ namespace MaghaleNegar
                         {
                             ShowCurrentRevision(doc);
                             doc.Revisions[1].Reject();
-                            lblTitle.Text = $"تایید ویرایش‌ها ({doc.Revisions.Count} مورد)";
+                            lblTitle.Text = $"تایید ویرایش‌ها ({countOfChanges} مورد)";
                         }
 
                         if (doc.Revisions.Count > 0)

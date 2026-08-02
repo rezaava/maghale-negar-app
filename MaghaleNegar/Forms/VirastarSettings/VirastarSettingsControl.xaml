@@ -110,37 +110,40 @@
                                 <Grid Style="{StaticResource SectionHeaderStyle}">
                                     <Border Style="{StaticResource HeaderLineStyle}" Margin="48,0,0,0"/>
                                     <TextBlock
-                                        Text="ویراستار"
-                                        Style="{StaticResource HeaderTextStyle}" Margin="-1,0,0,0"/>
+            Text="ویراستار"
+            Style="{StaticResource HeaderTextStyle}" Margin="-1,0,0,0"/>
                                 </Grid>
 
                                 <StackPanel Margin="15,10">
                                     <StackPanel
-                                        Margin="0,0,0,15"
-                                        HorizontalAlignment="Left"
-                                        Orientation="Horizontal">
+            Margin="0,0,0,15"
+            HorizontalAlignment="Left"
+            Orientation="Horizontal">
                                         <ToggleButton
-                                            x:Name="tbtnIncludeHalfSpaceCorrectionFootnote"
-                                            Margin="0,0,15,0"
-                                            UseLayoutRounding="False"
-                                            FlowDirection="LeftToRight" />
+                x:Name="tbtnIncludeHalfSpaceCorrectionFootnote"
+                Margin="0,0,15,0"
+                UseLayoutRounding="False"
+                FlowDirection="LeftToRight" />
                                         <TextBlock VerticalAlignment="Center" Text="اصلاح نیم فاصله در پانویس ها" />
                                     </StackPanel>
 
                                     <StackPanel
-                                        Margin="0,0,0,15"
-                                        HorizontalAlignment="Left"
-                                        Orientation="Horizontal">
+            Margin="0,0,0,15"
+            HorizontalAlignment="Left"
+            Orientation="Horizontal">
                                         <ToggleButton
-                                            x:Name="tbtnIncludeHalfSpaceCorrectionHeadersFooters"
-                                            Margin="0,0,15,0"
-                                            UseLayoutRounding="False"
-                                            VerticalAlignment="Top"
-                                            FlowDirection="LeftToRight" />
+                x:Name="tbtnIncludeHalfSpaceCorrectionHeadersFooters"
+                Margin="0,0,15,0"
+                UseLayoutRounding="False"
+                VerticalAlignment="Top"
+                FlowDirection="LeftToRight" />
                                         <TextBlock Text="اصلاح نیم فاصله در سرصفحه و پاصفحه" />
                                     </StackPanel>
 
-                                    <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                                    <StackPanel
+            Margin="0,0,0,15"
+            HorizontalAlignment="Left"
+            Orientation="Horizontal">
                                         <StackPanel.ToolTip>
                                             <StackPanel>
                                                 <TextBlock Text="؟؟؟؟؟" />
@@ -149,23 +152,46 @@
                                         </StackPanel.ToolTip>
 
                                         <ToggleButton
-                                            x:Name="tbtnIncludeHalfSpaceCorrectionSpecialFields"
-                                            Margin="0,0,15,0"
-                                            VerticalAlignment="Top"
-                                            UseLayoutRounding="False"
-                                            FlowDirection="LeftToRight" />
+                x:Name="tbtnIncludeHalfSpaceCorrectionSpecialFields"
+                Margin="0,0,15,0"
+                VerticalAlignment="Top"
+                UseLayoutRounding="False"
+                FlowDirection="LeftToRight" />
                                         <StackPanel Orientation="Horizontal">
                                             <TextBlock Margin="0,0,2,0" Text="اصلاح نیم فاصله در فیلد های خاص" />
                                             <materialDesign:PackIcon
-                                                VerticalAlignment="Center"
-                                                Foreground="{StaticResource PrimaryBackgroundColor}"
-                                                Kind="QuestionMarkBox"
-                                                UseLayoutRounding="False" />
+                    VerticalAlignment="Center"
+                    Foreground="{StaticResource PrimaryBackgroundColor}"
+                    Kind="QuestionMarkBox"
+                    UseLayoutRounding="False" />
+                                        </StackPanel>
+                                    </StackPanel>
+
+                                    <!-- ====== ✅ گزینه جدید با فاصله مناسب ====== -->
+                                    <StackPanel
+            Margin="0,0,0,15"
+            HorizontalAlignment="Left"
+            Orientation="Horizontal">
+                                        <ToggleButton
+                x:Name="tbtnShowTrackChanges"
+                Margin="0,0,15,0"
+                VerticalAlignment="Top"
+                UseLayoutRounding="False"
+                FlowDirection="LeftToRight"
+                IsChecked="True"
+                IsEnabled="False" />
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Margin="0,0,2,0" Text="ویرایش‌ها نشانه‌گذاری شده و به کاربر نمایش داده شوند." />
+                                            <materialDesign:PackIcon
+                    VerticalAlignment="Center"
+                    Foreground="{StaticResource PrimaryBackgroundColor}"
+                    Kind="QuestionMarkBox"
+                    UseLayoutRounding="False"
+                    ToolTip="با فعال بودن این گزینه، تغییرات اعمال شده توسط ویراستار به صورت Track Changes نمایش داده می‌شود و کاربر می‌تواند هر تغییر را تأیید یا رد کند." />
                                         </StackPanel>
                                     </StackPanel>
                                 </StackPanel>
                             </StackPanel>
-
                             <!-- تبدیل عدد Section -->
                             <StackPanel Margin="0,15">
                                 <!-- Header with legend effect -->

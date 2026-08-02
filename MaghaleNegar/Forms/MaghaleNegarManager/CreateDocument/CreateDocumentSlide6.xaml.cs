@@ -16,6 +16,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
     {
         public int Index { get; set; }
         public string AuthorName { get; set; }
+        public string AuthorNameEn { get; set; }
         public string AffiliationFa { get; set; }
         public string AffiliationEn { get; set; }
     }
@@ -29,10 +30,13 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
 
         // متغیرها
         private List<string> authorNames = new List<string>();
+        private List<string> authorNamesEn = new List<string>();
         private string selectedUniversityType = "";
         private string _titleEn = "";
         private string _titleFa = "";
         private List<InfoListItem> infoList = new List<InfoListItem>();
+        private bool isEditingListItem = false;
+        private InfoListItem editingListItem = null;
 
         public CreateDocumentSlide6()
         {
@@ -45,10 +49,12 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
 
         public void initializeVariables(
             List<string> authorNames,
+            List<string> authorNamesEn,
             string titleEn,
-            string titleFa) 
+            string titleFa)
         {
             this.authorNames = authorNames ?? new List<string>();
+            this.authorNamesEn = authorNamesEn ?? new List<string>();
             this._titleEn = titleEn ?? "";
             this._titleFa = titleFa ?? "";
 
@@ -155,6 +161,17 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
             gridUniversity.Visibility = Visibility.Visible;
         }
 
+        private void ChkConfirmAffiliation_Checked(object sender, RoutedEventArgs e)
+        {
+            ValidateControls();
+        }
+
+        private void ChkConfirmAffiliation_Unchecked(object sender, RoutedEventArgs e)
+        {
+            ValidateControls();
+        }
+
+
         #endregion
 
         #region ساخت نام فایل
@@ -220,6 +237,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
             string faculty = txtFacultyFa.Text.Trim();
             string university = txtUniversityFa.Text.Trim();
             string city = txtCityFa.Text.Trim();
+            string email = GetResponsibleAuthorEmail();
 
             if (string.IsNullOrEmpty(selectedUniversityType))
             {
@@ -228,11 +246,11 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
 
             if (selectedUniversityType == "Azad")
             {
-                return $"{degree}، گروه {group}، واحد {faculty}، دانشگاه آزاد اسلامی {city}، ایران";
+                return $"{degree}،گروه {group}،واحد {faculty}،دانشگاه آزاد اسلامی {city}،ایران ({email})";
             }
             else // Dolati
             {
-                return $"{degree}، گروه {group}، دانشکده {faculty} ... دانشگاه {university} ... {city}، ایران";
+                return $"{degree}،گروه {group}،دانشکده {faculty}،{university}،{city}،ایران ({email})";
             }
         }
 
@@ -253,11 +271,11 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
 
             if (selectedUniversityType == "Azad")
             {
-                return $"{degree}, Department of {group}, {faculty} Branch, Islamic Azad University, {city}, Iran ({email})";
+                return $"{degree},Department of {group},{faculty}Branch,Islamic Azad University, {city},({email}) Iran";
             }
             else // Dolati
             {
-                return $"{degree}, Department of {group}, Faculty of {faculty}, University of {university}, {city}, Iran ({email})";
+                return $"{degree},Department of {group},Faculty of {faculty},{university} e.g. Islamic,{city},({email}) Iran";
             }
         }
 
@@ -275,9 +293,42 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
         {
             try
             {
-                string authorName = cmbNameList.SelectedItem?.ToString() ?? "";
-                string affiliationFa = txtAcademicDegreeFa.Text.Trim();
-                string affiliationEn = txtAcademicDegreeEn.Text.Trim();
+                int selectedIndex = cmbNameList.SelectedIndex;
+                string authorName = "";
+                string authorNameEn = "";
+
+                // ====== دریافت نام فارسی و انگلیسی از لیست‌ها ======
+                if (selectedIndex >= 0 && selectedIndex < authorNames.Count)
+                {
+                    authorName = authorNames[selectedIndex];
+
+                    // ====== ✅ نام انگلیسی رو از لیست بگیر ======
+                    if (selectedIndex < authorNamesEn.Count)
+                    {
+                        authorNameEn = authorNamesEn[selectedIndex];
+                    }
+                    else
+                    {
+                        authorNameEn = authorName;  // اگر نبود، همون فارسی رو بذار
+                    }
+                }
+
+                // حذف ایمیل از نام نویسنده (فارسی)
+                int start = authorName.IndexOf('(');
+                if (start != -1)
+                {
+                    authorName = authorName.Substring(0, start).Trim();
+                }
+
+                // حذف ایمیل از نام انگلیسی (اگر باشه)
+                int startEn = authorNameEn.IndexOf('(');
+                if (startEn != -1)
+                {
+                    authorNameEn = authorNameEn.Substring(0, startEn).Trim();
+                }
+
+                string affiliationFa = GetPreviewTextFa();
+                string affiliationEn = GetPreviewTextEn();
 
                 if (string.IsNullOrEmpty(authorName))
                 {
@@ -294,10 +345,56 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                     return;
                 }
 
+                // ====== ✅ اگر در حالت ویرایش هستیم ======
+                if (isEditingListItem && editingListItem != null)
+                {
+                    // بررسی تکراری بودن (به جز خود آیتم)
+                    bool isDuplicate = infoList.Any(a => a.AuthorName == authorName && a != editingListItem);
+                    if (isDuplicate)
+                    {
+                        MessageBox.Show($"⚠️ نویسنده '{authorName}' قبلاً به لیست اضافه شده است.",
+                            "تکرار", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        return;
+                    }
+
+                    // به‌روزرسانی آیتم
+                    editingListItem.AuthorName = authorName;
+                    editingListItem.AuthorNameEn = authorNameEn;  // ← انگلیسی
+                    editingListItem.AffiliationFa = affiliationFa;
+                    editingListItem.AffiliationEn = affiliationEn;
+
+                    // اضافه کردن به لیست
+                    infoList.Add(editingListItem);
+
+                    // بازگشت به حالت عادی
+                    isEditingListItem = false;
+                    editingListItem = null;
+                    btnAddToList.Content = "➕ افزودن به لیست";
+
+                    RefreshDataGrid();
+                    ClearFields();
+                    ValidateControls();
+
+                    MessageBox.Show($"✅ اطلاعات نویسنده '{authorName}' با موفقیت ویرایش شد.", "موفق",
+                        MessageBoxButton.OK, MessageBoxImage.Information);
+                    return;
+                }
+
+                // ====== ✅ حالت عادی - افزودن جدید ======
+                // بررسی اینکه نویسنده قبلاً در لیست وجود ندارد
+                bool isAuthorExists = infoList.Any(a => a.AuthorName == authorName);
+                if (isAuthorExists)
+                {
+                    MessageBox.Show($"⚠️ نویسنده '{authorName}' قبلاً به لیست اضافه شده است.",
+                        "تکرار", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
                 var newItem = new InfoListItem
                 {
                     Index = infoList.Count + 1,
                     AuthorName = authorName,
+                    AuthorNameEn = authorNameEn,  // ← انگلیسی
                     AffiliationFa = affiliationFa,
                     AffiliationEn = affiliationEn
                 };
@@ -354,7 +451,6 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
 
         private void ClearFields()
         {
-            // ====== فقط فیلدهای دانشگاهی پاک شوند، کامبوباکس نویسنده دست نخورد ======
             chkAzad.IsChecked = false;
             chkDolati.IsChecked = false;
             selectedUniversityType = "";
@@ -368,6 +464,14 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
             txtUniversityEn.Text = "";
             txtCityFa.Text = "";
             txtCityEn.Text = "";
+
+            chkConfirmAffiliation.IsChecked = false;
+
+            // ====== اگر در حالت ویرایش نیستیم، کامبوباکس ریست شود ======
+            if (!isEditingListItem)
+            {
+                cmbNameList.SelectedIndex = -1;
+            }
 
             SetDefaultUniversityState();
             UpdatePreview();
@@ -440,11 +544,11 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
 
                 //try
                 //{
-                    // ====== 3. ایجاد سند جدید ======
-                    Document newDoc = wordApp.Documents.Add(templatePath);
+                // ====== 3. ایجاد سند جدید ======
+                Document newDoc = wordApp.Documents.Add(templatePath);
 
-                    // ====== 3.5. جاگذاری اطلاعات ======
-                    FillDocumentContent(newDoc);
+                // ====== 3.5. جاگذاری اطلاعات ======
+                FillDocumentContent(newDoc);
 
                 // ====== 4. ذخیره ======
                 string workspacePath = Properties.Settings.Default.WorkSpaceDirectory;
@@ -518,10 +622,10 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                 Ribbon.RibbonControlsVisibility(true);
 
                 // ====== 10. نمایش پیام موفقیت ======
-                MessageBox.Show("✅ مقاله با موفقیت ایجاد شد!", "موفق",
-                    MessageBoxButton.OK, MessageBoxImage.Information);
+                //MessageBox.Show("✅ مقاله با موفقیت ایجاد شد!", "موفق",
+                //    MessageBoxButton.OK, MessageBoxImage.Information);
 
-                TransitionMoveNextCommand?.Invoke();
+                //TransitionMoveNextCommand?.Invoke();
             }
             catch (Exception ex)
             {
@@ -546,10 +650,10 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
             {
                 doc.Content.LanguageID = WdLanguageID.wdPersian;
 
-                doc.PageSetup.TopMargin = Globals.ThisAddIn.Application.CentimetersToPoints(2.5f);
+                doc.PageSetup.TopMargin = Globals.ThisAddIn.Application.CentimetersToPoints(4.5f);
                 doc.PageSetup.BottomMargin = Globals.ThisAddIn.Application.CentimetersToPoints(2.5f);
                 doc.PageSetup.LeftMargin = Globals.ThisAddIn.Application.CentimetersToPoints(2.5f);
-                doc.PageSetup.RightMargin = Globals.ThisAddIn.Application.CentimetersToPoints(2.5f);
+                doc.PageSetup.RightMargin = Globals.ThisAddIn.Application.CentimetersToPoints(4.9f);
 
                 DedicatedFunctions.addVariable(doc, VariableIdentifierIDs._variable_id_GUID.ToString(), StringConstant.GUID);
                 DedicatedFunctions.addVariable(doc, VariableTypeIDs._variable_type_Document.ToString(), ((int)DocumentTypes.Nothing).ToString());
@@ -593,6 +697,13 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
             txtUniversityEn.Text = "";
             txtCityFa.Text = "";
             txtCityEn.Text = "";
+
+            chkConfirmAffiliation.IsChecked = false;
+
+            // ====== ریست حالت ویرایش ======
+            isEditingListItem = false;
+            editingListItem = null;
+            btnAddToList.Content = "➕ افزودن به لیست";
 
             SetDefaultUniversityState();
             RefreshDataGrid();
@@ -656,20 +767,22 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
             if (string.IsNullOrEmpty(txtCityEn.Text))
                 isValid = false;
 
+            // ====== بررسی چک‌باکس تأیید ======
+            if (isValid && chkConfirmAffiliation.IsChecked != true)
+                isValid = false;
+
             // ====== دکمه افزودن به لیست ======
             btnAddToList.IsEnabled = isValid;
 
             // ====== دکمه ایجاد مقاله ======
             btnForward.IsEnabled = infoList.Count > 0;
 
-            // ====== به‌روزرسانی پیش‌نمایش ======
             UpdatePreview();
 
-            // ====== به‌روزرسانی وضعیت ======
             if (infoList.Count > 0)
                 UpdateStatus($"✅ {infoList.Count} نویسنده به لیست اضافه شد! آماده ایجاد مقاله.", "#2E7D32");
             else if (isValid)
-                UpdateStatus("✅ تمام اطلاعات تکمیل شد! روی 'افزودن به لیست' کلیک کنید.", "#2196F3");
+                UpdateStatus("✅ تمام اطلاعات تکمیل شد! تأیید کنید و روی 'افزودن به لیست' کلیک کنید.", "#2196F3");
             else
                 UpdateStatus("⚠️ لطفاً تمام فیلدها را تکمیل کنید.", "#FF9800");
         }
@@ -693,11 +806,19 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                 string titleFa = _titleFa; // از اسلاید ۳ بگیر
                 SetContentControlText(doc, "TitleFa", titleFa);
 
+                // ====== 2. عنوان مقاله (انگلیسی) ======
+                string titleEn = _titleEn;
+                SetContentControlText(doc, "TitleEn", titleEn);
+
                 // ====== 2. نام نویسنده‌ها (فارسی) ======
                 string allAuthorsFa = string.Join("، ", infoList.Select(a => a.AuthorName));
                 SetContentControlText(doc, "AuthorNamesFa", allAuthorsFa);
 
-                
+                // ====== 4. نام نویسنده‌ها (انگلیسی) ======
+                string allAuthorsEn = string.Join(", ", infoList.Select(a => a.AuthorNameEn));
+                SetContentControlText(doc, "AuthorNamesEn", allAuthorsEn);
+
+
             }
             catch (Exception ex)
             {
@@ -726,5 +847,286 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                 Debug.WriteLine($"خطا در SetContentControlText برای {tag}: {ex.Message}");
             }
         }
+
+
+        #region TextBox Events
+
+        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox == null) return;
+
+            string tag = textBox.Tag?.ToString() ?? "";
+
+            if (!string.IsNullOrEmpty(tag.Trim()))
+            {
+                if (tag == "Persian")
+                    DedicatedFunctions.changeKeyboardLanguage(KeyboardLanguage.Persian);
+                else if (tag == "English")
+                    DedicatedFunctions.changeKeyboardLanguage(KeyboardLanguage.English);
+            }
+        }
+
+        #endregion
+
+        #region btnEdit
+
+        private void btnEditItem_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Button btn = sender as Button;
+                var item = btn?.Tag as InfoListItem;
+
+                if (item == null || !infoList.Contains(item))
+                    return;
+
+                // ====== تنظیم حالت ویرایش ======
+                isEditingListItem = true;
+                editingListItem = item;
+
+                // ====== 1. پر کردن کامبوباکس نویسنده ======
+                int index = authorNames.IndexOf(item.AuthorName);
+                if (index >= 0)
+                    cmbNameList.SelectedIndex = index;
+
+                // ====== 2. تجزیه و پر کردن فیلدهای دانشگاهی از وابستگی علمی فارسی ======
+                ParseAndFillFields(item.AffiliationFa, item.AffiliationEn);
+
+                // ====== 3. حذف آیتم از لیست ======
+                infoList.Remove(item);
+                RefreshDataGrid();
+
+                // ====== 4. غیرفعال کردن چک‌باکس تأیید ======
+                chkConfirmAffiliation.IsChecked = false;
+
+                // ====== 5. تغییر متن دکمه افزودن ======
+                btnAddToList.Content = "✏️ ویرایش اطلاعات";
+
+                // ====== 6. فوکوس روی کامبوباکس ======
+                cmbNameList.Focus();
+
+                ValidateControls();
+
+                MessageBox.Show($"آیتم '{item.AuthorName}' برای ویرایش انتخاب شد. پس از ویرایش، روی 'ویرایش اطلاعات' کلیک کنید.",
+                    "ویرایش", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"خطا در ویرایش: {ex.Message}", "خطا",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+
+
+        private void ParseAndFillFields(string affiliationFa, string affiliationEn)
+        {
+            try
+            {
+                // ============================================================
+                // بخش 1: تشخیص نوع دانشگاه
+                // ============================================================
+                if (affiliationFa.Contains("دانشگاه آزاد اسلامی"))
+                {
+                    chkAzad.IsChecked = true;
+                    selectedUniversityType = "Azad";
+                    SetAzadUniversityState();
+                }
+                else
+                {
+                    chkDolati.IsChecked = true;
+                    selectedUniversityType = "Dolati";
+                    SetDolatiUniversityState();
+                }
+
+
+                // ============================================================
+                // بخش 2: تجزیه متن فارسی
+                // ============================================================
+                string[] parts = affiliationFa.Split(new[] { '،' }, StringSplitOptions.RemoveEmptyEntries);
+
+                if (parts.Length >= 3)
+                {
+                    // ---- 2-1: مقطع تحصیلی (اولین بخش) ----
+                    txtAcademicDegreeFa.Text = parts[0].Trim();
+
+
+                    // ---- 2-2: پیدا کردن گروه ----
+                    foreach (var part in parts)
+                    {
+                        if (part.Contains("گروه"))
+                        {
+                            txtGroupFa.Text = part.Replace("گروه", "").Trim();
+                            break;
+                        }
+                    }
+
+
+                    // ---- 2-3: پیدا کردن دانشکده/واحد ----
+                    foreach (var part in parts)
+                    {
+                        if (part.Contains("واحد") || part.Contains("دانشکده"))
+                        {
+                            if (selectedUniversityType == "Azad")
+                            {
+                                txtFacultyFa.Text = part.Replace("واحد", "").Trim();
+                            }
+                            else
+                            {
+                                txtFacultyFa.Text = part.Replace("دانشکده", "").Trim();
+                            }
+                            break;
+                        }
+                    }
+
+
+                    // ---- 2-4: پیدا کردن دانشگاه ----
+                    // ✅ اصلاح: "دانشگاه یزد" را به صورت کامل نگه دار
+                    foreach (var part in parts)
+                    {
+                        if (part.Contains("دانشگاه"))
+                        {
+                            string uni = part;
+
+                            // حذف "دانشگاه آزاد اسلامی" و تبدیل به "دانشگاه"
+                            uni = uni.Replace("دانشگاه آزاد اسلامی", "دانشگاه");
+
+                            // حذف ویرگول‌های اضافی
+                            uni = uni.TrimStart('،').TrimEnd('،').Trim();
+
+                            // اگر "دانشگاه" بدون اسم بود، خالی بذار
+                            txtUniversityFa.Text = uni == "دانشگاه" ? "" : uni;
+                            break;
+                        }
+                    }
+
+
+                    // ---- 2-5: پیدا کردن شهر ----
+                    // ✅ اصلاح: از انتها شروع کن و اولین بخشی که کلمه کلیدی نداشت رو به عنوان شهر بگیر
+                    string city = "";
+                    for (int i = parts.Length - 2; i >= 0; i--)  // از یکی قبل از "ایران" شروع کن
+                    {
+                        string part = parts[i].Trim();
+
+                        // اگر بخش شامل کلمات کلیدی نبود، به عنوان شهر در نظر بگیر
+                        if (!part.Contains("گروه") && !part.Contains("واحد") &&
+                            !part.Contains("دانشکده") && !part.Contains("دانشگاه") &&
+                            !part.Contains("استادیار") && !part.Contains("دانشیار") &&
+                            !part.Contains("استاد") && !part.Contains("ایران") &&
+                            !part.Contains("کارشناسی") && !part.Contains("ارشد") &&    
+                            !part.Contains("دکتری") && !part.Contains("پسادکتری"))     
+                        {
+                            city = part;
+                            break;
+                        }
+                    }
+                    txtCityFa.Text = city;
+                }
+
+
+                // ============================================================
+                // بخش 3: تجزیه متن انگلیسی
+                // ============================================================
+                string[] enParts = affiliationEn.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+
+                if (enParts.Length >= 3)
+                {
+                    // ---- 3-1: مقطع تحصیلی (اولین بخش) ----
+                    txtAcademicDegreeEn.Text = enParts[0].Trim();
+
+
+                    // ---- 3-2: پیدا کردن گروه ----
+                    foreach (var part in enParts)
+                    {
+                        if (part.Contains("Department of"))
+                        {
+                            txtGroupEn.Text = part.Replace("Department of", "").Trim();
+                            break;
+                        }
+                    }
+
+
+                    // ---- 3-3: پیدا کردن دانشکده/واحد ----
+                    foreach (var part in enParts)
+                    {
+                        if (part.Contains("Branch") || part.Contains("Faculty of"))
+                        {
+                            if (selectedUniversityType == "Azad")
+                            {
+                                txtFacultyEn.Text = part.Replace("Branch", "").Trim();
+                            }
+                            else
+                            {
+                                txtFacultyEn.Text = part.Replace("Faculty of", "").Trim();
+                            }
+                            break;
+                        }
+                    }
+
+
+                    // ---- 3-4: پیدا کردن دانشگاه ----
+                    foreach (var part in enParts)
+                    {
+                        if (part.ToLower().Contains("university"))
+                        {
+                            string uni = part.Replace("Islamic Azad University", "").Trim();
+
+                            // فقط قبل از "e.g." رو بگیر
+                            int egIndex = uni.IndexOf("e.g.");
+                            if (egIndex != -1)
+                            {
+                                uni = uni.Substring(0, egIndex).Trim();
+                            }
+                            else
+                            {
+                                int egIndex2 = uni.IndexOf("e.g");
+                                if (egIndex2 != -1)
+                                {
+                                    uni = uni.Substring(0, egIndex2).Trim();
+                                }
+                            }
+
+                            txtUniversityEn.Text = uni;
+                            break;
+                        }
+                    }
+
+
+                    // ---- 3-5: پیدا کردن شهر ----
+                    // ✅ اصلاح: از انتها شروع کن و اولین بخشی که کلمه کلیدی نداشت رو به عنوان شهر بگیر
+                    string cityEn = "";
+                    for (int i = enParts.Length - 2; i >= 0; i--)
+                    {
+                        string part = enParts[i].Trim();
+
+                        // اگر بخش شامل کلمات کلیدی نبود، به عنوان شهر در نظر بگیر
+                        if (!part.Contains("Department") && !part.Contains("Branch") &&
+                            !part.Contains("Faculty") && !part.Contains("University") &&
+                            !part.Contains("Professor") && !part.Contains("Iran") &&
+                            !part.Contains("of") && !part.Contains("Azad") &&
+                            !part.Contains("Bachelor") && !part.Contains("Master") &&   
+                            !part.Contains("PhD") && !part.Contains("Doctoral"))         
+                        {
+                            cityEn = part;
+                            break;
+                        }
+                    }
+                    txtCityEn.Text = cityEn;
+                }
+
+
+                // ============================================================
+                // بخش 4: به‌روزرسانی پیش‌نمایش
+                // ============================================================
+                UpdatePreview();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"خطا در ParseAndFillFields: {ex.Message}");
+            }
+        }
+
+        #endregion
     }
 }

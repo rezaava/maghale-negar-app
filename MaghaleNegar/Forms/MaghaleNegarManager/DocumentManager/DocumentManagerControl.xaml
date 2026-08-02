@@ -224,50 +224,8 @@
                                         Margin="10,0,0,0"
                                         VerticalAlignment="Center"
                                         FontSize="18"
-                                        Text="اسناد جاری" />
+                                        Text="مقاله های جاری" />
                                 </StackPanel>
-                            </Viewbox>
-                        </Button>
-
-                        <Button
-                            x:Name="radioBtnNetworking"
-                            Grid.Row="2"
-                            Margin="0,5"
-                            Padding="15,10,15,10"
-                            HorizontalContentAlignment="Left"
-                            VerticalContentAlignment="Center"
-                            d:Height="45"
-                            Background="#007ac1"
-                            Command="{Binding NetworkingCommand}"
-                            Foreground="White">
-                            <Button.Style>
-                                <Style BasedOn="{StaticResource MaterialDesignFlatDarkBgButton}" TargetType="Button">
-                                    <Setter Property="Height" Value="Auto" />
-                                </Style>
-                            </Button.Style>
-
-                            <Viewbox StretchDirection="DownOnly">
-                                <materialDesign:Badged
-                                    x:Name="badgeNetworking"
-                                    BadgeColorZoneMode="PrimaryMid"
-                                    BadgeForeground="{StaticResource LightButtonTextColor}"
-                                    BadgePlacementMode="Right">
-
-                                    <StackPanel Width="150" Orientation="Horizontal">
-                                        <materialDesign:PackIcon
-                                            Width="30"
-                                            Height="30"
-                                            VerticalAlignment="Center"
-                                            Kind="Notifications" />
-
-                                        <TextBlock
-                                            Margin="10,0,0,0"
-                                            VerticalAlignment="Center"
-                                            FontSize="18"
-                                            Text="درخواست ها" />
-
-                                    </StackPanel>
-                                </materialDesign:Badged>
                             </Viewbox>
                         </Button>
 
@@ -299,7 +257,7 @@
                                         Margin="10,0,0,0"
                                         VerticalAlignment="Center"
                                         FontSize="18"
-                                        Text="ساخت سند جدید" />
+                                        Text="ایجاد مقاله جدید" />
                                 </StackPanel>
                             </Viewbox>
                         </Button>
@@ -334,7 +292,7 @@
                                         Margin="10,0,0,0"
                                         VerticalAlignment="Center"
                                         FontSize="18"
-                                        Text="اسناد بایگانی" />
+                                        Text="مقاله های بایگانی" />
                                 </StackPanel>
                             </Viewbox>
                         </Button>

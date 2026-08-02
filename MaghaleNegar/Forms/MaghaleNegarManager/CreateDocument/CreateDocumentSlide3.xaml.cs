@@ -50,6 +50,9 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
 
         public List<string> AuthorNames { get; private set; } = new List<string>();
 
+        public List<string> AuthorNamesEn { get; private set; } = new List<string>();
+
+
         // متغیرهای حالت ویرایش
         private bool isEditingMode = false;
         private AuthorInfo editingAuthor = null;
@@ -120,14 +123,22 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
 
             // ====== این بخش رو اضافه کن ======
             AuthorNames = new List<string>();
+            AuthorNamesEn = new List<string>();
+
             foreach (var author in authorsList)
             {
+                
                 string displayName = author.Name;
                 if (!string.IsNullOrEmpty(author.Email))
                 {
                     displayName += $" ({author.Email})";
                 }
                 AuthorNames.Add(displayName);
+            }
+
+            foreach (var author in authorsList)
+            {
+                AuthorNamesEn.Add(author.NameEn);
             }
         }
 
