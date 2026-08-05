@@ -5,7 +5,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        d:DesignHeight="850"
+        d:DesignHeight="600"
         d:DesignWidth="800"
         FlowDirection="RightToLeft"
         FontFamily="Vazirmatn"
@@ -24,13 +24,13 @@
                 <Setter Property="Opacity" Value="0.3"/>
             </Style>
 
-            <Style x:Key="PreviewBox" TargetType="Border">
+            <Style x:Key="InfoCard" TargetType="Border">
                 <Setter Property="Background" Value="#F8F9FA"/>
                 <Setter Property="BorderBrush" Value="#E0E0E0"/>
-                <Setter Property="BorderThickness" Value="1.5"/>
+                <Setter Property="BorderThickness" Value="1"/>
                 <Setter Property="CornerRadius" Value="8"/>
                 <Setter Property="Padding" Value="15,12"/>
-                <Setter Property="Margin" Value="5,0,5,15"/>
+                <Setter Property="Margin" Value="5,0,5,10"/>
             </Style>
         </ResourceDictionary>
     </UserControl.Resources>
@@ -54,460 +54,141 @@
                         Orientation="Vertical">
 
                     <!-- ========================================== -->
-                    <!-- بخش ۱: نویسنده -->
+                    <!-- عنوان صفحه -->
                     <!-- ========================================== -->
 
                     <TextBlock 
-                            Text="✍️ نویسنده"
-                            FontSize="16"
+                            Text="✅ تأیید نهایی اطلاعات"
+                            FontSize="22"
                             FontWeight="Bold"
-                            Foreground="{StaticResource PrimaryBackgroundColor}"
-                            Margin="5,0,5,10" />
+                            Foreground="#2E7D32"
+                            Margin="5,0,5,20" />
 
-                    <Grid Margin="0,0,0,15">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-                        <ComboBox
-                                x:Name="cmbNameList"
-                                Grid.Column="0"
-                                Margin="5"
-                                materialDesign:HintAssist.Background="{StaticResource LightBackgroundColor}"
-                                materialDesign:HintAssist.FloatingScale="1"
-                                materialDesign:HintAssist.Hint="انتخاب نام نویسنده"
-                                Style="{StaticResource MaterialDesignOutlinedComboBox}"
-                                SelectionChanged="CmbNameList_SelectionChanged" />
-                    </Grid>
+                    <TextBlock 
+                            Text="لطفاً اطلاعات زیر را بررسی کرده و تأیید کنید."
+                            FontSize="14"
+                            Foreground="#666666"
+                            Margin="5,0,5,15" />
 
                     <Separator Style="{StaticResource SectionSeparator}" />
 
                     <!-- ========================================== -->
-                    <!-- بخش ۲: نوع دانشگاه -->
+                    <!-- اطلاعات مقاله -->
                     <!-- ========================================== -->
 
                     <TextBlock 
-                            Text="📌 نوع دانشگاه"
+                            Text="📄 اطلاعات مقاله"
                             FontSize="16"
                             FontWeight="Bold"
                             Foreground="{StaticResource PrimaryBackgroundColor}"
                             Margin="5,0,5,10" />
 
-                    <Border 
-                            Background="#F5F5F5" 
-                            CornerRadius="6" 
-                            Padding="12,10"
-                            Margin="5,0,5,15">
-                        <StackPanel Orientation="Horizontal">
-                            <CheckBox 
-                                    x:Name="chkAzad" 
-                                    Content="دانشگاه آزاد"
-                                    FontSize="14"
-                                    Margin="0,0,25,0"
-                                    Checked="ChkUniversityType_Checked"
-                                    Unchecked="ChkUniversityType_Unchecked" />
-
-                            <CheckBox 
-                                    x:Name="chkDolati" 
-                                    Content="دانشگاه دولتی"
-                                    FontSize="14"
-                                    Checked="ChkUniversityType_Checked"
-                                    Unchecked="ChkUniversityType_Unchecked" />
-                        </StackPanel>
-                    </Border>
-
-                    <Separator Style="{StaticResource SectionSeparator}" />
-
-                    <!-- ========================================== -->
-                    <!-- بخش ۳: اطلاعات دانشگاهی -->
-                    <!-- ========================================== -->
-
-                    <TextBlock 
-                            Text="🏛️ اطلاعات دانشگاهی"
-                            FontSize="16"
-                            FontWeight="Bold"
-                            Foreground="{StaticResource PrimaryBackgroundColor}"
-                            Margin="5,0,5,10" />
-
-                    <!-- مقطع تحصیلی -->
-                    <TextBlock 
-                            Text="مقطع تحصیلی یا مرتبه علمی:"
-                            FontSize="13"
-                            Foreground="#555555"
-                            Margin="5,0,5,3" />
-
-                    <Grid Margin="0,0,0,15">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-                        <TextBox
-                                x:Name="txtAcademicDegreeFa"
-                                Grid.Column="0"
-                                Margin="5"
-                                materialDesign:HintAssist.Background="{StaticResource LightBackgroundColor}"
-                                materialDesign:HintAssist.FloatingScale="1"
-                                materialDesign:HintAssist.Hint="فارسی"
-                                Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                                Tag="Persian"
-                                TextWrapping="Wrap"
-                                GotFocus="TextBox_GotFocus"
-                                LostFocus="AnyTextBox_LostFocus" />
-                        <TextBox
-                                x:Name="txtAcademicDegreeEn"
-                                Grid.Column="1"
-                                Margin="5"
-                                materialDesign:HintAssist.Background="{StaticResource LightBackgroundColor}"
-                                materialDesign:HintAssist.FloatingScale="1"
-                                materialDesign:HintAssist.Hint="English"
-                                Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                                Tag="English"
-                                TextWrapping="Wrap" 
-                                GotFocus="TextBox_GotFocus"
-                                LostFocus="AnyTextBox_LostFocus" />
-                    </Grid>
-
-                    <!-- نام گروه -->
-                    <TextBlock 
-                            Text="نام گروه:"
-                            FontSize="13"
-                            Foreground="#555555"
-                            Margin="5,0,5,3" />
-
-                    <Grid Margin="0,0,0,15">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-                        <TextBox
-                                x:Name="txtGroupFa"
-                                Grid.Column="0"
-                                Margin="5"
-                                materialDesign:HintAssist.Background="{StaticResource LightBackgroundColor}"
-                                materialDesign:HintAssist.FloatingScale="1"
-                                materialDesign:HintAssist.Hint="فارسی"
-                                Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                                Tag="Persian"
-                                TextWrapping="Wrap"
-                                GotFocus="TextBox_GotFocus"
-                                LostFocus="AnyTextBox_LostFocus" />
-                        <TextBox
-                                x:Name="txtGroupEn"
-                                Grid.Column="1"
-                                Margin="5"
-                                materialDesign:HintAssist.Background="{StaticResource LightBackgroundColor}"
-                                materialDesign:HintAssist.FloatingScale="1"
-                                materialDesign:HintAssist.Hint="English"
-                                Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                                Tag="English"
-                                TextWrapping="Wrap"
-                                GotFocus="TextBox_GotFocus"
-                                LostFocus="AnyTextBox_LostFocus" />
-                    </Grid>
-
-                    <!-- نام دانشکده/واحد -->
-                    <TextBlock 
-                            x:Name="lblFaculty"
-                            Text="نام دانشکده:"
-                            FontSize="13"
-                            Foreground="#555555"
-                            Margin="5,0,5,3" />
-
-                    <Grid x:Name="gridFaculty" Margin="0,0,0,15">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-                        <TextBox
-                                x:Name="txtFacultyFa"
-                                Grid.Column="0"
-                                Margin="5"
-                                materialDesign:HintAssist.Background="{StaticResource LightBackgroundColor}"
-                                materialDesign:HintAssist.FloatingScale="1"
-                                materialDesign:HintAssist.Hint="فارسی"
-                                Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                                Tag="Persian"
-                                TextWrapping="Wrap" 
-                                GotFocus="TextBox_GotFocus"
-                                LostFocus="AnyTextBox_LostFocus" />
-                        <TextBox
-                                x:Name="txtFacultyEn"
-                                Grid.Column="1"
-                                Margin="5"
-                                materialDesign:HintAssist.Background="{StaticResource LightBackgroundColor}"
-                                materialDesign:HintAssist.FloatingScale="1"
-                                materialDesign:HintAssist.Hint="English"
-                                Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                                Tag="English"
-                                TextWrapping="Wrap"
-                                GotFocus="TextBox_GotFocus"
-                                LostFocus="AnyTextBox_LostFocus" />
-                    </Grid>
-
-                    <!-- نام دانشگاه -->
-                    <TextBlock 
-                            x:Name="lblUniversity"
-                            Text="نام دانشگاه:"
-                            FontSize="13"
-                            Foreground="#555555"
-                            Margin="5,0,5,3" />
-
-                    <Grid x:Name="gridUniversity" Margin="0,0,0,15">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-                        <TextBox
-                                x:Name="txtUniversityFa"
-                                Grid.Column="0"
-                                Margin="5"
-                                materialDesign:HintAssist.Background="{StaticResource LightBackgroundColor}"
-                                materialDesign:HintAssist.FloatingScale="1"
-                                materialDesign:HintAssist.Hint="فارسی - مثال : دانشگاه یزد"
-                                Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                                Tag="Persian"
-                                TextWrapping="Wrap" 
-                                GotFocus="TextBox_GotFocus"
-                                LostFocus="AnyTextBox_LostFocus" />
-                        <TextBox
-                                x:Name="txtUniversityEn"
-                                Grid.Column="1"
-                                Margin="5"
-                                materialDesign:HintAssist.Background="{StaticResource LightBackgroundColor}"
-                                materialDesign:HintAssist.FloatingScale="1"
-                                materialDesign:HintAssist.Hint="(English - (University of Yazd , Azad University"
-                                Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                                Tag="English"
-                                TextWrapping="Wrap"
-                                GotFocus="TextBox_GotFocus"
-                                LostFocus="AnyTextBox_LostFocus" />
-                    </Grid>
-
-                    <!-- نام شهر -->
-                    <TextBlock 
-                            Text="نام شهر:"
-                            FontSize="13"
-                            Foreground="#555555"
-                            Margin="5,0,5,3" />
-
-                    <Grid Margin="0,0,0,15">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-                        <TextBox
-                                x:Name="txtCityFa"
-                                Grid.Column="0"
-                                Margin="5"
-                                materialDesign:HintAssist.Background="{StaticResource LightBackgroundColor}"
-                                materialDesign:HintAssist.FloatingScale="1"
-                                materialDesign:HintAssist.Hint="فارسی"
-                                Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                                Tag="Persian"
-                                TextWrapping="Wrap"
-                                GotFocus="TextBox_GotFocus"
-                                LostFocus="AnyTextBox_LostFocus" />
-                        <TextBox
-                                x:Name="txtCityEn"
-                                Grid.Column="1"
-                                Margin="5"
-                                materialDesign:HintAssist.Background="{StaticResource LightBackgroundColor}"
-                                materialDesign:HintAssist.FloatingScale="1"
-                                materialDesign:HintAssist.Hint="English"
-                                Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                                Tag="English"
-                                TextWrapping="Wrap"
-                                GotFocus="TextBox_GotFocus"
-                                LostFocus="AnyTextBox_LostFocus" />
-                    </Grid>
-
-                    <Separator Style="{StaticResource SectionSeparator}" />
-
-                    <!-- ========================================== -->
-                    <!-- بخش ۴: پیش‌نمایش نهایی -->
-                    <!-- ========================================== -->
-
-                    <TextBlock 
-                            Text="📋 پیش‌نمایش نهایی"
-                            FontSize="16"
-                            FontWeight="Bold"
-                            Foreground="{StaticResource PrimaryBackgroundColor}"
-                            Margin="5,0,5,10" />
-
-                    <Border Style="{StaticResource PreviewBox}">
+                    <Border Style="{StaticResource InfoCard}">
                         <StackPanel>
-                            <TextBlock 
-                                    Text="🇮🇷 فارسی:"
-                                    FontSize="13"
-                                    FontWeight="Bold"
-                                    Foreground="#2E7D32"
-                                    Margin="0,0,0,5" />
-
-                            <TextBlock 
-                                    x:Name="txtPreviewFa"
-                                    FontSize="14"
-                                    Foreground="#333333"
-                                    TextWrapping="Wrap"
-                                    Margin="0,0,0,10"
-                                    Text="لطفاً اطلاعات را کامل کنید..." />
-
-                            <Separator 
-                                    Height="1" 
-                                    Background="#E0E0E0" 
-                                    Margin="0,5,0,10" />
-
-                            <TextBlock 
-                                    Text="🇬🇧 English:"
-                                    FontSize="13"
-                                    FontWeight="Bold"
-                                    Foreground="#1565C0"
-                                    Margin="0,0,0,5" />
-
-                            <TextBlock 
-                                    x:Name="txtPreviewEn"
-                                    FontSize="14"
-                                    Foreground="#333333"
-                                    TextWrapping="Wrap"
-                                    Text="Please complete the information..." />
+                            <TextBlock x:Name="txtTitleFa" FontSize="14" Foreground="#333333" TextWrapping="Wrap" />
+                            <TextBlock x:Name="txtTitleEn" FontSize="14" Foreground="#333333" TextWrapping="Wrap" Margin="0,5,0,0" />
                         </StackPanel>
                     </Border>
 
-                    <!-- ====== ✅ چک‌باکس تأیید وابستگی علمی ====== -->
-                    <CheckBox 
-                            x:Name="chkConfirmAffiliation"
+                    <!-- ========================================== -->
+                    <!-- اطلاعات نویسندگان -->
+                    <!-- ========================================== -->
+
+                    <TextBlock 
+                            Text="✍️ نویسندگان"
+                            FontSize="16"
+                            FontWeight="Bold"
+                            Foreground="{StaticResource PrimaryBackgroundColor}"
+                            Margin="5,0,5,10" />
+
+                    <Border Style="{StaticResource InfoCard}">
+                        <DataGrid
+                                x:Name="dgAuthors"
+                                Margin="0"
+                                AutoGenerateColumns="False"
+                                CanUserAddRows="False"
+                                CanUserDeleteRows="False"
+                                CanUserReorderColumns="False"
+                                CanUserResizeColumns="True"
+                                CanUserSortColumns="True"
+                                HeadersVisibility="Column"
+                                IsReadOnly="True"
+                                MaxHeight="150"
+                                MinHeight="50"
+                                GridLinesVisibility="Horizontal"
+                                AlternatingRowBackground="#F5F5F5"
+                                RowHeight="30"
+                                FontSize="13"
+                                BorderBrush="#DDDDDD"
+                                BorderThickness="0"
+                                Background="Transparent">
+
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding Index}" Header="#" Width="Auto" MinWidth="30" />
+                                <DataGridTextColumn Binding="{Binding AuthorName}" Header="نام" Width="2*" />
+                                <DataGridTextColumn Binding="{Binding AuthorNameEn}" Header="نام (انگلیسی)" Width="2*" />
+                                <DataGridTextColumn Binding="{Binding AffiliationFa}" Header="وابستگی علمی" Width="3*" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Border>
+
+                    <!-- ========================================== -->
+                    <!-- انتخاب نویسنده برای نمایش اطلاعات -->
+                    <!-- ========================================== -->
+
+                    <TextBlock 
+                            Text="👤 مشاهده اطلاعات نویسنده"
+                            FontSize="16"
+                            FontWeight="Bold"
+                            Foreground="{StaticResource PrimaryBackgroundColor}"
+                            Margin="5,0,5,10" />
+
+                    <ComboBox
+                            x:Name="cmbAuthorSelector"
                             Margin="5,0,5,15"
-                            Content="وابستگی علمی وارد شده به برنامه مورد تأیید است"
+                            materialDesign:HintAssist.Background="{StaticResource LightBackgroundColor}"
+                            materialDesign:HintAssist.FloatingScale="1"
+                            materialDesign:HintAssist.Hint="انتخاب نویسنده برای مشاهده اطلاعات"
+                            Style="{StaticResource MaterialDesignOutlinedComboBox}"
+                            SelectionChanged="CmbAuthorSelector_SelectionChanged" />
+
+                    <Border Style="{StaticResource InfoCard}">
+                        <StackPanel>
+                            <TextBlock x:Name="txtAuthorName" FontSize="14" Foreground="#333333" TextWrapping="Wrap" />
+                            <TextBlock x:Name="txtAuthorNameEn" FontSize="14" Foreground="#333333" TextWrapping="Wrap" Margin="0,5,0,0" />
+                            <TextBlock x:Name="txtAuthorAffiliationFa" FontSize="14" Foreground="#333333" TextWrapping="Wrap" Margin="0,5,0,0" />
+                            <TextBlock x:Name="txtAuthorAffiliationEn" FontSize="14" Foreground="#333333" TextWrapping="Wrap" Margin="0,5,0,0" />
+                        </StackPanel>
+                    </Border>
+
+                   
+
+                    <!-- ========================================== -->
+                    <!-- چک‌باکس تأیید -->
+                    <!-- ========================================== -->
+
+                    <CheckBox 
+                            x:Name="chkConfirm"
+                            Margin="5,0,5,15"
+                            Content=" اطلاعات وارد شده دوباره بررسی شد و مشکل نگارشی ندارند و مورد تأیید است."
                             FontSize="13"
                             FontWeight="SemiBold"
                             Foreground="#333333"
-                            Checked="ChkConfirmAffiliation_Checked"
-                            Unchecked="ChkConfirmAffiliation_Unchecked" />      
+                            Checked="ChkConfirm_Checked"
+                            Unchecked="ChkConfirm_Unchecked" />
 
                     <!-- ========================================== -->
-                    <!-- بخش ۵: دکمه افزودن به لیست -->
-                    <!-- ========================================== -->
-
-                    <Button
-                            x:Name="btnAddToList"
-                            Height="40"
-                            Margin="5,0,5,15"
-                            materialDesign:ButtonAssist.CornerRadius="5"
-                            Background="{StaticResource PrimaryBackgroundColor}"
-                            Content="➕ افزودن به لیست"
-                            FontWeight="Bold"
-                            Foreground="White"
-                            Cursor="Hand"
-                            IsEnabled="False"
-                            Click="btnAddToList_Click" />
-
-                    <!-- ========================================== -->
-                    <!-- بخش ۶: لیست اطلاعات -->
-                    <!-- ========================================== -->
-
-                    <TextBlock 
-                            Text="📋 لیست اطلاعات"
-                            FontSize="16"
-                            FontWeight="Bold"
-                            Foreground="{StaticResource PrimaryBackgroundColor}"
-                            Margin="5,0,5,10" />
-
-                    <DataGrid
-                            x:Name="dgInfoList"
-                            Margin="5"
-                            AutoGenerateColumns="False"
-                            CanUserAddRows="False"
-                            CanUserDeleteRows="False"
-                            CanUserReorderColumns="False"
-                            CanUserResizeColumns="True"
-                            CanUserSortColumns="True"
-                            HeadersVisibility="Column"
-                            IsReadOnly="True"
-                            MaxHeight="150"
-                            MinHeight="50"
-                            GridLinesVisibility="Horizontal"
-                            AlternatingRowBackground="#F5F5F5"
-                            RowHeight="35"
-                            FontSize="13"
-                            BorderBrush="#DDDDDD"
-                            BorderThickness="1"
-                            Background="White">
-
-                        <DataGrid.Columns>
-                            <!-- ستون ترکیب -->
-                            <DataGridTextColumn 
-                                    Binding="{Binding Index}" 
-                                    Header="ترتیب" 
-                                    Width="Auto" 
-                                    MinWidth="50" />
-
-                            <!-- ستون نام نویسنده -->
-                            <DataGridTextColumn 
-                                    Binding="{Binding AuthorName}" 
-                                    Header="نام نویسنده" 
-                                    Width="2*" />
-
-                            <!-- ستون وابستگی علمی (فارسی) -->
-                            <DataGridTextColumn 
-                                    Binding="{Binding AffiliationFa}" 
-                                    Header="وابستگی علمی" 
-                                    Width="3*" />
-
-                            <!-- ستون وابستگی علمی (انگلیسی) -->
-                            <DataGridTextColumn 
-                                    Binding="{Binding AffiliationEn}" 
-                                    Header="Affiliation" 
-                                    Width="3*" />
-
-                            <!-- ستون عملیات - حذف -->
-                            <!-- ستون عملیات - ویرایش و حذف -->
-                            <DataGridTemplateColumn Header="عملیات" Width="Auto" MinWidth="110">
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                            <!-- دکمه ویرایش -->
-                                            <Button 
-                                                Content="✏️" 
-                                                Width="28" 
-                                                Height="28" 
-                                                FontSize="14"
-                                                Background="#4CAF50" 
-                                                Foreground="White"
-                                                BorderThickness="0"
-                                                Cursor="Hand"
-                                                ToolTip="ویرایش"
-                                                Click="btnEditItem_Click"
-                                                Tag="{Binding}"
-                                                Margin="0,0,5,0" />
-
-                                            <!-- دکمه حذف -->
-                                            <Button 
-                                                Content="✕" 
-                                                Width="28" 
-                                                Height="28" 
-                                                FontSize="14"
-                                                FontWeight="Bold"
-                                                Background="#FF4444" 
-                                                Foreground="White"
-                                                BorderThickness="0"
-                                                Cursor="Hand"
-                                                ToolTip="حذف"
-                                                Click="btnDeleteItem_Click"
-                                                Tag="{Binding}" />  
-                                        </StackPanel>
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
-                        </DataGrid.Columns>
-                    </DataGrid>
-
                     <!-- وضعیت -->
+                    <!-- ========================================== -->
+
                     <TextBlock x:Name="lblStatus" FontSize="12" Foreground="#FF9800" Margin="5,5,5,0">
-                        ⚠️ لطفاً تمام فیلدها را تکمیل کنید
+                        ⚠️ لطفاً اطلاعات را بررسی و تأیید کنید.
                     </TextBlock>
 
                 </StackPanel>
             </ScrollViewer>
 
-            <!-- دکمه‌های جلو و عقب -->
+            <!-- دکمه‌ها -->
             <Grid x:Name="gridTransitionButtons" Grid.Row="1" Margin="10,0,10,10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -528,7 +209,7 @@
                         />
 
                 <Button
-                        x:Name="btnForward"
+                        x:Name="btnCreateDocument"
                         Grid.Column="1"
                         Height="42"
                         Margin="10,0,0,0"

@@ -31,7 +31,7 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <!-- ====== دو اسلاید ====== -->
+            <!-- ====== سه اسلاید ====== -->
             <materialDesign:Transitioner
                 x:Name="transitionCreateDocument"
                 Grid.Row="2"
@@ -46,7 +46,15 @@
                     <local:CreateDocumentSlide3 x:Name="createDocumentSlide3" />
                 </materialDesign:TransitionerSlide>
 
-                <!-- اسلاید 2: وابستگی علمی + ساخت مقاله -->
+                <!-- اسلاید 2: وابستگی علمی -->
+                <materialDesign:TransitionerSlide>
+                    <materialDesign:TransitionerSlide.OpeningEffects>
+                        <materialDesign:TransitionEffect Kind="FadeIn" />
+                    </materialDesign:TransitionerSlide.OpeningEffects>
+                    <local:CreateDocumentSlide5 x:Name="createDocumentSlide5" />
+                </materialDesign:TransitionerSlide>
+
+                <!-- اسلاید 3: تأیید نهایی + ایجاد مقاله -->
                 <materialDesign:TransitionerSlide>
                     <materialDesign:TransitionerSlide.OpeningEffects>
                         <materialDesign:TransitionEffect Kind="FadeIn" />
@@ -77,7 +85,8 @@
                         Margin="5"
                         Foreground="White"
                         Style="{DynamicResource MaterialDesignIconButton}"
-                        ToolTip="بستن پنجره">
+                        ToolTip="بستن پنجره"
+                        Click="BtnExitCreateDocument_Click">
                         <materialDesign:PackIcon Kind="WindowClose" />
                     </Button>
 
@@ -88,7 +97,8 @@
                         Margin="0,5,5,5"
                         Foreground="White"
                         Style="{DynamicResource MaterialDesignIconButton}"
-                        ToolTip="بزرگنمایی پنجره">
+                        ToolTip="بزرگنمایی پنجره"
+                        Click="BtnMaximize_Click">
                         <materialDesign:PackIcon
                             Width="20"
                             Height="20"
@@ -102,7 +112,8 @@
                         Margin="0,5,5,5"
                         Foreground="White"
                         Style="{DynamicResource MaterialDesignIconButton}"
-                        ToolTip="کوچکنمایی پنجره">
+                        ToolTip="کوچکنمایی پنجره"
+                        Click="BtnMinimize_Click">
                         <materialDesign:PackIcon
                             Width="20"
                             Height="20"
@@ -128,7 +139,8 @@
                         FlowDirection="LeftToRight"
                         Style="{StaticResource MaterialDesignSwitchToggleButton}"
                         ToolTip="پنجره Always on Top تنظیم"
-                        UseLayoutRounding="False">
+                        UseLayoutRounding="False"
+                        Click="ToggleButtonAlwaysOnTop_Click">
 
                         <materialDesign:PackIcon Kind="Pin" RenderTransformOrigin=".5,.5">
                             <materialDesign:PackIcon.RenderTransform>

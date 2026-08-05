@@ -2478,7 +2478,7 @@ namespace MaghaleNegar
                 {
                     DedicatedFunctions.AccessType accessType = DedicatedFunctions.hasAccess(doc);
 
-                    if (accessType == DedicatedFunctions.AccessType.AccessGranted)
+                    if (accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
                     {
                         DedicatedFunctions.uploadDocument(doc, true);
                         loadingForm?.closeForm(successfull: true);
@@ -3398,7 +3398,7 @@ namespace MaghaleNegar
 
                 // ====== دکمه 1: تایید همه ======
                 Button btnAcceptAll = new Button();
-                btnAcceptAll.Text = "✅✅\nتایید همه";
+                btnAcceptAll.Text = "✔✔\nتایید همه";
                 btnAcceptAll.Font = new System.Drawing.Font("Tahoma", 8);
                 btnAcceptAll.ForeColor = Color.Green;
                 btnAcceptAll.BackColor = Color.White;
@@ -3427,7 +3427,7 @@ namespace MaghaleNegar
 
                 // ====== دکمه 2: تایید کلمه ======
                 Button btnAcceptOne = new Button();
-                btnAcceptOne.Text = "✅\nتایید کلمه";
+                btnAcceptOne.Text = "✔\nتایید کلمه";
                 btnAcceptOne.Font = new System.Drawing.Font("Tahoma", 8);
                 btnAcceptOne.ForeColor = Color.Green;
                 btnAcceptOne.BackColor = Color.White;
@@ -3490,7 +3490,7 @@ namespace MaghaleNegar
 
                 // ====== دکمه 3: رد کلمه ======
                 Button btnRejectOne = new Button();
-                btnRejectOne.Text = "❌\nرد کلمه";
+                btnRejectOne.Text = "✘\nرد کلمه";
                 btnRejectOne.Font = new System.Drawing.Font("Tahoma", 8);
                 btnRejectOne.ForeColor = Color.Red;
                 btnRejectOne.BackColor = Color.White;
@@ -3546,7 +3546,7 @@ namespace MaghaleNegar
 
                 // ====== دکمه 4: رد همه ======
                 Button btnRejectAll = new Button();
-                btnRejectAll.Text = "❌❌\nرد همه";
+                btnRejectAll.Text = "✘✘\nرد همه";
                 btnRejectAll.Font = new System.Drawing.Font("Tahoma", 8);
                 btnRejectAll.ForeColor = Color.Red;
                 btnRejectAll.BackColor = Color.White;

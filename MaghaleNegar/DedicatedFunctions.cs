@@ -2806,7 +2806,7 @@ namespace MaghaleNegar
             string version = BugReport.AssemblyVersion.Replace(".", "");
 
             string URL = StringConstant.PrimaryServerApiBaseAddress;
-            string urlParameters = "update?ver=" + version;
+            string urlParameters = "update/maghalenegar/3?ver=" + version;
 
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri(URL);
@@ -6602,5 +6602,21 @@ namespace MaghaleNegar
             }
         }
         #endregion
-    }
+
+        public static async System.Threading.Tasks.Task<HttpResponseMessage> httpAsyncPostRequestAsync(
+        string baseAddress,
+        string urlParameters,
+        string token,
+        MultipartFormDataContent formData)
+            {
+                using (var client = new HttpClient())
+                {
+                    client.DefaultRequestHeaders.Authorization =
+                        new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+                    client.BaseAddress = new Uri(baseAddress);
+
+                    return await client.PostAsync(urlParameters, formData);
+                }
+            }
+        }
 }

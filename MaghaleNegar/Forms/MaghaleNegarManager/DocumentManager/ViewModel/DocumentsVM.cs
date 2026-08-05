@@ -243,7 +243,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.DocumentManager.ViewModel
 
             string token = Properties.Settings.Default.UserToken;
             int documentID = fileModel.ID;
-            string urlParameters = "save?id=" + documentID.ToString() + "&archive=" + archiveStatus.ToString();
+            string urlParameters = "save/maghalenegar/3?id=" + documentID.ToString() + "&archive=" + archiveStatus.ToString();
 
             DedicatedFunctions.httpAsyncPostRequest(StringConstant.PrimaryServerApiBaseAddress, urlParameters, token,
             OnResult =>
@@ -310,7 +310,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.DocumentManager.ViewModel
             Thread.Sleep(500);
 
             String token = Properties.Settings.Default.UserToken;
-            string urlParameters = "get-data";
+            string urlParameters = "get-data/maghalenegar/3";
             DedicatedFunctions.httpAsyncGetRequest(StringConstant.PrimaryServerApiBaseAddress, urlParameters, token,
             OnResult =>
             {

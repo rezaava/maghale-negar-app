@@ -332,7 +332,6 @@
                         Margin="10"
                         VerticalAlignment="Bottom"
                         materialDesign:ButtonAssist.CornerRadius="5"
-                        Command="{x:Static materialDesign:Transitioner.MoveNextCommand}"
                         Content="بعدی"
                         Foreground="{StaticResource LightButtonTextColor}"
                         IsEnabled="False" />

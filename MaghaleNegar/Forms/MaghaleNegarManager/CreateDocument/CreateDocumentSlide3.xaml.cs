@@ -27,6 +27,8 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
 
         private DocumentTypes documentType;
 
+        public string DocumentName { get; private set; }
+
         //Properties
         public Universities University { get; private set; }
         public string UniversityFa { get; private set; }
@@ -105,6 +107,16 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
 
         private void BtnForward_Click(object sender, RoutedEventArgs e)
         {
+            if (txtBoxFieldOfStudyEn.Text != txtBoxFieldOfStudyEn.Text.Trim())
+            {
+                DocumentName = txtBoxFieldOfStudyEn.Text.Trim();
+                txtBoxFieldOfStudyEn.Text = DocumentName;
+            }
+            else
+            {
+                DocumentName = txtBoxFieldOfStudyEn.Text;
+            }
+
             if (validateControls())
             {
                 SaveData();
