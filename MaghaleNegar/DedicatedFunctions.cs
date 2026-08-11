@@ -2675,62 +2675,175 @@ namespace MaghaleNegar
         #endregion
 
         #region Server
-        internal static void uploadDocument(Document doc, bool showMessage)
+        public static async System.Threading.Tasks.Task<bool> uploadDocumentAsync(Document doc, bool showMessage, LoadingForm loadingForm = null)
         {
-            DedicatedFunctions.AccessType accessType = DedicatedFunctions.hasAccess(doc);
-
-            if (accessType == DedicatedFunctions.AccessType.AccessGranted)
+            try
             {
-                DedicatedFunctions.saveDocument(doc);
+                if (doc == null)
+                {
+                    if (showMessage)
+                        ShowMessage("سند معتبر نیست!");
+                    return false;
+                }
 
-                JsonObject jsonVariables = DedicatedFunctions.variablesToJsonServer(doc);
+                AccessType accessType = hasAccess(doc);
+                if (accessType != AccessType.AccessGranted && accessType != AccessType.AccessGranted_Administrator)
+                {
+                    if (showMessage)
+                        ShowMessage(DialogBoxMessages.RequiredDedicatedDocument);
+                    return false;
+                }
 
-                Microsoft.Office.Interop.Word.ContentControl[] abstractContentControl = DedicatedFunctions.getContentControls(doc, ContentControlNames._field_Abstract_Fa.ToString());
+                saveDocument(doc);
+
+                string token = getStaticVariableValue(doc, VariableServerIDs._variable_server_UserToken.ToString());
+                if (string.IsNullOrEmpty(token))
+                {
+                    token = Properties.Settings.Default.UserToken;
+                }
+
+                if (string.IsNullOrEmpty(token))
+                {
+                    if (showMessage)
+                        ShowMessage("❌ توکن کاربر یافت نشد! لطفاً وارد شوید.");
+                    return false;
+                }
+
+                string documentID = getStaticVariableValue(doc, VariableServerIDs._variable_server_DocumentID.ToString());
+                if (string.IsNullOrEmpty(documentID))
+                {
+                    if (showMessage)
+                        ShowMessage("❌ شناسه سند یافت نشد! لطفاً سند را ذخیره کنید.");
+                    return false;
+                }
+
+                JsonObject jsonVariables = variablesToJsonServer(doc);
+
+                // دریافت چکیده
+                ContentControl[] abstractContentControl = getContentControls(doc, ContentControlNames._field_Abstract_Fa.ToString());
                 if (abstractContentControl != null && abstractContentControl.Length != 0)
                 {
                     Range rangeAbstract = abstractContentControl[0].Range;
-                    if (rangeAbstract != null)
+                    if (rangeAbstract != null && !string.IsNullOrEmpty(rangeAbstract.Text))
                     {
+                        string abstractText = rangeAbstract.Text.Trim();
                         if (jsonVariables.ContainsKey(VariableFieldIDs._variable_field_Abstract_Fa.ToString()))
-                            jsonVariables[VariableFieldIDs._variable_field_Abstract_Fa.ToString()] = rangeAbstract.Text;
+                            jsonVariables[VariableFieldIDs._variable_field_Abstract_Fa.ToString()] = abstractText;
                         else
-                            jsonVariables.Add(VariableFieldIDs._variable_field_Abstract_Fa.ToString(), rangeAbstract.Text);
+                            jsonVariables.Add(VariableFieldIDs._variable_field_Abstract_Fa.ToString(), abstractText);
                     }
                 }
 
-                string token = DedicatedFunctions.getStaticVariableValue(doc, VariableServerIDs._variable_server_UserToken.ToString());
-                string documentID = DedicatedFunctions.getStaticVariableValue(doc, VariableServerIDs._variable_server_DocumentID.ToString());
-                string urlParameters = "save?id=" + documentID + "&config=" + jsonVariables.ToString();
-
-                //add File
+                string urlParameters = $"save/maghalenegar/3?id={documentID}&config={jsonVariables.ToString()}";
                 var formData = new MultipartFormDataContent();
-                var fileStream = new FileStream(doc.FullName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
-                var fileContent = new StreamContent(fileStream);
-                //formData.Add(fileContent , "file" , doc.Name);
-                formData.Add(fileContent, "file", "documentfile.docx");
 
-                DedicatedFunctions.httpAsyncPostRequest(StringConstant.PrimaryServerApiBaseAddress, urlParameters, token,
-                OnResult =>
-                {
-                    JsonDocument document = JsonDocument.Parse(OnResult);
-                    JsonElement root = document.RootElement;
-
-                    root.TryGetProperty("updated", out JsonElement updatedAtElement);
-                    string updatedAt = updatedAtElement.GetString();
-                    DedicatedFunctions.setORAddStaticVariableValue(doc, VariableServerIDs._variable_server_UpdatedAt.ToString(), updatedAt);
-                    DedicatedFunctions.setORAddStaticVariableValue(doc, VariableServerIDs._variable_server_UpdatedFile.ToString(), updatedAt);
-                    DedicatedFunctions.setORAddStaticVariableValue(doc, VariableServerIDs._variable_server_UpdatedConfig.ToString(), updatedAt);
-                    DedicatedFunctions.saveDocument(doc);
-
-                    if (showMessage)
-                        DedicatedFunctions.ShowMessage("سند با موفقیت آپلود شد", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
-                },
-                OnFailed =>
+                if (!File.Exists(doc.FullName))
                 {
                     if (showMessage)
-                        DedicatedFunctions.ShowErrorMessage(ErrorMessages.ErrorServiceUnavailable + "\n" +
-                            OnFailed.StatusCode + "> " + OnFailed.ReasonPhrase);
-                }, formData);
+                        ShowMessage($"❌ فایل سند وجود ندارد:\n{doc.FullName}");
+                    return false;
+                }
+
+                using (var fileStream = new FileStream(doc.FullName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+                {
+                    var fileContent = new StreamContent(fileStream);
+                    formData.Add(fileContent, "file", "documentfile.docx");
+
+                    var response = await httpAsyncPostRequestAsync(
+                        StringConstant.PrimaryServerApiBaseAddress,
+                        urlParameters,
+                        token,
+                        formData);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string result = await response.Content.ReadAsStringAsync();
+                        try
+                        {
+                            JsonDocument document = JsonDocument.Parse(result);
+                            JsonElement root = document.RootElement;
+
+                            if (root.TryGetProperty("updated", out JsonElement updatedAtElement))
+                            {
+                                string updatedAt = updatedAtElement.GetString();
+                                setORAddStaticVariableValue(doc,
+                                    VariableServerIDs._variable_server_UpdatedAt.ToString(), updatedAt);
+                                setORAddStaticVariableValue(doc,
+                                    VariableServerIDs._variable_server_UpdatedFile.ToString(), updatedAt);
+                                setORAddStaticVariableValue(doc,
+                                    VariableServerIDs._variable_server_UpdatedConfig.ToString(), updatedAt);
+                            }
+
+                            saveDocument(doc);
+
+                            if (showMessage)
+                            {
+                                if (loadingForm != null)
+                                {
+                                    loadingForm.BeginInvoke(new Action(() =>
+                                    {
+                                        loadingForm.closeForm(successfull: true);
+                                    }));
+                                }
+                                ShowMessage("✅ سند با موفقیت آپلود شد",
+                                    System.Windows.Forms.MessageBoxButtons.OK,
+                                    System.Windows.Forms.MessageBoxIcon.Information);
+                            }
+
+                            return true;
+                        }
+                        catch (Exception ex)
+                        {
+                            Debug.WriteLine($"خطا در پردازش پاسخ: {ex.Message}");
+                            if (showMessage)
+                            {
+                                if (loadingForm != null)
+                                {
+                                    loadingForm.BeginInvoke(new Action(() =>
+                                    {
+                                        loadingForm.closeForm(successfull: false);
+                                    }));
+                                }
+                                ShowErrorMessage($"خطا در پردازش پاسخ سرور:\n{ex.Message}");
+                            }
+                            return false;
+                        }
+                    }
+                    else
+                    {
+                        string errorContent = await response.Content.ReadAsStringAsync();
+                        Debug.WriteLine($"خطا در آپلود: {response.StatusCode} - {errorContent}");
+
+                        if (showMessage)
+                        {
+                            if (loadingForm != null)
+                            {
+                                loadingForm.BeginInvoke(new Action(() =>
+                                {
+                                    loadingForm.closeForm(successfull: false);
+                                }));
+                            }
+                            ShowErrorMessage($"خطا در آپلود سند:\n{response.StatusCode} - {response.ReasonPhrase}");
+                        }
+                        return false;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"خطا در uploadDocumentAsync: {ex.Message}");
+                if (showMessage)
+                {
+                    if (loadingForm != null)
+                    {
+                        loadingForm.BeginInvoke(new Action(() =>
+                        {
+                            loadingForm.closeForm(successfull: false);
+                        }));
+                    }
+                    ShowErrorMessage($"خطا در آپلود سند:\n{ex.Message}");
+                }
+                return false;
             }
         }
         internal static void sendBugReport(int reportType, string text, StreamContent fileContent = null, string fileExtension = null)

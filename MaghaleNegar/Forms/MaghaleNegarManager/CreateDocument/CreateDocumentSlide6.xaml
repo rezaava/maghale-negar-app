@@ -114,7 +114,7 @@
                                 HeadersVisibility="Column"
                                 IsReadOnly="True"
                                 MaxHeight="150"
-                                MinHeight="50"
+                                MinHeight="100"
                                 GridLinesVisibility="Horizontal"
                                 AlternatingRowBackground="#F5F5F5"
                                 RowHeight="30"

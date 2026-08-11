@@ -395,6 +395,15 @@
     <Compile Include="Forms\FormatSettings\FormatSettingsForm.Designer.cs">
       <DependentUpon>FormatSettingsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\JournalSettings\JournalSettingsControl.xaml.cs">
+      <DependentUpon>JournalSettingsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\JournalSettings\JournalSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\JournalSettings\JournalSettingsForm.Designer.cs">
+      <DependentUpon>JournalSettingsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MaghaleNegarManager\CreateDocument\CreateDocumentControl.xaml.cs">
       <DependentUpon>CreateDocumentControl.xaml</DependentUpon>
     </Compile>
@@ -619,6 +628,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormatSettings\FormatSettingsForm.resx">
       <DependentUpon>FormatSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\JournalSettings\JournalSettingsForm.resx">
+      <DependentUpon>JournalSettingsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\VirastarSettings\VirastarSettingsForm.resx">
       <DependentUpon>VirastarSettingsForm.cs</DependentUpon>
@@ -1074,6 +1086,10 @@
     <Page Include="Forms\FormatSettings\FormatSettingsControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\JournalSettings\JournalSettingsControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Forms\MaghaleNegarManager\CreateDocument\CreateDocumentControl.xaml">
       <Generator>MSBuild:Compile</Generator>

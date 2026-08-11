@@ -70,8 +70,14 @@
 						<item id="__id60" />
 						<item id="__id61" />
 					</gallery>
-					<button id="btnChatBoxNetworking" onAction="btnChatBoxNetworking_Click" getImage="getImage" getEnabled="getEnabled" getVisible="getVisible" getLabel="getLabel"  getDescription="getDescription" getSupertip="getSupertip" getScreentip="getScreentip" getKeytip="getKeytip" size="large"/>
 
+					<menu id="menueditor" getImage="getImage" getEnabled="getEnabled" getVisible="getVisible" getLabel="getLabel"  getDescription="getDescription" getSupertip="getSupertip" getScreentip="getScreentip" getKeytip="getKeytip" size="large">
+						<button id="Editor" onAction="Editor_Click" getImage="getImage" getEnabled="getEnabled" getVisible="getVisible" getLabel="getLabel"  getDescription="getDescription" getSupertip="getSupertip" getScreentip="getScreentip" getKeytip="getKeytip"/>
+					</menu>
+					
+					<button id="btnChatBoxNetworking" onAction="btnChatBoxNetworking_Click" getImage="getImage" getEnabled="getEnabled" getVisible="getVisible" getLabel="getLabel"  getDescription="getDescription" getSupertip="getSupertip" getScreentip="getScreentip" getKeytip="getKeytip" size="large"/>
+					
+					
 				</group>
 				<group id="grpFormat" getImage="getImage" getVisible="getVisible" getLabel="getLabel"  getSupertip="getSupertip" getScreentip="getScreentip" getKeytip="getKeytip">
 

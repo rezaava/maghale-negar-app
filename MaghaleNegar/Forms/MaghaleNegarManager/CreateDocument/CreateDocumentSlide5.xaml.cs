@@ -275,7 +275,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
             }
             else // Dolati
             {
-                return $" ({degree} ,Department of {group},Faculty of {faculty},{university} e.g. Islamic,{city}, Iran ({email}";
+                return $" ({degree} ,Department of {group},Faculty of {faculty},{university} ,{city}, Iran ({email}";
             }
         }
 
@@ -896,29 +896,43 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                 if (item == null || !infoList.Contains(item))
                     return;
 
-                // ====== تنظیم حالت ویرایش ======
                 isEditingListItem = true;
                 editingListItem = item;
 
-                // ====== 1. پر کردن کامبوباکس نویسنده ======
-                int index = authorNames.IndexOf(item.AuthorName);
+                // ====== 1. پیدا کردن ایندکس در کامبوباکس با حذف ایمیل ======
+                int index = -1;
+                for (int i = 0; i < authorNames.Count; i++)
+                {
+                    string fullName = authorNames[i];
+                    int parenIndex = fullName.IndexOf('(');
+                    string nameWithoutEmail = parenIndex > 0 ? fullName.Substring(0, parenIndex).Trim() : fullName.Trim();
+
+                    if (nameWithoutEmail == item.AuthorName)
+                    {
+                        index = i;
+                        break;
+                    }
+                }
+
                 if (index >= 0)
                     cmbNameList.SelectedIndex = index;
+                else
+                    cmbNameList.SelectedIndex = -1; // در صورت عدم تطابق
 
-                // ====== 2. تجزیه و پر کردن فیلدهای دانشگاهی از وابستگی علمی فارسی ======
+                // ====== 2. تجزیه و پر کردن فیلدها ======
                 ParseAndFillFields(item.AffiliationFa, item.AffiliationEn);
 
-                // ====== 3. حذف آیتم از لیست ======
+                // ====== 3. حذف از لیست ======
                 infoList.Remove(item);
                 RefreshDataGrid();
 
-                // ====== 4. غیرفعال کردن چک‌باکس تأیید ======
+                // ====== 4. غیرفعال کردن چک‌باکس ======
                 chkConfirmAffiliation.IsChecked = false;
 
-                // ====== 5. تغییر متن دکمه افزودن ======
+                // ====== 5. تغییر متن دکمه ======
                 btnAddToList.Content = "✏️ ویرایش اطلاعات";
 
-                // ====== 6. فوکوس روی کامبوباکس ======
+                // ====== 6. فوکوس ======
                 cmbNameList.Focus();
 
                 ValidateControls();
@@ -932,8 +946,6 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
-
 
         private void ParseAndFillFields(string affiliationFa, string affiliationEn)
         {

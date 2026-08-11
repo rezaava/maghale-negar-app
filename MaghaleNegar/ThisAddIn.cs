@@ -13,6 +13,7 @@ using MaghaleNegar.Forms.FootnoteSettings;
 using MaghaleNegar.Forms.FormatSettings;
 using MaghaleNegar.Forms.MaghaleNegarManager;
 using MaghaleNegar.Forms.VirastarSettings;
+using MaghaleNegar.Forms.JournalSettings;
 using MaghaleNegar.Models;
 using MaghaleNegar.TaskPanes.ChatBoxNetworking;
 using MaghaleNegar.TaskPanes.CrossReference;
@@ -536,7 +537,7 @@ namespace MaghaleNegar
                             //DedicatedFunctions.saveDocument(doc);
                             if (Properties.Settings.Default.AutoSaveOnClose)
                             {
-                                DedicatedFunctions.uploadDocument(doc, false);
+                                _ = DedicatedFunctions.uploadDocumentAsync(doc, false);
                             }
                             DedicatedFunctions.closeDocument(doc, WdSaveOptions.wdSaveChanges);
                         }
@@ -567,7 +568,7 @@ namespace MaghaleNegar
 
                         if (Properties.Settings.Default.AutoSaveOnClose)
                         {
-                            DedicatedFunctions.uploadDocument(doc, false);
+                            _ = DedicatedFunctions.uploadDocumentAsync(doc, false);
                         }
                     }
                 }
@@ -2459,7 +2460,7 @@ namespace MaghaleNegar
             loadingForm.ShowDialog();
         }
 
-        public void uploadDocument()
+        public async void uploadDocument()
         {
             Document doc;
             try
@@ -2468,34 +2469,36 @@ namespace MaghaleNegar
             }
             catch (Exception)
             {
+                DedicatedFunctions.ShowMessage("هیچ سندی باز نیست!");
                 return;
             }
-            LoadingForm loadingForm = new LoadingForm();
 
-            System.Threading.Tasks.Task.Run(() =>
+            if (doc == null)
             {
-                try
-                {
-                    DedicatedFunctions.AccessType accessType = DedicatedFunctions.hasAccess(doc);
+                DedicatedFunctions.ShowMessage("هیچ سندی باز نیست!");
+                return;
+            }
 
-                    if (accessType == DedicatedFunctions.AccessType.AccessGranted_Administrator)
-                    {
-                        DedicatedFunctions.uploadDocument(doc, true);
-                        loadingForm?.closeForm(successfull: true);
-                    }
-                    else
-                    {
-                        DedicatedFunctions.ShowMessage(DialogBoxMessages.RequiredDedicatedDocument);
-                        loadingForm?.closeForm(successfull: false);
-                    }
-                }
-                catch (Exception e)
+            DedicatedFunctions.AccessType accessType = DedicatedFunctions.hasAccess(doc);
+            if (accessType != DedicatedFunctions.AccessType.AccessGranted &&
+                accessType != DedicatedFunctions.AccessType.AccessGranted_Administrator)
+            {
+                DedicatedFunctions.ShowMessage(DialogBoxMessages.RequiredDedicatedDocument);
+                return;
+            }
+
+            LoadingForm loadingForm = new LoadingForm();
+            loadingForm.Show();
+
+            bool success = await DedicatedFunctions.uploadDocumentAsync(doc, true, loadingForm);
+
+            if (!success)
+            {
+                loadingForm.BeginInvoke(new Action(() =>
                 {
-                    DedicatedFunctions.ShowErrorMessage("خطا غیر منتظره ای در آپلود سند رخ داد" + "\nپیغام خطا:\n" + e.Message);
-                    loadingForm?.closeForm(successfull: false);
-                }
-            });
-            loadingForm.ShowDialog();
+                    loadingForm.closeForm(successfull: false);
+                }));
+            }
         }
 
 
@@ -3212,6 +3215,25 @@ namespace MaghaleNegar
         #endregion
 
         #region Settings
+
+        public void journalSettings()
+        {
+            Document doc;
+            try
+            {
+                doc = Globals.ThisAddIn.Application.ActiveDocument;
+            }
+            catch (Exception)
+            {
+                return;
+            }
+            DedicatedFunctions.AccessType accessType = DedicatedFunctions.hasAccess(doc);
+            
+            JournalSettingsForm form = new JournalSettingsForm(Globals.ThisAddIn.Application.ActiveDocument);
+            form.ShowDialog();
+
+        }
+
         public void formatSettings()
         {
             Document doc;

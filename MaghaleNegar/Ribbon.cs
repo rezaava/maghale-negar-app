@@ -1,9 +1,10 @@
-﻿using MaghaleNegar.Constants;
+﻿using MaghaleNegar;
+using MaghaleNegar.Constants;
+using MaghaleNegar.Constants;
+using MaghaleNegar.Forms;
+using MaghaleNegar.Models;
 using MaghaleNegar.Models;
 using Microsoft.Office.Interop.Word;
-using MaghaleNegar;
-using MaghaleNegar.Constants;
-using MaghaleNegar.Models;
 using stdole;
 using System;
 using System.Collections.Generic;
@@ -162,6 +163,10 @@ namespace MaghaleNegar
 
                 new RibbonControlModel(RibbonControlNames.grpDocumentManager,RibbonControlModel.RibbonControlTypes.Group,null,true,true,"مقاله نگار",null,null,null,null),
                 new RibbonControlModel(RibbonControlNames.galleryDocumentsManager,RibbonControlModel.RibbonControlTypes.Gallery,Properties.ResourceRibbonIcons.MaghaleNegarDocuments,true,true,"مدیریت مقاله نگار","مدیریت مقاله نگار",null,null,galleryDocumentManagerItems),
+
+                new RibbonControlModel("menueditor", RibbonControlModel.RibbonControlTypes.Menu, Properties.ResourceRibbonIcons.DocumentText, true, true, "سردبیر", "سردبیر", "سردبیر", null, null),         
+                new RibbonControlModel(RibbonControlNames.Editor,RibbonControlModel.RibbonControlTypes.Button,Properties.ResourceRibbonIcons.Heading1,true,true,"مشخصات نشریه",null,null,null),
+
                 new RibbonControlModel(RibbonControlNames.btnChatBoxNetworking,RibbonControlModel.RibbonControlTypes.Button,Properties.ResourceRibbonIcons.Messages,true,true,"مقاله‌های من","مقاله‌های من","مقاله‌های من","C"),
                 new RibbonControlModel(RibbonControlNames.btnChangeContents,RibbonControlModel.RibbonControlTypes.Button,Properties.ResourceRibbonIcons.EditFile,true,true,"ویرایش اطلاعات","ویرایش اطلاعات","ویرایش برخی از اطلاعات شناسنامه ای سند جاری",null),
                 new RibbonControlModel(RibbonControlNames.btnAddRemovePages,RibbonControlModel.RibbonControlTypes.Button,Properties.ResourceRibbonIcons.AddFile,true,true,"صفحه‌بندی","صفحه‌بندی و فصل‌بندی","حذف و اضافه صفحات اختیاری و مدیریت فصل های سند جاری",null),
@@ -510,6 +515,11 @@ namespace MaghaleNegar
         #endregion
 
         #region Change Style Selection
+
+        public void Editor_Click(Microsoft.Office.Core.IRibbonControl control)
+        {
+            Globals.ThisAddIn.journalSettings();
+        }
         public void Abstract_Click(Microsoft.Office.Core.IRibbonControl control)
         {
             Globals.ThisAddIn.setAbstractStyle();
@@ -1270,6 +1280,8 @@ namespace MaghaleNegar
         internal const string btnLogin = "btnLogin";
 
         internal const string galleryDocumentsManager = "galleryDocumentsManager";
+
+        internal const string Editor = "Editor";
 
         internal const string btnChatBoxNetworking = "btnChatBoxNetworking";
 

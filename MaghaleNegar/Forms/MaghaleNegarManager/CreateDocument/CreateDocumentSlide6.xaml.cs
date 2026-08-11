@@ -1,9 +1,11 @@
-﻿using MaghaleNegar.Constants;
+﻿using DocumentFormat.OpenXml.Spreadsheet;
+using MaghaleNegar.Constants;
 using MaghaleNegar.Forms.MaghaleNegarManager.DocumentManager.View;
 using Microsoft.Office.Interop.Word;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
@@ -409,22 +411,314 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
         {
             try
             {
-                // عنوان مقاله
+                // ====== عنوان مقاله ======
                 SetContentControlText(doc, "TitleFa", _titleFa);
                 SetContentControlText(doc, "TitleEn", _titleEn);
 
-                // نام نویسنده‌ها
-                string allAuthorsFa = string.Join("، ", infoList.Select(a => a.AuthorName));
-                string allAuthorsEn = string.Join(", ", infoList.Select(a => a.AuthorNameEn));
-                SetContentControlText(doc, "AuthorNamesFa", allAuthorsFa);
-                SetContentControlText(doc, "AuthorNamesEn", allAuthorsEn);
+                // ====== نویسندگان فارسی + Footnote ======
+                InsertAuthorsWithFootnotes(doc, "AuthorNamesFa", false);
+
+                // ====== نویسندگان انگلیسی ======
+                InsertAuthorsWithFootnotes(doc, "AuthorNamesEn", true);
             }
             catch (Exception ex)
             {
-                Debug.WriteLine($"خطا در FillDocumentContent: {ex.Message}");
+                Debug.WriteLine($"خطا در FillDocumentContent: {ex}");
+                MessageBox.Show(
+                    $"خطا در ایجاد اطلاعات نویسندگان:\n{ex.Message}",
+                    "خطا",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+            }
+        }
+        private void InsertAuthorsWithFootnotes(Document doc)
+        {
+            try
+            {
+                if (infoList == null || infoList.Count == 0)
+                    return;
+
+                // ====== نویسندگان فارسی ======
+                if (doc.Bookmarks.Exists("AuthorNamesFa"))
+                {
+                    Range authorRange = doc.Bookmarks["AuthorNamesFa"].Range;
+
+                    // پاک کردن محتوای قبلی Bookmark
+                    authorRange.Text = "";
+
+                    // بعد از تغییر Text، Bookmark ممکن است از بین برود
+                    // بنابراین Range را دوباره از محل Bookmark اصلی نمی‌توان گرفت.
+                    // موقعیت شروع را قبل از تغییر نگه می‌داریم.
+                }
+
+                // بهتر است Bookmark را با یک Range مشخص کنترل کنیم
+                Bookmark bookmark = doc.Bookmarks["AuthorNamesFa"];
+                Range range = bookmark.Range;
+
+                int startPosition = range.Start;
+
+                // پاک کردن محتوای Bookmark
+                range.Text = "";
+
+                // ایجاد Range جدید در محل Bookmark
+                Range insertRange = doc.Range(startPosition, startPosition);
+
+                for (int i = 0; i < infoList.Count; i++)
+                {
+                    var author = infoList[i];
+
+                    if (i > 0)
+                    {
+                        insertRange.InsertAfter("، ");
+                        insertRange.Collapse(WdCollapseDirection.wdCollapseEnd);
+                    }
+
+                    // نام نویسنده
+                    insertRange.InsertAfter(author.AuthorName);
+                    insertRange.Collapse(WdCollapseDirection.wdCollapseEnd);
+
+                    // ====== ایجاد Footnote واقعی Word ======
+                    string footnoteText = author.AffiliationFa;
+
+                    if (string.IsNullOrWhiteSpace(footnoteText))
+                        footnoteText = author.AffiliationEn;
+
+                    if (string.IsNullOrWhiteSpace(footnoteText))
+                        footnoteText = "وابستگی علمی مشخص نیست";
+
+                    // ایجاد Footnote دقیقاً بعد از نام نویسنده
+                    Footnote footnote = doc.Footnotes.Add(
+                        insertRange,
+                        false,
+                        footnoteText
+                    );
+
+                    // تنظیم فونت Footnote
+                    footnote.Range.Font.Size = 10;
+                    footnote.Range.ParagraphFormat.Alignment =
+                        WdParagraphAlignment.wdAlignParagraphRight;
+
+                    // رفتن به انتهای Reference ایجاد شده
+                    insertRange = doc.Range(
+                        footnote.Reference.End,
+                        footnote.Reference.End
+                    );
+                }
+
+                // ====== نویسندگان انگلیسی ======
+                if (doc.Bookmarks.Exists("AuthorNamesEn"))
+                {
+                    Bookmark bookmarkEn = doc.Bookmarks["AuthorNamesEn"];
+                    Range rangeEn = bookmarkEn.Range;
+
+                    int startPositionEn = rangeEn.Start;
+
+                    rangeEn.Text = "";
+
+                    Range insertRangeEn = doc.Range(
+                        startPositionEn,
+                        startPositionEn
+                    );
+
+                    for (int i = 0; i < infoList.Count; i++)
+                    {
+                        var author = infoList[i];
+
+                        if (i > 0)
+                        {
+                            insertRangeEn.InsertAfter(", ");
+                            insertRangeEn.Collapse(
+                                WdCollapseDirection.wdCollapseEnd
+                            );
+                        }
+
+                        // نام انگلیسی نویسنده
+                        insertRangeEn.InsertAfter(author.AuthorNameEn);
+                        insertRangeEn.Collapse(
+                            WdCollapseDirection.wdCollapseEnd
+                        );
+
+                        // وابستگی انگلیسی
+                        string footnoteText = author.AffiliationEn;
+
+                        if (string.IsNullOrWhiteSpace(footnoteText))
+                            footnoteText = author.AffiliationFa;
+
+                        if (string.IsNullOrWhiteSpace(footnoteText))
+                            footnoteText = "Affiliation not specified";
+
+                        // Footnote واقعی
+                        Footnote footnote = doc.Footnotes.Add(
+                            insertRangeEn,
+                            false,
+                            footnoteText
+                        );
+
+                        footnote.Range.Font.Size = 10;
+                        footnote.Range.ParagraphFormat.Alignment =
+                            WdParagraphAlignment.wdAlignParagraphLeft;
+
+                        insertRangeEn = doc.Range(
+                            footnote.Reference.End,
+                            footnote.Reference.End
+                        );
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(
+                    $"خطا در InsertAuthorsWithFootnotes: {ex.Message}"
+                );
             }
         }
 
+        private void SetBookmarkText(Document doc, string bookmarkName, string text)
+        {
+            try
+            {
+                if (doc.Bookmarks.Exists(bookmarkName))
+                {
+                    doc.Bookmarks[bookmarkName].Range.Text = text;
+                }
+            }
+            catch (Exception ex)
+            {
+                //Debug.WriteLine($"خطا در SetBookmarkText برای {bookmarkName}: {ex.Message}");
+            }
+        }
+        private void InsertAuthorsWithFootnotes(
+            Document doc,
+            string bookmarkName,
+            bool isEnglish)
+        {
+            try
+            {
+                if (infoList == null || infoList.Count == 0)
+                    return;
+
+                if (!doc.Bookmarks.Exists(bookmarkName))
+                {
+                    Debug.WriteLine($"Bookmark پیدا نشد: {bookmarkName}");
+                    return;
+                }
+
+                // محدوده Bookmark
+                Range bookmarkRange = doc.Bookmarks[bookmarkName].Range;
+
+                // موقعیت شروع Bookmark
+                int start = bookmarkRange.Start;
+
+                // حذف متن قبلی
+                bookmarkRange.Text = "";
+
+                // Range جدید برای درج نویسندگان
+                Range insertRange = doc.Range(start, start);
+
+                for (int i = 0; i < infoList.Count; i++)
+                {
+                    var author = infoList[i];
+
+                    if (author == null)
+                        continue;
+
+                    // ==========================================
+                    // جداکننده بین نویسندگان
+                    // ==========================================
+                    if (i > 0)
+                    {
+                        insertRange.InsertAfter(isEnglish ? ", " : "، ");
+
+                        insertRange.Collapse(
+                            WdCollapseDirection.wdCollapseEnd);
+                    }
+
+                    // ==========================================
+                    // نام نویسنده
+                    // ==========================================
+                    string authorName = isEnglish
+                        ? author.AuthorNameEn
+                        : author.AuthorName;
+
+                    if (string.IsNullOrWhiteSpace(authorName))
+                        authorName = "-";
+
+                    insertRange.InsertAfter(authorName);
+
+                    insertRange.Collapse(
+                        WdCollapseDirection.wdCollapseEnd);
+
+                    // ==========================================
+                    // متن Footnote
+                    // ==========================================
+                    string footnoteText = isEnglish
+                        ? author.AffiliationEn
+                        : author.AffiliationFa;
+
+                    // اگر متن زبان موردنظر خالی بود
+                    // از زبان دیگر استفاده کن
+                    if (string.IsNullOrWhiteSpace(footnoteText))
+                    {
+                        footnoteText = isEnglish
+                            ? author.AffiliationFa
+                            : author.AffiliationEn;
+                    }
+
+                    if (string.IsNullOrWhiteSpace(footnoteText))
+                    {
+                        footnoteText = isEnglish
+                            ? "Affiliation not specified"
+                            : "وابستگی علمی مشخص نیست";
+                    }
+
+                    // ==========================================
+                    // ایجاد Footnote واقعی Word
+                    // ==========================================
+
+                    object reference = Type.Missing;
+                    object text = footnoteText;
+
+                    Footnote footnote = doc.Footnotes.Add(
+                        insertRange,
+                        ref reference,
+                        ref text
+                    );
+
+                    // ==========================================
+                    // تنظیم Footnote
+                    // ==========================================
+
+                    footnote.Range.Font.Size = 10;
+
+                    if (isEnglish)
+                    {
+                        footnote.Range.ParagraphFormat.Alignment =
+                            WdParagraphAlignment.wdAlignParagraphLeft;
+                    }
+                    else
+                    {
+                        footnote.Range.ParagraphFormat.Alignment =
+                            WdParagraphAlignment.wdAlignParagraphRight;
+                    }
+
+                    // ==========================================
+                    // ادامه درج بعد از Reference
+                    // ==========================================
+
+                    insertRange = doc.Range(
+                        footnote.Reference.End,
+                        footnote.Reference.End
+                    );
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(
+                    $"خطا در InsertAuthorsWithFootnotes ({bookmarkName}): {ex}");
+
+                throw;
+            }
+        }
         private void SetContentControlText(Document doc, string tag, string text)
         {
             try
