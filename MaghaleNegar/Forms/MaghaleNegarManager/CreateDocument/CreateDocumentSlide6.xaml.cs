@@ -447,9 +447,9 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
             }
         }
         private void InsertAuthorsWithFootnotes(
-                  Document doc,
-                  string bookmarkName,
-                  bool isEnglish)
+                          Document doc,
+                          string bookmarkName,
+                          bool isEnglish)
         {
             try
             {
@@ -461,6 +461,11 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                     Debug.WriteLine($"Bookmark پیدا نشد: {bookmarkName}");
                     return;
                 }
+
+                // ==========================================
+                // تنظیم شماره‌گذاری پانویس‌ها (شروع از ۱ در هر صفحه)
+                // ==========================================
+                doc.Footnotes.NumberingRule = WdNumberingRule.wdRestartPage;
 
                 // محدوده Bookmark
                 Range bookmarkRange = doc.Bookmarks[bookmarkName].Range;
@@ -487,9 +492,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                     if (i > 0)
                     {
                         insertRange.InsertAfter(isEnglish ? ", " : "، ");
-
-                        insertRange.Collapse(
-                            WdCollapseDirection.wdCollapseEnd);
+                        insertRange.Collapse(WdCollapseDirection.wdCollapseEnd);
                     }
 
                     // ==========================================
@@ -503,9 +506,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                         authorName = "-";
 
                     insertRange.InsertAfter(authorName);
-
-                    insertRange.Collapse(
-                        WdCollapseDirection.wdCollapseEnd);
+                    insertRange.Collapse(WdCollapseDirection.wdCollapseEnd);
 
                     // ==========================================
                     // متن Footnote
@@ -514,8 +515,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                         ? author.AffiliationEn
                         : author.AffiliationFa;
 
-                    // اگر متن زبان موردنظر خالی بود
-                    // از زبان دیگر استفاده کن
+                    // اگر متن زبان موردنظر خالی بود، از زبان دیگر استفاده کن
                     if (string.IsNullOrWhiteSpace(footnoteText))
                     {
                         footnoteText = isEnglish
@@ -533,7 +533,6 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                     // ==========================================
                     // ایجاد Footnote واقعی Word
                     // ==========================================
-
                     object reference = Type.Missing;
                     object text = footnoteText;
 
@@ -544,31 +543,23 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                     );
 
                     // ==========================================
-                    // تنظیم Footnote
+                    // تنظیمات Footnote
                     // ==========================================
-
                     footnote.Range.Font.Size = 10;
 
-                    // تنظیم جهت نوشتار (RTL برای فارسی) با استفاده از ReadingOrder
+                    // تنظیم جهت نوشتار (RTL برای فارسی)
                     footnote.Range.ParagraphFormat.ReadingOrder = isEnglish
                         ? WdReadingOrder.wdReadingOrderLtr
                         : WdReadingOrder.wdReadingOrderRtl;
 
-                    if (isEnglish)
-                    {
-                        footnote.Range.ParagraphFormat.Alignment =
-                            WdParagraphAlignment.wdAlignParagraphLeft;
-                    }
-                    else
-                    {
-                        footnote.Range.ParagraphFormat.Alignment =
-                            WdParagraphAlignment.wdAlignParagraphRight;
-                    }
+                    // تنظیم تراز (چپ‌چین برای انگلیسی، راست‌چین برای فارسی)
+                    footnote.Range.ParagraphFormat.Alignment = isEnglish
+                        ? WdParagraphAlignment.wdAlignParagraphLeft
+                        : WdParagraphAlignment.wdAlignParagraphRight;
 
                     // ==========================================
                     // ادامه درج بعد از Reference
                     // ==========================================
-
                     insertRange = doc.Range(
                         footnote.Reference.End,
                         footnote.Reference.End
@@ -577,9 +568,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(
-                    $"خطا در InsertAuthorsWithFootnotes ({bookmarkName}): {ex}");
-
+                Debug.WriteLine($"خطا در InsertAuthorsWithFootnotes ({bookmarkName}): {ex}");
                 throw;
             }
         }

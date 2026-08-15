@@ -246,11 +246,11 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
 
             if (selectedUniversityType == "Azad")
             {
-                return $"{degree}،گروه {group}،واحد {faculty}،دانشگاه آزاد اسلامی {city}،ایران ({email})";
+                return $"{degree}، گروه {group}، واحد {faculty}، دانشگاه آزاد اسلامی {city}، ایران ({email})";
             }
             else // Dolati
             {
-                return $"{degree}،گروه {group}،دانشکده {faculty}،{university}،{city}،ایران ({email})";
+                return $"{degree}، گروه {group}، دانشکده {faculty}، {university}، {city}، ایران ({email})";
             }
         }
 
@@ -271,11 +271,11 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
 
             if (selectedUniversityType == "Azad")
             {
-                return $" ({degree} ,Department of {group},{faculty}Branch,Islamic Azad University, {city}, Iran ({email}";
+                return $"{degree}, Department of {group}, {faculty} Branch, Islamic Azad University, {city}, Iran ({email})";
             }
             else // Dolati
             {
-                return $" ({degree} ,Department of {group},Faculty of {faculty},{university} ,{city}, Iran ({email}";
+                return $"{degree}, Department of {group}, Faculty of {faculty}, {university}, {city}, Iran ({email})";
             }
         }
 
