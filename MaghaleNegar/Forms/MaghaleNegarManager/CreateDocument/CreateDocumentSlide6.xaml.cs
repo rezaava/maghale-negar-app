@@ -431,148 +431,7 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                     MessageBoxImage.Error);
             }
         }
-        private void InsertAuthorsWithFootnotes(Document doc)
-        {
-            try
-            {
-                if (infoList == null || infoList.Count == 0)
-                    return;
-
-                // ====== نویسندگان فارسی ======
-                if (doc.Bookmarks.Exists("AuthorNamesFa"))
-                {
-                    Range authorRange = doc.Bookmarks["AuthorNamesFa"].Range;
-
-                    // پاک کردن محتوای قبلی Bookmark
-                    authorRange.Text = "";
-
-                    // بعد از تغییر Text، Bookmark ممکن است از بین برود
-                    // بنابراین Range را دوباره از محل Bookmark اصلی نمی‌توان گرفت.
-                    // موقعیت شروع را قبل از تغییر نگه می‌داریم.
-                }
-
-                // بهتر است Bookmark را با یک Range مشخص کنترل کنیم
-                Bookmark bookmark = doc.Bookmarks["AuthorNamesFa"];
-                Range range = bookmark.Range;
-
-                int startPosition = range.Start;
-
-                // پاک کردن محتوای Bookmark
-                range.Text = "";
-
-                // ایجاد Range جدید در محل Bookmark
-                Range insertRange = doc.Range(startPosition, startPosition);
-
-                for (int i = 0; i < infoList.Count; i++)
-                {
-                    var author = infoList[i];
-
-                    if (i > 0)
-                    {
-                        insertRange.InsertAfter("، ");
-                        insertRange.Collapse(WdCollapseDirection.wdCollapseEnd);
-                    }
-
-                    // نام نویسنده
-                    insertRange.InsertAfter(author.AuthorName);
-                    insertRange.Collapse(WdCollapseDirection.wdCollapseEnd);
-
-                    // ====== ایجاد Footnote واقعی Word ======
-                    string footnoteText = author.AffiliationFa;
-
-                    if (string.IsNullOrWhiteSpace(footnoteText))
-                        footnoteText = author.AffiliationEn;
-
-                    if (string.IsNullOrWhiteSpace(footnoteText))
-                        footnoteText = "وابستگی علمی مشخص نیست";
-
-                    // ایجاد Footnote دقیقاً بعد از نام نویسنده
-                    Footnote footnote = doc.Footnotes.Add(
-                        insertRange,
-                        false,
-                        footnoteText
-                    );
-
-                    // تنظیم فونت Footnote
-                    footnote.Range.Font.Size = 10;
-                    footnote.Range.ParagraphFormat.Alignment =
-                        WdParagraphAlignment.wdAlignParagraphRight;
-
-                    // رفتن به انتهای Reference ایجاد شده
-                    insertRange = doc.Range(
-                        footnote.Reference.End,
-                        footnote.Reference.End
-                    );
-                }
-
-                // ====== نویسندگان انگلیسی ======
-                if (doc.Bookmarks.Exists("AuthorNamesEn"))
-                {
-                    Bookmark bookmarkEn = doc.Bookmarks["AuthorNamesEn"];
-                    Range rangeEn = bookmarkEn.Range;
-
-                    int startPositionEn = rangeEn.Start;
-
-                    rangeEn.Text = "";
-
-                    Range insertRangeEn = doc.Range(
-                        startPositionEn,
-                        startPositionEn
-                    );
-
-                    for (int i = 0; i < infoList.Count; i++)
-                    {
-                        var author = infoList[i];
-
-                        if (i > 0)
-                        {
-                            insertRangeEn.InsertAfter(", ");
-                            insertRangeEn.Collapse(
-                                WdCollapseDirection.wdCollapseEnd
-                            );
-                        }
-
-                        // نام انگلیسی نویسنده
-                        insertRangeEn.InsertAfter(author.AuthorNameEn);
-                        insertRangeEn.Collapse(
-                            WdCollapseDirection.wdCollapseEnd
-                        );
-
-                        // وابستگی انگلیسی
-                        string footnoteText = author.AffiliationEn;
-
-                        if (string.IsNullOrWhiteSpace(footnoteText))
-                            footnoteText = author.AffiliationFa;
-
-                        if (string.IsNullOrWhiteSpace(footnoteText))
-                            footnoteText = "Affiliation not specified";
-
-                        // Footnote واقعی
-                        Footnote footnote = doc.Footnotes.Add(
-                            insertRangeEn,
-                            false,
-                            footnoteText
-                        );
-
-                        footnote.Range.Font.Size = 10;
-                        footnote.Range.ParagraphFormat.Alignment =
-                            WdParagraphAlignment.wdAlignParagraphLeft;
-
-                        insertRangeEn = doc.Range(
-                            footnote.Reference.End,
-                            footnote.Reference.End
-                        );
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(
-                    $"خطا در InsertAuthorsWithFootnotes: {ex.Message}"
-                );
-            }
-        }
-
+        
         private void SetBookmarkText(Document doc, string bookmarkName, string text)
         {
             try
@@ -588,9 +447,9 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
             }
         }
         private void InsertAuthorsWithFootnotes(
-            Document doc,
-            string bookmarkName,
-            bool isEnglish)
+                  Document doc,
+                  string bookmarkName,
+                  bool isEnglish)
         {
             try
             {
@@ -689,6 +548,11 @@ namespace MaghaleNegar.Forms.MaghaleNegarManager.CreateDocument
                     // ==========================================
 
                     footnote.Range.Font.Size = 10;
+
+                    // تنظیم جهت نوشتار (RTL برای فارسی) با استفاده از ReadingOrder
+                    footnote.Range.ParagraphFormat.ReadingOrder = isEnglish
+                        ? WdReadingOrder.wdReadingOrderLtr
+                        : WdReadingOrder.wdReadingOrderRtl;
 
                     if (isEnglish)
                     {

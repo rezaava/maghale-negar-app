@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\error\\Desktop\\maghale-negar-app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|c:\\users\\error\\desktop\\maghale-negar-app\\maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide5.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide5.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|c:\\users\\error\\desktop\\maghale-negar-app\\maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide5.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide5.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|c:\\users\\error\\desktop\\maghale-negar-app\\maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateDocumentSlide5.xaml",
-              "DocumentMoniker": "C:\\Users\\error\\Desktop\\maghale-negar-app\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide5.xaml",
-              "RelativeDocumentMoniker": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide5.xaml",
-              "ToolTip": "C:\\Users\\error\\Desktop\\maghale-negar-app\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide5.xaml",
-              "RelativeToolTip": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide5.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-08-09T09:18:54.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CreateDocumentSlide5.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\error\\Desktop\\maghale-negar-app\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide5.xaml.cs",
-              "RelativeDocumentMoniker": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide5.xaml.cs",
-              "ToolTip": "C:\\Users\\error\\Desktop\\maghale-negar-app\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide5.xaml.cs",
-              "RelativeToolTip": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide5.xaml.cs",
-              "ViewState": "AgIAAIEDAAAAm5mZmZkBwKQDAAAvAAAAAAAAAA==",
+              "Title": "CreateDocumentSlide6.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\error\\Desktop\\maghale-negar-app\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml.cs",
+              "RelativeDocumentMoniker": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml.cs",
+              "ToolTip": "C:\\Users\\error\\Desktop\\maghale-negar-app\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml.cs",
+              "RelativeToolTip": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml.cs",
+              "ViewState": "AgIAAAQCAACAl5mZmZkiwCgCAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-09T09:05:03.424Z",
+              "WhenOpened": "2026-08-15T05:01:35.98Z",
               "EditorCaption": ""
             }
           ]
