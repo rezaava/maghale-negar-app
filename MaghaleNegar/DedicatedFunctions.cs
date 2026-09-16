@@ -4553,6 +4553,9 @@ namespace MaghaleNegar
         }
         #endregion
 
+
+
+
         #region Image
         internal static string copyImageToTempFolder(Bitmap bitmap, string customFileName = "filename", string postFix = ".jpg")
         {
