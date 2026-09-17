@@ -1,0 +1,63 @@
+# ==== Visual Studio / .NET build output ====
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww]in32/
+bin/
+obj/
+out/
+
+# ==== Visual Studio cache/options ====
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# ==== NuGet ====
+packages/
+*.nupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+# ==== VSTO / ClickOnce ====
+*.vsto
+*.manifest
+*.application
+publish/
+Publish/
+*_TemporaryKey*.pfx
+
+# ==== Build results / logs ====
+*.log
+*.tlog
+*.lastbuildstate
+*.pidb
+*.svclog
+*.ipdb
+*.iobj
+
+# ==== ReSharper / other tool caches ====
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# ==== Word temp/lock files (relevant to this project) ====
+~$*.dotm
+~$*.docx
+~$*.doc
+Thumbs.db
+
+# ==== ConfuserEx / obfuscation output ====
+Confused/
+*.crproj.bak
+
+# ==== Advanced Installer build output ====
+*.aip.bak
+[Bb]uild/
+
+# ==== Misc OS files ====
+.DS_Store
+desktop.ini

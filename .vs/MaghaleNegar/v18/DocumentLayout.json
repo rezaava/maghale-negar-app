@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\maghalenegar\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|c:\\users\\moaba\\documents\\cs\\code\\c#\\maghale-negar-app\\maghalenegar\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|c:\\users\\moaba\\documents\\cs\\code\\c#\\maghale-negar-app\\maghalenegar\\dedicatedfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\maghalenegar\\dedicatedfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\dedicatedfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|c:\\users\\moaba\\documents\\cs\\code\\c#\\maghale-negar-app\\maghalenegar\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\maghalenegar\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -56,7 +56,7 @@
               "RelativeDocumentMoniker": "MaghaleNegar\\Constants\\Constants.cs",
               "ToolTip": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\MaghaleNegar\\Constants\\Constants.cs",
               "RelativeToolTip": "MaghaleNegar\\Constants\\Constants.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAkwJEAAABnAAAAAAAAAA==",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAiwJEAAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-15T06:29:53.538Z",
               "EditorCaption": ""
@@ -71,8 +71,7 @@
               "RelativeToolTip": "MaghaleNegar\\DedicatedFunctions.cs",
               "ViewState": "AgIAAGkRAAAAAAAAAAAgwHERAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-15T06:30:25.782Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-15T06:30:25.782Z"
             },
             {
               "$type": "Document",
@@ -84,8 +83,7 @@
               "RelativeToolTip": "MaghaleNegar\\ThisAddIn.cs",
               "ViewState": "AgIAAK8BAAAAAAAAAAAiwLoBAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T05:33:30.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-17T05:33:30.232Z"
             },
             {
               "$type": "Document",
