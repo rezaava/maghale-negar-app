@@ -90,30 +90,60 @@ namespace MaghaleNegar.Constants
 
         internal const string Universities = "MaghaleNegar.Constants.Universities.xml";
 
-        internal const string B_Yagut = "MaghaleNegar.Resources.B Yagut.ttf";
-        internal const string B_Yagut_Bold = "MaghaleNegar.Resources.B Yagut Bold.ttf";
+        //internal const string B_Yagut = "MaghaleNegar.Resources.B Yagut.ttf";
+        //internal const string B_Yagut_Bold = "MaghaleNegar.Resources.B Yagut Bold.ttf";
 
-        internal const string B_Badr_Bold = "MaghaleNegar.Resources.B Badr Bold.ttf";
-        internal const string B_Badr = "MaghaleNegar.Resources.B Badr.ttf";
-        internal const string B_Lotus_Bold = "MaghaleNegar.Resources.B Lotus Bold.ttf";
-        internal const string B_Lotus = "MaghaleNegar.Resources.B Lotus.ttf";
-        internal const string B_Nazanin_Bold = "MaghaleNegar.Resources.B Nazanin Bold.ttf";
-        internal const string B_Nazanin = "MaghaleNegar.Resources.B Nazanin.ttf";
-        internal const string B_Titr_Bold = "MaghaleNegar.Resources.B Titr Bold.ttf";
-        internal const string B_Zar_Bold = "MaghaleNegar.Resources.B Zar Bold.ttf";
-        internal const string B_Zar = "MaghaleNegar.Resources.B Zar.ttf";
-        internal const string Besmellah_1 = "MaghaleNegar.Resources.Besmellah_1.ttf";
-        internal const string Besmellah_2 = "MaghaleNegar.Resources.Besmellah_2.ttf";
-        internal const string Besmellah_3 = "MaghaleNegar.Resources.Besmellah_3.ttf";
-        internal const string Besmellah_4 = "MaghaleNegar.Resources.Besmellah_4.ttf";
-        internal const string IranNastaliq = "MaghaleNegar.Resources.IranNastaliq.ttf";
-        internal const string times = "MaghaleNegar.Resources.TIMES.ttf";
-        internal const string times_BD = "MaghaleNegar.Resources.TIMESBD.ttf";
-        internal const string times_BI = "MaghaleNegar.Resources.TIMESBI.ttf";
-        internal const string times_I = "MaghaleNegar.Resources.TIMESI.ttf";
-        internal const string Vazir = "MaghaleNegar.Resources.Vazir.ttf";
-        internal const string Vazirmatn_Bold = "MaghaleNegar.Resources.Vazirmatn-Bold.ttf";
-        internal const string Vazirmatn_Regular = "MaghaleNegar.Resources.Vazirmatn-Regular.ttf";
+        //internal const string B_Badr_Bold = "MaghaleNegar.Resources.B Badr Bold.ttf";
+        //internal const string B_Badr = "MaghaleNegar.Resources.B Badr.ttf";
+        //internal const string B_Lotus_Bold = "MaghaleNegar.Resources.B Lotus Bold.ttf";
+        //internal const string B_Lotus = "MaghaleNegar.Resources.B Lotus.ttf";
+        //internal const string B_Nazanin_Bold = "MaghaleNegar.Resources.B Nazanin Bold.ttf";
+        //internal const string B_Nazanin = "MaghaleNegar.Resources.B Nazanin.ttf";
+        //internal const string B_Titr_Bold = "MaghaleNegar.Resources.B Titr Bold.ttf";
+        //internal const string B_Zar_Bold = "MaghaleNegar.Resources.B Zar Bold.ttf";
+        //internal const string B_Zar = "MaghaleNegar.Resources.B Zar.ttf";
+        //internal const string Besmellah_1 = "MaghaleNegar.Resources.Besmellah_1.ttf";
+        //internal const string Besmellah_2 = "MaghaleNegar.Resources.Besmellah_2.ttf";
+        //internal const string Besmellah_3 = "MaghaleNegar.Resources.Besmellah_3.ttf";
+        //internal const string Besmellah_4 = "MaghaleNegar.Resources.Besmellah_4.ttf";
+        //internal const string IranNastaliq = "MaghaleNegar.Resources.IranNastaliq.ttf";
+        ////internal const string times = "MaghaleNegar.Resources.TIMES.ttf";
+        ////internal const string times_BD = "MaghaleNegar.Resources.TIMESBD.ttf";
+        ////internal const string times_BI = "MaghaleNegar.Resources.TIMESBI.ttf";
+        ////internal const string times_I = "MaghaleNegar.Resources.TIMESI.ttf";
+
+        //internal const string times = "MaghaleNegar.Resources.Fonts.TIMES.ttf";
+        //internal const string times_BD = "MaghaleNegar.Resources.Fonts.TIMESBD.ttf";
+        //internal const string times_BI = "MaghaleNegar.Resources.Fonts.TIMESBI.ttf";
+        //internal const string times_I = "MaghaleNegar.Resources.Fonts.TIMESI.ttf";
+
+        //internal const string Vazir = "MaghaleNegar.Resources.Vazir.ttf";
+        //internal const string Vazirmatn_Bold = "MaghaleNegar.Resources.Vazirmatn-Bold.ttf";
+        //internal const string Vazirmatn_Regular = "MaghaleNegar.Resources.Vazirmatn-Regular.ttf";
+
+        internal const string B_Yagut = "MaghaleNegar.Resources.Fonts.B Yagut.ttf";
+        internal const string B_Yagut_Bold = "MaghaleNegar.Resources.Fonts.B Yagut Bold.ttf";
+        internal const string B_Badr_Bold = "MaghaleNegar.Resources.Fonts.B Badr Bold.ttf";
+        internal const string B_Badr = "MaghaleNegar.Resources.Fonts.B Badr.ttf";
+        internal const string B_Lotus_Bold = "MaghaleNegar.Resources.Fonts.B Lotus Bold.ttf";
+        internal const string B_Lotus = "MaghaleNegar.Resources.Fonts.B Lotus.ttf";
+        internal const string B_Nazanin_Bold = "MaghaleNegar.Resources.Fonts.B Nazanin Bold.ttf";
+        internal const string B_Nazanin = "MaghaleNegar.Resources.Fonts.B Nazanin.ttf";
+        internal const string B_Titr_Bold = "MaghaleNegar.Resources.Fonts.B Titr Bold.ttf";
+        internal const string B_Zar_Bold = "MaghaleNegar.Resources.Fonts.B Zar Bold.ttf";
+        internal const string B_Zar = "MaghaleNegar.Resources.Fonts.B Zar.ttf";
+        internal const string Besmellah_1 = "MaghaleNegar.Resources.Fonts.Besmellah_1.ttf";
+        internal const string Besmellah_2 = "MaghaleNegar.Resources.Fonts.Besmellah_2.ttf";
+        internal const string Besmellah_3 = "MaghaleNegar.Resources.Fonts.Besmellah_3.ttf";
+        internal const string Besmellah_4 = "MaghaleNegar.Resources.Fonts.Besmellah_4.ttf";
+        internal const string IranNastaliq = "MaghaleNegar.Resources.Fonts.IranNastaliq.ttf";
+        internal const string times = "MaghaleNegar.Resources.Fonts.TIMES.ttf";
+        internal const string times_BD = "MaghaleNegar.Resources.Fonts.TIMESBD.ttf";
+        internal const string times_BI = "MaghaleNegar.Resources.Fonts.TIMESBI.ttf";
+        internal const string times_I = "MaghaleNegar.Resources.Fonts.TIMESI.ttf";
+        internal const string Vazir = "MaghaleNegar.Resources.Fonts.Vazir.ttf";
+        internal const string Vazirmatn_Bold = "MaghaleNegar.Resources.Fonts.Vazirmatn-Bold.ttf";
+        internal const string Vazirmatn_Regular = "MaghaleNegar.Resources.Fonts.Vazirmatn-Regular.ttf";
     }
 
     struct ParagraphAndTextWrapMarks

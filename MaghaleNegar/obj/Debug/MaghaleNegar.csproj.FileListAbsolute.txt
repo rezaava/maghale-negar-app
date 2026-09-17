@@ -322,6 +322,7 @@ C:\Users\error\Desktop\maghale-negar-app\MaghaleNegar\obj\Debug\MaghaleNegar.csp
 C:\Users\error\Desktop\maghale-negar-app\MaghaleNegar\obj\Debug\MaghaleN.CECAE18E.Up2Date
 C:\Users\error\Desktop\maghale-negar-app\MaghaleNegar\obj\Debug\MaghaleNegar.dll
 C:\Users\error\Desktop\maghale-negar-app\MaghaleNegar\obj\Debug\MaghaleNegar.pdb
+C:\Users\moaba\Documents\cs\Code\C#\maghale-negar-app\MaghaleNegar\bin\Debug\Constants\MaghaleNegarShortcut.dotm
 C:\Users\moaba\Documents\cs\Code\C#\maghale-negar-app\MaghaleNegar\bin\Debug\MaghaleNegar.dll.config
 C:\Users\moaba\Documents\cs\Code\C#\maghale-negar-app\MaghaleNegar\bin\Debug\MaghaleNegar.dll
 C:\Users\moaba\Documents\cs\Code\C#\maghale-negar-app\MaghaleNegar\bin\Debug\MaghaleNegar.pdb

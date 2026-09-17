@@ -776,13 +776,15 @@
     <EmbeddedResource Include="Resources\Fonts\B Nazanin Bold.ttf" />
     <EmbeddedResource Include="Resources\Fonts\B Nazanin.ttf" />
     <EmbeddedResource Include="Resources\Fonts\B Titr Bold.ttf" />
-    <EmbeddedResource Include="Constants\MaghaleNegarShortcut.dotm" />
+    <EmbeddedResource Include="Constants\MaghaleNegarShortcut.dotm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Fonts\B Yagut Bold.ttf" />
     <EmbeddedResource Include="Resources\Fonts\B Yagut.ttf" />
-    <None Include="Resources\Fonts\TIMES.ttf" />
-    <None Include="Resources\Fonts\TIMESBD.ttf" />
-    <None Include="Resources\Fonts\TIMESBI.ttf" />
-    <None Include="Resources\Fonts\TIMESI.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\TIMES.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\TIMESBD.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\TIMESBI.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\TIMESI.ttf" />
     <None Include="Resources\Thumbs.db" />
     <EmbeddedResource Include="Resources\Fonts\Vazir.ttf" />
     <EmbeddedResource Include="Resources\Fonts\Vazirmatn-Bold.ttf" />

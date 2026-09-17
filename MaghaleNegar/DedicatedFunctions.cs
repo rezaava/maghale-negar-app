@@ -4462,7 +4462,7 @@ namespace MaghaleNegar
 
             if (streamResource == null)
             {
-                throw new Exception("خطای غیر منتظره در گرفتن Stream از فایل!");
+                throw new Exception("خطای غیر منتظره در گرفتن Stream از فایل!\nنام فایل: " + resourcePath);
             }
             return streamResource;
         }

@@ -432,7 +432,13 @@ namespace MaghaleNegar
             }
             catch (Exception ex)
             {
-                DedicatedFunctions.ShowErrorMessage("خطای غیر منتظره ای در بارگیری افزونه رخ داده است\n افزونه غیرفعال میشود\n پیغام خطا:\n" + ex.Message,
+                string fullMsg = ex.Message;
+                if (ex.InnerException != null)
+                    fullMsg += "\n\nInner: " + ex.InnerException.Message;
+                fullMsg += "\n\nStackTrace:\n" + ex.StackTrace;
+
+                DedicatedFunctions.ShowErrorMessage(
+                    "خطای غیر منتظره ای در بارگیری افزونه رخ داده است\n افزونه غیرفعال میشود\n پیغام خطا:\n" + fullMsg,
                     (int)ErrorCodes.StartupProblem, StringConstant.SupportEmail);
             }
         }

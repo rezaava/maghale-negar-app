@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\maghalenegar\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|c:\\users\\moaba\\documents\\cs\\code\\c#\\maghale-negar-app\\maghalenegar\\dedicatedfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\dedicatedfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|c:\\users\\moaba\\documents\\cs\\code\\c#\\maghale-negar-app\\maghalenegar\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\maghalenegar\\forms\\maghalenegarmanager\\createdocument\\createdocumentslide6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\maghalenegar\\constants\\comboboxdata\\comboboxdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\constants\\comboboxdata\\comboboxdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\maghalenegar\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +50,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\MaghaleNegar\\Constants\\Constants.cs",
+              "RelativeDocumentMoniker": "MaghaleNegar\\Constants\\Constants.cs",
+              "ToolTip": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\MaghaleNegar\\Constants\\Constants.cs",
+              "RelativeToolTip": "MaghaleNegar\\Constants\\Constants.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAkwJEAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-15T06:29:53.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "DedicatedFunctions.cs",
+              "DocumentMoniker": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\MaghaleNegar\\DedicatedFunctions.cs",
+              "RelativeDocumentMoniker": "MaghaleNegar\\DedicatedFunctions.cs",
+              "ToolTip": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\MaghaleNegar\\DedicatedFunctions.cs",
+              "RelativeToolTip": "MaghaleNegar\\DedicatedFunctions.cs",
+              "ViewState": "AgIAAGkRAAAAAAAAAAAgwHERAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-15T06:30:25.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ThisAddIn.cs",
+              "DocumentMoniker": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\MaghaleNegar\\ThisAddIn.cs",
+              "RelativeDocumentMoniker": "MaghaleNegar\\ThisAddIn.cs",
+              "ToolTip": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\MaghaleNegar\\ThisAddIn.cs",
+              "RelativeToolTip": "MaghaleNegar\\ThisAddIn.cs",
+              "ViewState": "AgIAAK8BAAAAAAAAAAAiwLoBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T05:33:30.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CreateDocumentSlide6.xaml.cs",
               "DocumentMoniker": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml.cs",
               "RelativeDocumentMoniker": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide6.xaml.cs",
@@ -58,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide5.xaml.cs",
               "DocumentMoniker": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide5.xaml.cs",
               "RelativeDocumentMoniker": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide5.xaml.cs",
@@ -70,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "CreateDocumentSlide5.xaml",
               "DocumentMoniker": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide5.xaml",
               "RelativeDocumentMoniker": "MaghaleNegar\\Forms\\MaghaleNegarManager\\CreateDocument\\CreateDocumentSlide5.xaml",
@@ -81,20 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DedicatedFunctions.cs",
-              "DocumentMoniker": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\MaghaleNegar\\DedicatedFunctions.cs",
-              "RelativeDocumentMoniker": "MaghaleNegar\\DedicatedFunctions.cs",
-              "ToolTip": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\MaghaleNegar\\DedicatedFunctions.cs",
-              "RelativeToolTip": "MaghaleNegar\\DedicatedFunctions.cs",
-              "ViewState": "AgIAACARAAAAAAAAAAAiwM0RAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-15T06:30:25.782Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ComboBoxData.cs",
               "DocumentMoniker": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\MaghaleNegar\\Constants\\ComboBoxData\\ComboBoxData.cs",
               "RelativeDocumentMoniker": "MaghaleNegar\\Constants\\ComboBoxData\\ComboBoxData.cs",
@@ -103,18 +133,6 @@
               "ViewState": "AgIAADoAAAAAAAAAAAAwwFAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-15T06:30:11.981Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Constants.cs",
-              "DocumentMoniker": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\MaghaleNegar\\Constants\\Constants.cs",
-              "RelativeDocumentMoniker": "MaghaleNegar\\Constants\\Constants.cs",
-              "ToolTip": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\MaghaleNegar\\Constants\\Constants.cs",
-              "RelativeToolTip": "MaghaleNegar\\Constants\\Constants.cs",
-              "ViewState": "AgIAACsBAAAAAAAAAAAgwD8BAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-15T06:29:53.538Z"
             }
           ]
         }
