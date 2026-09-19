@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|c:\\users\\moaba\\documents\\cs\\code\\c#\\maghale-negar-app\\maghalenegar\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\maghalenegar\\dedicatedfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\dedicatedfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|c:\\users\\moaba\\documents\\cs\\code\\c#\\maghale-negar-app\\maghalenegar\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|solutionrelative:maghalenegar\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BD35DDE-535B-4E76-8F9A-72DF0B55F097}|MaghaleNegar\\MaghaleNegar.csproj|C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\maghalenegar\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,28 +50,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Constants.cs",
               "DocumentMoniker": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\MaghaleNegar\\Constants\\Constants.cs",
               "RelativeDocumentMoniker": "MaghaleNegar\\Constants\\Constants.cs",
               "ToolTip": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\MaghaleNegar\\Constants\\Constants.cs",
               "RelativeToolTip": "MaghaleNegar\\Constants\\Constants.cs",
-              "ViewState": "AgIAAIYAAAAAAAAAAAAiwJEAAABnAAAAAAAAAA==",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAcwJEAAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-15T06:29:53.538Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DedicatedFunctions.cs",
               "DocumentMoniker": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\MaghaleNegar\\DedicatedFunctions.cs",
               "RelativeDocumentMoniker": "MaghaleNegar\\DedicatedFunctions.cs",
               "ToolTip": "C:\\Users\\moaba\\Documents\\cs\\Code\\C#\\maghale-negar-app\\MaghaleNegar\\DedicatedFunctions.cs",
               "RelativeToolTip": "MaghaleNegar\\DedicatedFunctions.cs",
-              "ViewState": "AgIAAGkRAAAAAAAAAAAgwHERAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAIcRAAAAAAAAAAAiwFsRAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-15T06:30:25.782Z"
+              "WhenOpened": "2026-08-15T06:30:25.782Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
